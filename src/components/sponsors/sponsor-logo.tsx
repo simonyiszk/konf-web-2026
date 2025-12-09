@@ -1,6 +1,7 @@
 import clsx from "clsx";
 
 import { Company, SponsorCategory } from "@/models/models";
+import {JSX} from "react";
 
 function ConditionalWrapper({
   condition,
