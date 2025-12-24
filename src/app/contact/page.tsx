@@ -4,8 +4,8 @@ import { LocationTile } from "@/components/tiles/location-tile";
 import { OrganiserTile } from "@/components/tiles/organizer-tile";
 import { getIndexData } from "@/models/get-index-data";
 
-export default function Contact() {
-  const data = getIndexData();
+export default async function asyncContact() {
+  const data = await getIndexData();
   if (!data) {
     redirect("/error");
   }

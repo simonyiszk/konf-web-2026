@@ -1,1 +1,3 @@
-Simonyi Konferencia 2025
+XXIII. Simonyi Konferencia
+
+2026.03.24.
