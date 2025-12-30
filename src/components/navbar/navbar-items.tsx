@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const links = [
-  {
+  /*{
     href: "/",
     label: "főoldal",
-  },
+  },*/
   {
     href: "https://xxii.konferencia.simonyi.bme.hu/",
     label: "xxii. konferencia",
@@ -33,10 +33,10 @@ const links = [
     href: "/register",
     label: "regisztráció",
   },*/
-  {
+  /*{
     href: "/contact",
     label: "kapcsolat",
-  },
+  },*/
 ];
 
 export function NavbarItems() {

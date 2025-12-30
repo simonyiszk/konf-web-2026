@@ -1,12 +1,6 @@
-import Hero from "@/components/hero/Hero";
 import { ImageCarouselSection } from "@/components/image-carousel/image-carousel-section";
-import { SponsorSection } from "@/components/sponsors/sponsor-section";
-import { MobilAppTile } from "@/components/tiles/mobil-app-tile";
 import { PromoVideoTile } from "@/components/tiles/promo-video-tile";
-import { YoutubeVideoTile } from "@/components/tiles/youtube-video-tile";
 import { getIndexData } from "@/models/get-index-data";
-import { getStreams } from "@/models/get-youtube-video-data";
-import { StreamData } from "@/models/models";
 import { redirect } from "next/navigation";
 
 export default async function Landing() {
