@@ -2,6 +2,7 @@ import { ImageCarouselSection } from "@/components/image-carousel/image-carousel
 import { PromoVideoTile } from "@/components/tiles/promo-video-tile";
 import { getIndexData } from "@/models/get-index-data";
 import { redirect } from "next/navigation";
+import CountdownTileImplementation from "@/components/tiles/countdown-tile/countdown-implementation";
 
 export default async function Landing() {
   const data = await getIndexData();
@@ -12,7 +13,7 @@ export default async function Landing() {
   //const appData = data.mobilApp;
   return (
     <div className="flex-grow relative flex flex-col justify-center items-center w-full">
-
+      <CountdownTileImplementation />
       <PromoVideoTile data={data.promoVideo} />
       {/*<MobilAppTile data={appData} />*/}
       {data.previousConferences.conferences.length > 0 && (

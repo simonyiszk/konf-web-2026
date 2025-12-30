@@ -12,7 +12,7 @@ export function DesktopNavbar() {
       <div
         id="desktop-nav-container"
         className={clsx(
-          "flex items-center justify-between gap-10 w-full p-4 box-border rounded-md backdrop-blur-md bg-white bg-opacity-[0.15]"
+          "flex items-center justify-between gap-10 w-full p-4 box-border rounded-md backdrop-blur-md bg-text"
         )}
       >
         <Link href="/" className="h-full">
