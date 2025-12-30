@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from "next/font/local";
-import { Inter_Tight } from "next/font/google";
+import { Aboreto, Faculty_Glyphic } from "next/font/google";
 import PlausibleProvider from "next-plausible";
 import { Navbar } from "@/components/navbar/navbar";
 import { Footer } from "@/components/footer/footer";
@@ -25,15 +24,16 @@ export const metadata: Metadata = {
   },
 };
 
-const cygrotesk = localFont({
-  src: "./fonts/CyGrotesk.woff",
-  fallback: ["sans-serif"],
-  variable: "--font-cygrotesk",
+const aboreto = Aboreto({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-aboreto",
 });
 
-const interTight = Inter_Tight({
+const facultyGlyphic = Faculty_Glyphic({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-inter-tight",
+  variable: "--font-faculty-glyphic",
 });
 
 export default function RootLayout({
@@ -42,14 +42,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="hu" className={`${cygrotesk.variable} ${interTight.variable}`}>
-      <body className={"font-interTight bg-background text-text"}>
+    <html lang="hu" className={`${aboreto.variable} ${facultyGlyphic.variable}`}>
+      <body className={"font-facultyGlyphic bg-background text-text"}>
         <PlausibleProvider
           domain="konferencia.simonyi.bme.hu"
           customDomain={process.env.NEXT_PUBLIC_PLAUSIBLE_URL}
           selfHosted
         />
-        <div className="w-full flex flex-col min-h-screen flex-grow justify-center items-center body">
+        <div className="w-full flex flex-col min-h-screen flex-grow justify-center items-center">
           <Navbar />
           <main className="container mb-10">{children}</main>
           <Footer />

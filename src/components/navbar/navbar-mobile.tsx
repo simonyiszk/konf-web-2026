@@ -31,15 +31,15 @@ export function NavbarMobile() {
   }, []);
 
   return (
-    <nav className="md:hidden overflow-hidden ">
+    <nav className="md:hidden overflow-hidden">
       <div className="w-full px-5 py-3 sticky top-0 z-20" onClick={onLinkClick}>
         <div
           id="mobile-nav-container"
           className={clsx(
             "w-full p-4 box-border rounded-md backdrop-blur-md",
             isDarkBackground
-              ? "bg-white bg-opacity-[0.15]"
-              : "bg-black bg-opacity-[0.65]"
+              ? "bg-text bg-opacity-[0.15]"
+              : "bg-white bg-opacity-[0.65]"
           )}
         >
           <div className="w-full flex items-center justify-between gap-5">
@@ -47,7 +47,7 @@ export function NavbarMobile() {
               <KonfLogo className="fill-text h-fit" />
             </Link>
             <button onClick={toggle}>
-              <TbMenu2 size={40} />
+              <TbMenu2 size={40} className="text-background" />
             </button>
           </div>
           {isOpen && <NavbarItems />}

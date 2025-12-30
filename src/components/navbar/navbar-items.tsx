@@ -46,7 +46,7 @@ export function NavbarItems() {
         <Link
           href={href}
           key={href}
-          className="hover:text-brand text-xl font-bold"
+          className="hover:text-brand text-xl font-bold text-background"
         >
           {label}
         </Link>

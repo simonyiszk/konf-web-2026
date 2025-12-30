@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --text-base: #fffffa;
+    --text-base: #f4e1be;
     --text-50: #ffffe5;
     --text-100: #ffffcc;
     --text-200: #ffff99;
@@ -17,7 +17,7 @@
     --text-900: #333300;
     --text-950: #191a00;
 
-    --background-base: #31292f;
+    --background-base: #64370c;
     --background-50: #f3f1f3;
     --background-100: #e8e3e7;
     --background-200: #d1c7ce;
@@ -30,7 +30,7 @@
     --background-900: #1c171b;
     --background-950: #0e0c0d;
 
-    --primary-base: #f18b50;
+    --primary-base: #3677b0;
     --primary-50: #fdefe7;
     --primary-100: #fbe0d0;
     --primary-200: #f7c0a1;
@@ -43,7 +43,7 @@
     --primary-900: #2f1404;
     --primary-950: #180a02;
 
-    --secondary-base: #966b9d;
+    --secondary-base: #e97116;
     --secondary-50: #f4f0f5;
     --secondary-100: #e9e0eb;
     --secondary-200: #d3c2d6;
@@ -56,7 +56,7 @@
     --secondary-900: #1d141f;
     --secondary-950: #0f0a0f;
 
-    --accent-base: #3c6e71;
+    --accent-base: #45b06a;
     --accent-50: #eef6f6;
     --accent-100: #deeded;
     --accent-200: #bcdadc;
@@ -76,7 +76,7 @@ h2 {
   font-weight: 300;
 }
 h1 {
-  font-family: "cygrotesk", "cygrotesk Fallback", sans-serif;
+  font-family: var(--font-aboreto), sans-serif;
   font-size: 3rem;
 
   @media screen and (max-width: 768px) {

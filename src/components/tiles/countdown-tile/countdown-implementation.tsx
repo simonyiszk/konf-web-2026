@@ -21,29 +21,29 @@ export default function CountdownTileImplementation() {
   }, [target]);
   return (
     <>
-      <div className="grid grid-cols-6 justify-center font-faculty-glyphic place-items-center">
-        <span className="col-span-2 grid grid-rows-4">
+      <div className="grid grid-cols-2 md:grid-cols-6 md:grid-rows-1 justify-center font-faculty-glyphic place-items-center h-full">
+        <span className="col-span-1 md:col-span-2 grid grid-rows-4 gap-y-4">
           <span>
-            <div className="text-3xl md:text-5xl">{String( Math.floor(duration / (60*60*24)) ).padStart(2, "0")}</div>
-            <div className="text-xs md:text-sm">nap</div>
+            <div className="text-5xl md:text-5xl">{String( Math.floor(duration / (60*60*24)) ).padStart(2, "0")}</div>
+            <div className="text-xl md:text-2xl text-secondary">nap</div>
           </span>
           <span>
-            <div className="text-3xl md:text-5xl">{String( Math.floor(duration / (60*60)) % 24 ).padStart(2, "0")}</div>
-            <div className="text-xs md:text-sm">óra</div>
+            <div className="text-5xl md:text-5xl">{String( Math.floor(duration / (60*60)) % 24 ).padStart(2, "0")}</div>
+            <div className="text-xl md:text-2xl text-secondary">óra</div>
           </span>
           <span>
-            <div className="text-3xl md:text-5xl">{String( Math.floor(duration / 60) % 60 ).padStart(2, "0")}</div>
-            <div className="text-xs md:text-sm">perc</div>
+            <div className="text-5xl md:text-5xl">{String( Math.floor(duration / 60) % 60 ).padStart(2, "0")}</div>
+            <div className="text-xl md:text-2xl text-secondary">perc</div>
           </span>
           <span>
-            <div className="text-3xl md:text-5xl">{String(duration % 60).padStart(2, "0")}</div>
-            <div className="text-xs md:text-sm">másodperc</div>
+            <div className="text-5xl md:text-5xl">{String(duration % 60).padStart(2, "0")}</div>
+            <div className="text-xl md:text-2xl text-secondary">másodperc</div>
           </span>
         </span>
-        <span className="col-span-1">
+        <span className="col-span-1 pr-6 md:pr-0">
           <Vines className="fill-primary w-full" />
         </span>
-        <span className="col-span-3"><FullWhite className="w-full" /></span>
+        <span className="col-span-2 md:col-span-3"><FullWhite className="w-full" /></span>
       </div>
     </>
   );

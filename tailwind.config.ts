@@ -85,8 +85,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        cygrotesk: ["var(--font-cygrotesk)"],
-        interTight: ["var(--font-inter-tight)"],
+        aboreto: ["var(--font-aboreto)"],
         facultyGlyphic: ["var(--font-faculty-glyphic)"],
       },
       boxShadow: {
