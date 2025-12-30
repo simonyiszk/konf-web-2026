@@ -28,12 +28,12 @@ export function Footer() {
           {/* <Link href="/presentations" className="brand-link">
             Előadások
           </Link> */}
-          <Link href="/contact" className="brand-link">
+          {/*<Link href="/contact" className="brand-link">
             Kapcsolat
           </Link>
           <Link href="/giveaway" className="brand-link">
             Nyereményjáték
-          </Link>
+          </Link>*/}
           {/* <Link href="/conferences" className="brand-link">
             Előző évek konferenciái
           </Link> */}
