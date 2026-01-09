@@ -3,7 +3,7 @@
 import {differenceInSeconds} from "date-fns";
 import { useEffect, useMemo, useState } from "react";
 import {Vines} from "@/components/svgs/Vines";
-import {FullWhite} from "@/components/svgs/FullWhite";
+import {FullSand} from "@/components/svgs/FullSand";
 
 export default function CountdownTileImplementation() {
   const target = useMemo(() => new Date(2026, 2, 24, 10, 0), []);
@@ -43,7 +43,7 @@ export default function CountdownTileImplementation() {
         <span className="col-span-1 pr-6 md:pr-0">
           <Vines className="fill-primary w-full" />
         </span>
-        <span className="col-span-2 md:col-span-3"><FullWhite className="w-full" /></span>
+        <span className="col-span-2 md:col-span-3"><FullSand className="w-full" /></span>
       </div>
     </>
   );
