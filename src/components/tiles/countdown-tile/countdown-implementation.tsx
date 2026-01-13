@@ -41,9 +41,16 @@ export default function CountdownTileImplementation() {
           </span>
         </span>
         <span className="col-span-1 pr-6 md:pr-0">
-          <Vines className="fill-primary w-full" />
+          <Vines className="fill-primary w-full" width={192} height={475}/>
         </span>
-        <span className="col-span-2 md:col-span-3"><FullSand className="w-full" /></span>
+        <span className="col-span-2 md:col-span-3 grid grid-rows-3 gap-y-4">
+          <span className="row-span-2">
+            <FullSand className="w-full" />
+          </span>
+          <span>
+            <div className="text-5xl md:text-5xl">2026. 03. 24.</div>
+          </span>
+        </span>
       </div>
     </>
   );

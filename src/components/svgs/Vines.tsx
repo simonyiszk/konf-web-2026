@@ -1,6 +1,16 @@
-export const Vines = ({className}: { className?: string }) => (
+export const Vines = ({
+  className,
+  width,
+  height,
+}: {
+  className?: string;
+  width?: number;
+  height?: number;
+}) => (
   <svg
     viewBox="0 0 212 525"
+    width={width || 212}
+    height={height || 525}
     xmlns="http://www.w3.org/2000/svg"
     className={className}
     style={{

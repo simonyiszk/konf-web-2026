@@ -44,7 +44,7 @@ export function NavbarMobile() {
         >
           <div className="w-full flex items-center justify-between gap-5">
             <Link href="/" className="h-full">
-              <KonfLogo className="fill-text h-fit" />
+              <KonfLogo className="fill-text h-fit" height={45} width={48} />
             </Link>
             <button onClick={toggle}>
               <TbMenu2 size={40} className="text-background" />
