@@ -7,19 +7,19 @@ const links = [
   },*/
   {
     href: "https://xxii.konferencia.simonyi.bme.hu/",
-    label: "xxii. konferencia",
+    label: "XXII. konferencia",
   },
   {
     href: "https://xxi.konferencia.simonyi.bme.hu/",
-    label: "xxi. konferencia",
+    label: "XXI. konferencia",
   },
   {
     href: "https://xx.konferencia.simonyi.bme.hu/",
-    label: "xx. konferencia",
+    label: "XX. konferencia",
   },
   {
     href: "https://xix.konferencia.simonyi.bme.hu/",
-    label: "xix. konferencia",
+    label: "XIX. konferencia",
   },
   /*{
     href: "/presentations",
@@ -33,10 +33,10 @@ const links = [
     href: "/register",
     label: "regisztráció",
   },*/
-  /*{
+  {
     href: "/contact",
     label: "kapcsolat",
-  },*/
+  },
 ];
 
 export function NavbarItems() {
