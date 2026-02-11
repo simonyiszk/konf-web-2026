@@ -3,7 +3,6 @@
 import clsx from "clsx";
 import Link from "next/link";
 import React, { CSSProperties, useRef, useState } from "react";
-import { Tile } from "@/components/tiles/tile";
 import {
   BreakWithDates,
   PresentationWithDates,
@@ -144,11 +143,9 @@ export function PresentationGrid({
 export function PresentationTile({
   presentation,
   preview = false,
-  long = false,
 }: {
   presentation: PresentationWithDates | BreakWithDates;
   preview?: boolean;
-  long?: boolean;
 }) {
   const presenter = presentation.isBreak
     ? null
@@ -156,84 +153,85 @@ export function PresentationTile({
   const description = presentation.isBreak
     ? null
     : (presentation as PresentationWithDates).description;
+
+  const length = presentation.endDate.getTime() - presentation.startDate.getTime() ;
+
+  // helper to compute room color using CSS variables
+  const roomColorStyle: CSSProperties | undefined =
+    presentation.room === "IB028"
+      ? { color: "var(--primary-base)" }
+      : presentation.room === "IB025"
+      ? { color: "var(--accent-base)" }
+      : undefined;
+
   return (
     <>
-      <Tile
-        clickable={!presentation.isBreak && !preview}
-        className="w-full h-full rounded-md"
-        disableMinHeight={true}
-      >
-        <Tile.Body
-          lessPadding="5"
-          className="flex flex-col text-[--background]"
+      <div className="w-full h-1 rounded-sm mb-1" style={{ backgroundColor: 'var(--secondary-base)' }} />
+      <span className="pb-2 text-lg">
+        {presentation.room !== "BOTH" &&
+          !preview && (
+            <span style={roomColorStyle}>{` ${presentation.room}  · `}</span>
+          )}
+        {dateToHourAndMinuteString(presentation.startDate)} - {dateToHourAndMinuteString(presentation.endDate)}
+      </span>
+      <div className="flex flex-col justify-center flex-1">
+        <div
+          className={clsx(
+            "flex",
+            presentation.isBreak && "justify-around"
+          )}
         >
-          <span className="pb-2 text-xs">
-            {presentation.room !== "BOTH" &&
-              !preview &&
-              `${presentation.room}  | `}
-            {dateToHourAndMinuteString(presentation.startDate)} -{" "}
-            {dateToHourAndMinuteString(presentation.endDate)}
-          </span>
-          <div className="flex flex-col justify-center flex-1">
-            <div
+          <h2
+            className={clsx(
+              "text-xl lg:text-2xl font-medium",
+              !presenter ? "text-center pb-4" : "pb-4 lg:pb-6"
+            )}
+          >
+            {presentation.title}
+          </h2>
+          {presentation.room === "BOTH" && presentation.isBreak && (
+            <h2
+              aria-hidden={true}
               className={clsx(
-                "flex",
-                presentation.isBreak && "justify-around"
+                "text-lg lg:text-xl pb-4 lg:pb-6 font-medium",
+                !presenter && "text-center"
               )}
             >
-              <h2
-                className={clsx(
-                  "text-lg lg:text-xl font-medium",
-                  !presenter ? "text-center pb-4" : "pb-4 lg:pb-6"
-                )}
-              >
-                {presentation.title}
-              </h2>
-              {presentation.room === "BOTH" && presentation.isBreak && (
-                <h2
-                  aria-hidden={true}
-                  className={clsx(
-                    "text-lg lg:text-xl pb-4 lg:pb-6 font-medium",
-                    !presenter && "text-center"
-                  )}
-                >
-                  {presentation.title}
-                </h2>
-              )}
-            </div>
-            {!!presenter && (
-              <div className="flex gap-4">
-                {presenter.pictureUrl != "" && (<img
-                  src={presenter.pictureUrl}
-                  className="object-cover rounded-3xl w-16 h-16"
-                  alt="Presentation Image"
-                />)}
-                {presenter.pictureUrl == "" && (<div className="rounded-3xl w-16 h-16 bg-gray-300" />)}
-                <div>
-                  <h3 className="text-lg lg:text-2xl font-bold">
-                    {presenter.name}
-                  </h3>
-                  <div className="text-xs lg:text-sm">{presenter.rank}</div>
-                  <div className="hidden lg:block text-xs pt-0.5">
-                    {presenter.company?.name}
-                  </div>
-                </div>
+              {presentation.title}
+            </h2>
+          )}
+        </div>
+        {!!presenter && (
+          <div className="flex gap-4">
+            {presenter.pictureUrl != "" && (<img
+              src={presenter.pictureUrl}
+              className="object-cover rounded-3xl w-16 h-16"
+              alt="Presentation Image"
+            />)}
+            {presenter.pictureUrl == "" && (<div className="rounded-3xl w-16 h-16 bg-gray-300" />)}
+            <div>
+              <h3 className="text-lg lg:text-xl font-medium">
+                {presenter.name}
+              </h3>
+              <div className="text-xs lg:text-sm">{presenter.rank}</div>
+              <div className="hidden lg:block text-xs pt-0.5">
+                {presenter.company?.name}
               </div>
-            )}
-            {presenter?.company?.category === SponsorCategory.MAIN_SPONSOR &&
-              !preview && (
-                <p className="mt-2 text-base whitespace-pre-line">
-                  {description?.split("\n")[0]}
-                </p>
-              )}
+            </div>
           </div>
-        </Tile.Body>
-      </Tile>
+        )}
+        {length >= 2 * TimeMarkerStepSize &&
+          !preview && (
+            <p className="mt-2 text-base whitespace-pre-line">
+              {description?.split("\n")[0]}
+            </p>
+          )}
+      </div>
     </>
   );
 }
 
-const TimeMarkerStepSize = 20 * 60 * 1000; // half an hour
+const TimeMarkerStepSize = 20 * 60 * 1000;
 
 function TimeMarker({
   markerDate,
