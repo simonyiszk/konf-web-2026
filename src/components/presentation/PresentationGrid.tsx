@@ -32,12 +32,22 @@ export function PresentationGrid({
   return (
     <>
       <div className="max-md:hidden">
-        <div className="flex sticky left-0 top-28 z-10 md:ml-24 flex-row justify-around rounded-b-md mb-8">
-          <div className="py-4 px-6 font-bold text-lg text-primary">
-            IB028
-          </div>
-          <div className="py-4 px-6 font-bold text-lg text-accent">
-            IB025
+        <div className="sticky left-0 top-28 z-10 rounded-b-md mb-8">
+          <div
+            className="w-full"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 8rem 1fr",
+              alignItems: "center",
+            }}
+          >
+            <div className="py-4 px-6 text-5xl text-primary" style={{ justifySelf: "center" }}>
+              IB028
+            </div>
+            <div />
+            <div className="py-4 px-6 text-5xl text-accent" style={{ justifySelf: "center" }}>
+              IB025
+            </div>
           </div>
         </div>
 
@@ -53,8 +63,7 @@ export function PresentationGrid({
               <li
                 key={presentation.slug}
                 className={clsx(
-                  "w-full px-1 pb-4",
-                  presentation.room == "IB028" && "pr-4"
+                  "w-full px-1 pb-4"
                 )}
                 style={getPresentationCellStyles(startDate, presentation)}
               >
@@ -236,14 +245,20 @@ function TimeMarker({
   const rowStart =
     getTimeRowPositionInGrid(markerDate.getTime(), startDate) + 1;
   const rowEnd = rowStart + Math.floor(TimeMarkerStepSize / TimespanUnit) - 1;
+  const hours = markerDate.getHours().toString().padStart(2, "0");
+  const minutes = markerDate.getMinutes().toString().padStart(2, "0");
   return (
     <li
       aria-hidden={true}
-      className={clsx("snap-start hidden pr-4 md:block")}
-      style={{ gridRowStart: rowStart, gridRowEnd: rowEnd, gridColumnStart: 2, gridColumnEnd: 3 }}
+      className={clsx("snap-start hidden md:block")}
+      style={{ gridRowStart: rowStart, gridRowEnd: rowEnd, gridColumnStart: 2, gridColumnEnd: 3, justifySelf: 'center' }}
     >
-      <div className="py-4 px-6 font-bold text-lg">
-        {dateToHourAndMinuteString(markerDate)}
+      <div className="flex flex-col items-center">
+        <div className="w-24 h-1 rounded-sm mb-1" style={{ backgroundColor: 'var(--primary-700)' }} />
+        <div className="py-2 px-4 font-bold text-center flex items-start justify-center">
+          <span className="text-5xl leading-none font-semibold">{hours}</span>
+          <span className="self-start ml-1 text-3xl leading-none">{minutes}</span>
+        </div>
       </div>
     </li>
   );
