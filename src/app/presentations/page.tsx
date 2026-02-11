@@ -8,18 +8,18 @@ import { BreakWithDates, PresentationWithDates } from "@/models/models";
 export const metadata: Metadata = {
   title: "Előadások",
   description:
-    "Az előadások listája a XXI. Simonyi Konferencián, Magyarország legnagyobb egyetemi hallgatók által szervezett éves technológiai konferenciáján.",
+    "Az előadások listája a XXIII. Simonyi Konferencián, Magyarország legnagyobb egyetemi hallgatók által szervezett éves technológiai konferenciáján.",
 };
 
-export default function Presentations() {
-  const presentations = getPresentationData();
+export default async function Presentations() {
+  const presentations = await getPresentationData();
   if (!presentations) {
     notFound();
   }
   const [startDate, endDate] = getStartAndEndDates(presentations);
   return (
     <div className="flex flex-col w-full px-4 sm:px-6 xl:px-0 relative">
-      <h1 className="mb-16 mt-8">Előadások</h1>
+      <h1 className="mb-16 mt-8 text-center">ELŐADÁSOK</h1>
       <PresentationGrid
         presentations={presentations}
         endDate={endDate}

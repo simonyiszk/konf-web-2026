@@ -33,10 +33,10 @@ export function PresentationGrid({
     <>
       <div className="max-md:hidden">
         <div className="flex sticky left-0 top-28 z-10 md:ml-24 flex-row justify-around rounded-b-md mb-8">
-          <div className="rounded-md backdrop-blur-md bg-white bg-opacity-[0.15] py-4 px-6 font-bold text-lg">
+          <div className="py-4 px-6 font-bold text-lg text-primary">
             IB028
           </div>
-          <div className="rounded-md backdrop-blur-md bg-white bg-opacity-[0.15] py-4 px-6 font-bold text-lg">
+          <div className="py-4 px-6 font-bold text-lg text-accent">
             IB025
           </div>
         </div>
@@ -58,7 +58,7 @@ export function PresentationGrid({
                 )}
                 style={getPresentationCellStyles(startDate, presentation)}
               >
-                {presentation.placeholder ? (
+                {presentation.isBreak ? (
                   <PresentationTile presentation={presentation} />
                 ) : (
                   <Link href={`/presentations/${slugify(presentation.title)}`}>
@@ -107,7 +107,7 @@ export function PresentationGrid({
               .filter((presentation) => presentation.room === selectedHall)
               .map((presentation) => (
                 <li key={presentation.slug}>
-                  {presentation.placeholder ? (
+                  {presentation.isBreak ? (
                     <PresentationTile presentation={presentation} />
                   ) : (
                     <Link
@@ -135,20 +135,22 @@ export function PresentationGrid({
 export function PresentationTile({
   presentation,
   preview = false,
+  long = false,
 }: {
   presentation: PresentationWithDates | BreakWithDates;
   preview?: boolean;
+  long?: boolean;
 }) {
-  const presenter = presentation.placeholder
+  const presenter = presentation.isBreak
     ? null
     : (presentation as PresentationWithDates).presenter;
-  const description = presentation.placeholder
+  const description = presentation.isBreak
     ? null
     : (presentation as PresentationWithDates).description;
   return (
     <>
       <Tile
-        clickable={!presentation.placeholder && !preview}
+        clickable={!presentation.isBreak && !preview}
         className="w-full h-full rounded-md"
         disableMinHeight={true}
       >
@@ -167,7 +169,7 @@ export function PresentationTile({
             <div
               className={clsx(
                 "flex",
-                presentation.placeholder && "justify-around"
+                presentation.isBreak && "justify-around"
               )}
             >
               <h2
@@ -178,7 +180,7 @@ export function PresentationTile({
               >
                 {presentation.title}
               </h2>
-              {presentation.room === "BOTH" && presentation.placeholder && (
+              {presentation.room === "BOTH" && presentation.isBreak && (
                 <h2
                   aria-hidden={true}
                   className={clsx(
@@ -192,11 +194,12 @@ export function PresentationTile({
             </div>
             {!!presenter && (
               <div className="flex gap-4">
-                <img
+                {presenter.pictureUrl != "" && (<img
                   src={presenter.pictureUrl}
                   className="object-cover rounded-3xl w-16 h-16"
                   alt="Presentation Image"
-                />
+                />)}
+                {presenter.pictureUrl == "" && (<div className="rounded-3xl w-16 h-16 bg-gray-300" />)}
                 <div>
                   <h3 className="text-lg lg:text-2xl font-bold">
                     {presenter.name}
@@ -237,9 +240,9 @@ function TimeMarker({
     <li
       aria-hidden={true}
       className={clsx("snap-start hidden pr-4 md:block")}
-      style={{ gridRowStart: rowStart, gridRowEnd: rowEnd }}
+      style={{ gridRowStart: rowStart, gridRowEnd: rowEnd, gridColumnStart: 2, gridColumnEnd: 3 }}
     >
-      <div className="rounded-md backdrop-blur-md bg-white bg-opacity-[0.15] py-4 px-6 font-bold text-lg">
+      <div className="py-4 px-6 font-bold text-lg">
         {dateToHourAndMinuteString(markerDate)}
       </div>
     </li>
@@ -281,10 +284,10 @@ function getPresentationCellStyles(
     presentation.endDate.getTime(),
     startDate
   );
-  let columLocation: CSSProperties = { gridColumnStart: 2, gridColumnEnd: 4 };
+  let columLocation: CSSProperties = { gridColumnStart: 1, gridColumnEnd: 4 };
   switch (presentation.room) {
     case "IB028":
-      columLocation = { gridColumnStart: 2, gridColumnEnd: 3 };
+      columLocation = { gridColumnStart: 1, gridColumnEnd: 2 };
       break;
     case "IB025":
       columLocation = { gridColumnStart: 3, gridColumnEnd: 4 };

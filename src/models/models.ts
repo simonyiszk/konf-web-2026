@@ -39,7 +39,7 @@ export interface Break {
   language: "en" | "hu";
   startTime: string;
   endTime: string;
-  placeholder?: boolean;
+  isBreak?: boolean;
 }
 
 export interface PresentationModel {
@@ -54,7 +54,7 @@ export interface PresentationModel {
   description: string;
   videoUrl?: string;
   imageUrls?: string[];
-  placeholder?: boolean;
+  isBreak?: boolean;
 }
 
 export interface Delay {

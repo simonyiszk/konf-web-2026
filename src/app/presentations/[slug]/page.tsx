@@ -5,8 +5,8 @@ import Presentation from "@/components/presentation/Presentation";
 import {getIndexData} from "@/models/get-index-data";
 import slugify from "@/utils/slugify";
 
-export function generateStaticParams() {
-  const data = getIndexData();
+export async function generateStaticParams() {
+  const data = await getIndexData();
   return (
     data?.presentations?.map((p) => ({
       slug: slugify(p.title),
@@ -22,7 +22,7 @@ export async function generateMetadata(
   props: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const data = getIndexData();
+  const data = await getIndexData();
   const slug = (await props.params).slug;
   const presentation = data?.presentations.find(
     (p) => slugify(p.title) === slug
@@ -39,8 +39,8 @@ export async function generateMetadata(
   };
 }
 
-const getPresentationBySlug = (slug: string) => {
-  const data = getIndexData();
+const getPresentationBySlug = async (slug: string) => {
+  const data = await getIndexData();
   return data?.presentations.find((p) => slugify(p.title) === slug);
 };
 
@@ -49,7 +49,7 @@ export default async function PresentationBySlug({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const presentation = getPresentationBySlug((await params).slug);
+  const presentation = await getPresentationBySlug((await params).slug);
   if (!presentation) {
     notFound();
   }

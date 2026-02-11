@@ -22,9 +22,7 @@ export default function Presentation({
   const { title, description, presenter, imageUrls } = presentation;
   let time = "";
   if (presentation.startTime && presentation.endTime) {
-    time = ` | ${dateToHourAndMinuteString(
-      new Date(presentation.startTime)
-    )} - ${dateToHourAndMinuteString(new Date(presentation.endTime))}`;
+    time = ` | ${presentation.startTime} - ${presentation.endTime}`;
   }
   return (
     <Tile className={clsx(isFrontPage && "sm:col-span-6")}>
