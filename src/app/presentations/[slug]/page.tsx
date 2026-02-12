@@ -8,7 +8,7 @@ import slugify from "@/utils/slugify";
 export async function generateStaticParams() {
   const data = await getIndexData();
   return (
-    data?.presentations?.map((p) => ({
+    data?.presentations?.filter((p) => !p.isBreak).map((p) => ({
       slug: slugify(p.title),
     })) ?? []
   );
