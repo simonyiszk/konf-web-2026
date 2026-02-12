@@ -1,15 +1,8 @@
-import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa";
 
 import { PresentationModel } from "@/models/models";
-import { dateToHourAndMinuteString } from "@/utils/dateHelper";
-import slugify from "@/utils/slugify";
 
-import uk from "../../../public/img/uk.svg";
-import { Tile } from "../tiles/tile";
-import { YoutubeVideo } from "../youtube-video";
+import { SlArrowLeft } from "react-icons/sl";
 
 type PresentationProps = {
   presentation: PresentationModel;
@@ -20,168 +13,67 @@ export default function Presentation({
   isFrontPage,
 }: PresentationProps) {
   const { title, description, presenter, imageUrls } = presentation;
-  let time = "";
-  if (presentation.startTime && presentation.endTime) {
-    time = ` | ${presentation.startTime} - ${presentation.endTime}`;
-  }
+  let startTime = presentation.startTime.split(":").map(Number);
+  let endTime = presentation.endTime.split(":").map(Number);
+
   return (
-    <Tile className={clsx(isFrontPage && "sm:col-span-6")}>
-      <Tile.Body>
-        <div className="w-full">
-          {!isFrontPage && (
-            <h3 className="mb-5 w-fit hover:text-brand">
-              <Link href={`/presentations`}>
-                <div className="flex items-center">
-                  <FaArrowLeft />
-                  <p className="ml-1">Vissza az előadásokhoz </p>
-                </div>
-              </Link>
-            </h3>
-          )}
-          {!isFrontPage && (
-            <div>
-              <h1 className="mb-2 hyphens-auto sm:hyphens-none">{title}</h1>
-              <p className="mb-8 text-[25px] font-bold block md:hidden text-[--background]">{`${presentation.room}${time}`}</p>
-            </div>
-          )}
-          <div className="flex flex-col md:flex-row gap-8">
-            {!isFrontPage && (
-              <div>
-                <p className="mb-8 text-[25px] font-bold hidden md:block text-[--background]">{`${presentation.room}${time}`}</p>
-                <p className="text-[--background] text-base sm:text-[20px] whitespace-pre-line">
-                  {description}
-                </p>
-              </div>
-            )}
-            {isFrontPage && (
-              <div>
-                <p className="mb-2 text-3xl sm:text-[40px] font-bold leading-10">
-                  {title}
-                </p>
-                <p className="mb-8 text-[22px] font-bold text-[--background]">{`${presentation.room}${time}`}</p>
-                <p className="text-stone-200 text-base sm:text-[20px] whitespace-pre-line">
-                  {description}
-                </p>
-                <div className="flex flex-col sm:flex-row">
-                  {imageUrls?.map((image: string) => {
-                    return (
-                      <img
-                        src={image}
-                        key={image}
-                        alt="presentation images"
-                        className="p-2 max-w-full max-h-[75px] object-contain mt-5"
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-            <div
-              className={clsx(
-                "flex flex-col items-center flex-shrink-0 text-center md:max-w-sm",
-                isFrontPage ? "order-none" : "order-first",
-                "md:order-last"
-              )}
+    <>
+      {!isFrontPage && (
+        <>
+          <div className="flex gap-4 mb-6 w-28 border border-gray-300 rounded-lg px-3 py-2 hover:bg-text hover:text-primary-700">
+            <Link
+              href="/presentations"
+              className="flex items-center ml-2 hover:ml-1 gap-2 text-md transition-colors"
             >
-              <div
-                className={clsx(
-                  "object-cover aspect-square",
-                  isFrontPage
-                    ? "w-72 h-72 sm:w-96 sm:h-96"
-                    : "w-[350px] h-[350px] sm:w-[408px] sm:h-[408px]"
-                )}
-              >
+              <SlArrowLeft />
+              Vissza
+            </Link>
+          </div>
+          <div className="flex gap-2">
+            <div>
+              <h3 className="text-5xl px-8"
+                  style={presentation.room === "IB028"? {color: "var(--primary-base)"}:{color: "var(--accent-base)"}}>
+                {presentation.room}
+              </h3>
+              <div className="py-2 pl-8 font-bold text-left w-full">
+                <div className="flex items-start gap-8">
+                  <div className="flex flex-col flex-none mx-1">
+                    <div className="flex items-start">
+                      <span className="text-5xl leading-none font-semibold">{startTime[0]}</span>
+                      <span className="self-start ml-1 text-3xl leading-none">{startTime[1]}</span>
+                      <span className="text-5xl leading-none font-semibold ml-0.5">-</span>
+                    </div>
+                    <div className="flex items-start mt-2">
+                      <span className="text-5xl leading-none font-semibold">{endTime[0]}</span>
+                      <span className="self-start ml-1 text-3xl leading-none">{endTime[1]}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 w-full">
+                    <span className="block text-5xl font-bold">{title}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="gap-4 w-full px-8" style={{ display: "grid", gridTemplateColumns: "8fr 5fr" }}>
+            <div className="flex flex-col gap-4">
+              {description}
+            </div>
+            <div className="flex flex-col gap-4">
+              <h4 className="text-2xl font-bold">Előadó</h4>
+              <div className="flex items-center gap-4">
                 <img
                   src={presenter.pictureUrl}
-                  className="object-cover h-full w-full rounded-3xl"
-                  alt="Presentation Image"
+                  alt={presenter.name}
+                  className="w-16 h-16 rounded-full object-cover"
                 />
+                <span className="text-lg">{presenter.name}</span>
               </div>
-              <p className="block mt-4 text-[32px] leading-tight font-bold text-[--foreground]-900">
-                {presenter.name}
-              </p>
-              <p className="block mt-0.5 text-[20px]  text-[--background]">
-                {presenter.rank}
-              </p>
-              {presenter.company && presenter.company.logoUrl && (
-                <div className="mt-2 bg-white rounded-xl max-w-[308px] max-h-[75px] w-full">
-                  <img
-                    src={presenter.company.logoUrl}
-                    alt="Company logo"
-                    className="p-2 max-w-full max-h-[75px] object-fit m-auto"
-                  />
-                </div>
-              )}
-              {presentation.language === "en" && (
-                <div className="flex mt-2 gap-2">
-                  <Image
-                    src={uk}
-                    alt="Egyesült Királyság zászlója"
-                    width={50}
-                    height={25}
-                    className="rounded-xl"
-                  />
-                  <p className="text-lg">Az előadás angol nyelvű.</p>
-                </div>
-              )}
             </div>
           </div>
-          <div className="sm:w-full md:w-6/7 lg:w-5/6 mx-auto mt-8">
-            {presentation.videoUrl && !isFrontPage && (
-              <YoutubeVideo
-                title={presentation.title}
-                url={presentation.videoUrl}
-              />
-            )}
-          </div>
-        </div>
-        {isFrontPage && (
-          <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-center pt-6 justify-center">
-            <Link
-              href={`/presentations/${slugify(presentation.title)}`}
-              className="inline-flex items-center font-semibold text-xl text-[--foreground] brand-link"
-            >
-              Részletek
-              <svg
-                className=" w-2.5 h-2.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-            </Link>
-            <Link
-              href={"/presentations"}
-              className="inline-flex items-center font-semibold text-xl text-[--foreground] brand-link"
-            >
-              Összes előadás
-              <svg
-                className=" w-2.5 h-2.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-            </Link>
-          </div>
-        )}
-      </Tile.Body>
-    </Tile>
-  );
-}
+         </>
+       )}
+     </>
+   )
+ }
