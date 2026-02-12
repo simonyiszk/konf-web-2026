@@ -12,9 +12,9 @@ export default function Presentation({
   presentation,
   isFrontPage,
 }: PresentationProps) {
-  const { title, description, presenter, imageUrls } = presentation;
-  let startTime = presentation.startTime.split(":").map(Number);
-  let endTime = presentation.endTime.split(":").map(Number);
+  const { title, description, presenter } = presentation;
+  const startTime = presentation.startTime.split(":").map(Number);
+  const endTime = presentation.endTime.split(":").map(Number);
 
   return (
     <>
