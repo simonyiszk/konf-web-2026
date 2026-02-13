@@ -5,8 +5,7 @@ import Link from "next/link";
 import React, { CSSProperties, useRef, useState } from "react";
 import {
   BreakWithDates,
-  PresentationWithDates,
-  SponsorCategory,
+  PresentationWithDates
 } from "@/models/models";
 import { dateToHourAndMinuteString } from "@/utils/dateHelper";
 import slugify from "@/utils/slugify";
@@ -40,11 +39,11 @@ export function PresentationGrid({
               alignItems: "center",
             }}
           >
-            <div className="py-4 px-6 text-5xl text-primary" style={{ justifySelf: "center" }}>
+            <div className="py-2 px-6 text-5xl font-bold bg-primary text-primary-950 rounded-2xl" style={{ justifySelf: "center" }}>
               IB028
             </div>
             <div />
-            <div className="py-4 px-6 text-5xl text-accent" style={{ justifySelf: "center" }}>
+            <div className="py-2 px-6 text-5xl font-bold bg-accent text-accent-950 rounded-2xl" style={{ justifySelf: "center" }}>
               IB025
             </div>
           </div>
@@ -62,14 +61,19 @@ export function PresentationGrid({
               <li
                 key={presentation.slug}
                 className={clsx(
-                  "w-full px-1 pb-4"
+                  "w-full px-1 pb-6"
                 )}
                 style={getPresentationCellStyles(startDate, presentation)}
               >
                 {presentation.isBreak ? (
-                  <PresentationTile presentation={presentation} />
+                  <div className="w-full h-full p-4 rounded-xl">
+                    <PresentationTile presentation={presentation} />
+                  </div>
                 ) : (
-                  <Link href={`/presentations/${slugify(presentation.title)}`}>
+                  <Link
+                    href={`/presentations/${slugify(presentation.title)}`}
+                    className="block w-full h-full p-4 rounded-xl transition-colors duration-300 hover:bg-text hover:text-background"
+                  >
                     <PresentationTile presentation={presentation} />
                   </Link>
                 )}
@@ -116,10 +120,13 @@ export function PresentationGrid({
               .map((presentation) => (
                 <li key={presentation.slug}>
                   {presentation.isBreak ? (
-                    <PresentationTile presentation={presentation} />
+                    <div className="w-full h-full p-4 rounded-xl">
+                      <PresentationTile presentation={presentation} />
+                    </div>
                   ) : (
                     <Link
                       href={`/presentations/${slugify(presentation.title)}`}
+                      className="block w-full h-full p-4 rounded-xl transition-colors duration-300 hover:bg-text hover:text-background"
                     >
                       <PresentationTile presentation={presentation} />
                     </Link>
@@ -203,12 +210,14 @@ export function PresentationTile({
         </div>
         {!!presenter && (
           <div className="flex gap-4">
-            {presenter.pictureUrl != "" && (<img
-              src={presenter.pictureUrl}
-              className="object-cover rounded-3xl w-16 h-16"
+            <img
+              src={presenter.pictureUrl || "/img/avatar.webp"}
+              className={clsx(
+                "object-cover rounded-3xl w-16 h-16",
+                !presenter.pictureUrl && "sepia-[.5] opacity-80"
+              )}
               alt="Presentation Image"
-            />)}
-            {presenter.pictureUrl == "" && (<div className="rounded-3xl w-16 h-16 bg-gray-300" />)}
+            />
             <div>
               <h3 className="text-lg lg:text-xl font-medium">
                 {presenter.name}
