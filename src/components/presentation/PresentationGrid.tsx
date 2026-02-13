@@ -90,8 +90,8 @@ export function PresentationGrid({
         </div>
       </div>
       <div className="md:hidden">
-        <div className="  sticky left-0 top-28 z-10 flex-row flex justify-center rounded-b-md mb-8">
-          <div className="border-2 border-primary-200 rounded-2xl flex p-2 relative">
+        <div className="  sticky left-0 top-16 z-30 flex-row flex justify-center rounded-b-md mb-8">
+          <div className="border-2 border-primary-200 rounded-2xl flex p-2 relative bg-background">
             <div
               className={clsx(
                 "absolute top-2 bottom-2 w-[calc(50%-0.5rem)] rounded-lg transition-all duration-300 ease-in-out",
