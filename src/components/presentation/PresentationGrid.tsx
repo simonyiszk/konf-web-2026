@@ -132,7 +132,7 @@ export function PresentationGrid({
                   ) : (
                     <Link
                       href={`/presentations/${slugify(presentation.title)}`}
-                      className="block w-full h-full p-4 rounded-xl transition-colors duration-300 hover:bg-text hover:text-background"
+                      className="block w-full h-full p-4 rounded-xl transition-colors duration-300"
                     >
                       <PresentationTile presentation={presentation} />
                     </Link>
