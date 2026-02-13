@@ -1,14 +1,14 @@
 "use client";
 
-import clsx from "clsx";
-import Link from "next/link";
-import React, { CSSProperties, useRef, useState } from "react";
 import {
   BreakWithDates,
   PresentationWithDates
 } from "@/models/models";
 import { dateToHourAndMinuteString } from "@/utils/dateHelper";
 import slugify from "@/utils/slugify";
+import clsx from "clsx";
+import Link from "next/link";
+import { CSSProperties, useRef, useState } from "react";
 
 const TimespanUnit = 15 * 60 * 1000; // fifteen minutes
 const TimespanUnitHeight = "minmax(5rem, auto)";
@@ -91,11 +91,17 @@ export function PresentationGrid({
       </div>
       <div className="md:hidden">
         <div className="  sticky left-0 top-28 z-10 flex-row flex justify-center rounded-b-md mb-8">
-          <div className="border rounded-md flex">
+          <div className="border-2 border-primary-200 rounded-2xl flex p-2 relative">
+            <div
+              className={clsx(
+                "absolute top-2 bottom-2 w-[calc(50%-0.5rem)] rounded-lg transition-all duration-300 ease-in-out",
+                selectedHall === "IB028" ? "left-2 bg-primary" : "left-1/2 bg-accent"
+              )}
+            />
             <button
               className={clsx(
-                "rounded-md backdrop-blur-md  bg-opacity-[0.15] py-4 px-6 font-bold text-lg",
-                selectedHall === "IB028" && "bg-white"
+                "rounded-lg py-2 px-6 font-bold text-3xl transition-colors duration-300 z-10 w-1/2",
+                selectedHall === "IB028" ? "text-primary-950" : "text-primary placeholder-opacity-50 hover:bg-white/5"
               )}
               onClick={() => setSelectedHall("IB028")}
             >
@@ -103,8 +109,8 @@ export function PresentationGrid({
             </button>
             <button
               className={clsx(
-                "rounded-md backdrop-blur-md  bg-opacity-[0.15] py-4 px-6 font-bold text-lg hover:bg-gray-200",
-                selectedHall === "IB025" && "bg-white"
+                "rounded-lg py-2 px-6 font-bold text-3xl transition-colors duration-300 z-10 w-1/2",
+                selectedHall === "IB025" ? "text-accent-950" : "text-accent placeholder-opacity-50 hover:bg-white/5"
               )}
               onClick={() => setSelectedHall("IB025")}
             >
