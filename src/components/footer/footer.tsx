@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { SocialButtons } from "./social-buttons";
 import KonfLogo from "../svgs/Konf";
+import { SocialButtons } from "./social-buttons";
 
 export function Footer() {
   return (
@@ -56,7 +56,7 @@ export function Footer() {
               target="blank"
             >
               <Image
-                src="/img/kirdev-inline.svg"
+                src="/img/kirdev-inline-brown.svg"
                 className="mb-4"
                 alt="Kir-Dev"
                 width={193}
@@ -69,7 +69,7 @@ export function Footer() {
               target="blank"
             >
               <Image
-                src="/img/schdesign.svg"
+                src="/img/schdesign-brown.svg"
                 alt="schdesign"
                 width={200}
                 height={60}
@@ -85,7 +85,7 @@ export function Footer() {
             target="blank"
           >
             <Image
-              src="/img/vercel.svg"
+              src="/img/vercel-brown.svg"
               alt="Vercel"
               className="mx-auto"
               width={100}
@@ -96,7 +96,7 @@ export function Footer() {
 
         <div className="flex items-center gap-8 ">
           <Link href="https://vik.bme.hu" className="brand-link" target="blank">
-            <Image src="/img/vik.svg" alt="Vik" width={48} height={48} />
+            <Image src="/img/vik-brown.svg" alt="Vik" width={48} height={48} />
           </Link>
           <Link
             href="https://simonyi.bme.hu"
@@ -104,7 +104,7 @@ export function Footer() {
             target="blank"
           >
             <Image
-              src="/img/simonyi.svg"
+              src="/img/simonyi-brown.svg"
               alt="Simonyi Károly Szakkollégium"
               width={160}
               height={34}
