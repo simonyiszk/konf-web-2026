@@ -185,7 +185,7 @@ export function PresentationTile({
           !preview && (
             <span style={roomColorStyle}>{` ${presentation.room}  · `}</span>
           )}
-        {dateToHourAndMinuteString(presentation.startDate)} - {dateToHourAndMinuteString(presentation.endDate)}
+        {presentation.startTime} - {presentation.endTime}
       </span>
       <div className="flex flex-col justify-center flex-1">
         <div
@@ -252,14 +252,13 @@ function TimeMarker({
   markerDate,
   startDate,
 }: {
-  markerDate: Date;
+  markerDate: (string|Date)[];
   startDate: number;
 }) {
   const rowStart =
-    getTimeRowPositionInGrid(markerDate.getTime(), startDate) + 1;
+    getTimeRowPositionInGrid((markerDate[0] as Date).getTime(), startDate) + 1;
   const rowEnd = rowStart + Math.floor(TimeMarkerStepSize / TimespanUnit) - 1;
-  const hours = markerDate.getHours().toString().padStart(2, "0");
-  const minutes = markerDate.getMinutes().toString().padStart(2, "0");
+  const [hours, minutes] = (markerDate[1] as string).split(":");
   return (
     <li
       aria-hidden={true}
@@ -276,11 +275,11 @@ function TimeMarker({
     </li>
   );
 }
-function getUniqueDates(datesArray: Date[]): Date[] {
+function getUniqueDates(datesArray: (string|Date)[][]): (string|Date)[][] {
   const uniqueDates = new Set();
 
   return datesArray.filter((date) => {
-    const dateString = date.toISOString(); // Convert date to string
+    const dateString = (date[0] as Date).toISOString(); // Convert date to string
     if (!uniqueDates.has(dateString)) {
       uniqueDates.add(dateString);
       return true;
@@ -291,8 +290,8 @@ function getUniqueDates(datesArray: Date[]): Date[] {
 
 function timeMarkerGenerator(
   presentations: (PresentationWithDates | BreakWithDates)[]
-): Date[] {
-  const times = presentations.map((presentation) => presentation.startDate);
+): (string|Date)[][] {
+  const times = presentations.map((presentation) => [presentation.startDate, presentation.startTime]);
   return getUniqueDates(times);
 }
 
