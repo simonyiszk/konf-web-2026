@@ -21,15 +21,16 @@ export default function Presentation({
     <>
       {!isFrontPage && (
         <>
-          <div className="flex gap-4 mb-4 md:mb-6 ml-4 md:ml-8 w-28 border border-gray-300 rounded-lg px-3 py-2 hover:bg-text hover:text-primary-700">
-            <Link
-              href="/presentations"
-              className="flex items-center ml-2 hover:ml-1 gap-2 text-md transition-colors"
-            >
+          <Link
+            href="/presentations"
+            className="flex items-center ml-2 hover:ml-1 gap-2 text-md transition-colors"
+          >
+            <div className="flex items-center gap-4 mb-4 md:mb-6 ml-4 md:ml-8 w-28 border border-gray-300 rounded-lg px-3 py-2 hover:bg-text hover:text-primary-700">
               <SlArrowLeft />
               Vissza
-            </Link>
-          </div>
+            </div>
+          </Link>
+
           <div className="flex gap-2">
             <div>
               <h3 className="text-3xl md:text-5xl px-4 md:px-8"
@@ -61,19 +62,40 @@ export default function Presentation({
             <div className="flex flex-col gap-4 order-2 md:order-1">
               {description}
             </div>
-            <div className="flex flex-col gap-4 order-1 md:order-2">
-              <h4 className="text-3xl md:text-2xl font-bold">Előadó</h4>
-              <div className="flex items-center gap-4">
+            <div
+              className={clsx(
+                "flex flex-col items-center flex-shrink-0 text-center md:max-w-sm",
+                isFrontPage ? "order-none" : "order-first",
+                "md:order-last"
+              )}
+            >
+              <div
+                className={clsx(
+                  "object-cover aspect-square",
+                  "w-[250px] h-[250px] lg:w-[320px] lg:h-[320px]"
+                )}
+              >
                 <img
-                  src={presenter.pictureUrl || "/img/avatar.webp"}
-                  alt={presenter.name}
-                  className={clsx(
-                    "w-16 h-16 rounded-full object-cover",
-                    !presenter.pictureUrl && "sepia-[.5] opacity-80"
-                  )}
+                  src={presenter.pictureUrl}
+                  className="object-cover h-full w-full rounded-3xl"
+                  alt="Presentation Image"
                 />
-                <span className="text-lg">{presenter.name}</span>
               </div>
+              <p className="block mt-4 text-[32px] leading-tight font-bold text-[--foreground]-900">
+                {presenter.name}
+              </p>
+              <p className="block mt-0.5 text-[20px]  text-[--background]">
+                {presenter.rank}
+              </p>
+              {presenter.company && presenter.company.logoUrl && (
+                <div className="mt-2 bg-white rounded-xl max-w-[308px] max-h-[75px] w-full">
+                  <img
+                    src={presenter.company.logoUrl}
+                    alt="Company logo"
+                    className="p-2 max-w-full max-h-[75px] object-fit m-auto"
+                  />
+                </div>
+              )}
             </div>
           </div>
          </>
