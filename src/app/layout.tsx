@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="hu" className={`${aboreto.variable} ${facultyGlyphic.variable}`}>
-      <body className={"font-facultyGlyphic bg-background text-text"}>
+      <body className={"font-facultyGlyphic bg-text text-background"}>
         <PlausibleProvider
           domain="konferencia.simonyi.bme.hu"
           customDomain={process.env.NEXT_PUBLIC_PLAUSIBLE_URL}
@@ -51,7 +51,7 @@ export default function RootLayout({
         />
         <div className="w-full flex flex-col min-h-screen flex-grow justify-center items-center">
           <Navbar />
-          <main className="container mb-10">{children}</main>
+          <main className="mb-10 w-full">{children}</main>
           <Footer />
         </div>
       </body>
