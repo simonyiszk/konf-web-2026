@@ -42,7 +42,7 @@ export function SponsorLogo({
           height={category === SponsorCategory.MAIN_SPONSOR ? "auto" : "75"}
           className={clsx(
             category === SponsorCategory.MAIN_SPONSOR ? "" : "max-h-[75px]",
-            "mx-auto my-auto h-full object-contain block"
+            "mx-auto my-auto h-full object-contain block bg-white rounded-lg p-5"
           )}
         />
       </div>

@@ -1,5 +1,5 @@
 .section {
-  @apply grid gap-3 bg-white px-8 pt-8 pb-8 text-center text-black;
+  @apply grid gap-3 px-8 pt-8 pb-8 text-center text-black;
   grid-template-columns: 1fr;
 }
 
