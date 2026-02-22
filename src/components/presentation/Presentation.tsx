@@ -1,15 +1,9 @@
 import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa";
 
 import { PresentationModel } from "@/models/models";
-import { dateToHourAndMinuteString } from "@/utils/dateHelper";
-import slugify from "@/utils/slugify";
 
-import uk from "../../../public/img/uk.svg";
-import { Tile } from "../tiles/tile";
-import { YoutubeVideo } from "../youtube-video";
+import { SlArrowLeft } from "react-icons/sl";
 
 type PresentationProps = {
   presentation: PresentationModel;
@@ -19,65 +13,55 @@ export default function Presentation({
   presentation,
   isFrontPage,
 }: PresentationProps) {
-  const { title, description, presenter, imageUrls } = presentation;
-  let time = "";
-  if (presentation.startTime && presentation.endTime) {
-    time = ` | ${dateToHourAndMinuteString(
-      new Date(presentation.startTime)
-    )} - ${dateToHourAndMinuteString(new Date(presentation.endTime))}`;
-  }
+  const { title, description, presenter } = presentation;
+  const startTime = presentation.startTime.split(":").map(Number);
+  const endTime = presentation.endTime.split(":").map(Number);
+
   return (
-    <Tile className={clsx(isFrontPage && "sm:col-span-6")}>
-      <Tile.Body>
-        <div className="w-full">
-          {!isFrontPage && (
-            <h3 className="mb-5 w-fit hover:text-brand">
-              <Link href={`/presentations`}>
-                <div className="flex items-center">
-                  <FaArrowLeft />
-                  <p className="ml-1">Vissza az előadásokhoz </p>
-                </div>
-              </Link>
-            </h3>
-          )}
-          {!isFrontPage && (
-            <div>
-              <h1 className="mb-2 hyphens-auto sm:hyphens-none">{title}</h1>
-              <p className="mb-8 text-[25px] font-bold block md:hidden text-[--background]">{`${presentation.room}${time}`}</p>
+    <>
+      {!isFrontPage && (
+        <>
+          <Link
+            href="/presentations"
+            className="flex items-center ml-2 hover:ml-1 gap-2 text-md transition-colors"
+          >
+            <div className="flex items-center gap-4 mb-4 md:mb-6 ml-4 md:ml-8 w-28 border border-gray-300 rounded-lg px-3 py-2 hover:bg-text hover:text-primary-700">
+              <SlArrowLeft />
+              Vissza
             </div>
-          )}
-          <div className="flex flex-col md:flex-row gap-8">
-            {!isFrontPage && (
-              <div>
-                <p className="mb-8 text-[25px] font-bold hidden md:block text-[--background]">{`${presentation.room}${time}`}</p>
-                <p className="text-[--background] text-base sm:text-[20px] whitespace-pre-line">
-                  {description}
-                </p>
-              </div>
-            )}
-            {isFrontPage && (
-              <div>
-                <p className="mb-2 text-3xl sm:text-[40px] font-bold leading-10">
-                  {title}
-                </p>
-                <p className="mb-8 text-[22px] font-bold text-[--background]">{`${presentation.room}${time}`}</p>
-                <p className="text-stone-200 text-base sm:text-[20px] whitespace-pre-line">
-                  {description}
-                </p>
-                <div className="flex flex-col sm:flex-row">
-                  {imageUrls?.map((image: string) => {
-                    return (
-                      <img
-                        src={image}
-                        key={image}
-                        alt="presentation images"
-                        className="p-2 max-w-full max-h-[75px] object-contain mt-5"
-                      />
-                    );
-                  })}
+          </Link>
+
+          <div className="flex gap-2">
+            <div>
+              <h3 className="text-3xl md:text-5xl px-4 md:px-8"
+                  style={presentation.room === "IB028"? {color: "var(--primary-base)"}:{color: "var(--accent-base)"}}>
+                {presentation.room}
+              </h3>
+              <div className="py-4 md:py-8 px-4 md:pl-8 font-bold text-left w-full">
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+                  <div className="flex flex-row md:flex-col flex-none mx-1 gap-2 md:gap-0">
+                    <div className="flex items-start">
+                      <span className="text-3xl md:text-5xl leading-none font-semibold">{startTime[0]}</span>
+                      <span className="self-start ml-1 text-xl md:text-3xl leading-none">{startTime[1].toString().padStart(2, '0')}</span>
+                      <span className="text-3xl md:text-5xl leading-none font-semibold ml-0.5 whitespace-pre">-</span>
+                    </div>
+                    <div className="flex items-start mt-0 md:mt-2">
+                      <span className="text-3xl md:text-5xl leading-none font-semibold">{endTime[0]}</span>
+                      <span className="self-start ml-1 text-xl md:text-3xl leading-none">{endTime[1].toString().padStart(2, '0')}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 w-full">
+                    <span className="block text-3xl md:text-5xl font-bold leading-tight md:leading-normal py-1 md:py-2">{title}</span>
+                  </div>
                 </div>
               </div>
-            )}
+            </div>
+          </div>
+          <div className="gap-8 md:gap-4 w-full px-4 md:px-8 grid grid-cols-1 md:grid-cols-[8fr_5fr]">
+            <div className="flex flex-col gap-4 order-2 md:order-1">
+              {description}
+            </div>
             <div
               className={clsx(
                 "flex flex-col items-center flex-shrink-0 text-center md:max-w-sm",
@@ -88,9 +72,7 @@ export default function Presentation({
               <div
                 className={clsx(
                   "object-cover aspect-square",
-                  isFrontPage
-                    ? "w-72 h-72 sm:w-96 sm:h-96"
-                    : "w-[350px] h-[350px] sm:w-[408px] sm:h-[408px]"
+                  "w-[250px] h-[250px] lg:w-[320px] lg:h-[320px]"
                 )}
               >
                 <img
@@ -114,76 +96,10 @@ export default function Presentation({
                   />
                 </div>
               )}
-              {presentation.language === "en" && (
-                <div className="flex mt-2 gap-2">
-                  <Image
-                    src={uk}
-                    alt="Egyesült Királyság zászlója"
-                    width={50}
-                    height={25}
-                    className="rounded-xl"
-                  />
-                  <p className="text-lg">Az előadás angol nyelvű.</p>
-                </div>
-              )}
             </div>
           </div>
-          <div className="sm:w-full md:w-6/7 lg:w-5/6 mx-auto mt-8">
-            {presentation.videoUrl && !isFrontPage && (
-              <YoutubeVideo
-                title={presentation.title}
-                url={presentation.videoUrl}
-              />
-            )}
-          </div>
-        </div>
-        {isFrontPage && (
-          <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-center pt-6 justify-center">
-            <Link
-              href={`/presentations/${slugify(presentation.title)}`}
-              className="inline-flex items-center font-semibold text-xl text-[--foreground] brand-link"
-            >
-              Részletek
-              <svg
-                className=" w-2.5 h-2.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-            </Link>
-            <Link
-              href={"/presentations"}
-              className="inline-flex items-center font-semibold text-xl text-[--foreground] brand-link"
-            >
-              Összes előadás
-              <svg
-                className=" w-2.5 h-2.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-            </Link>
-          </div>
-        )}
-      </Tile.Body>
-    </Tile>
-  );
-}
+         </>
+       )}
+     </>
+   )
+ }

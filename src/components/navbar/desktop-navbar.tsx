@@ -15,7 +15,7 @@ export function DesktopNavbar() {
           "flex items-stretch justify-between gap-10 w-full p-4 box-border rounded-md backdrop-blur-md bg-text"
         )}
       >
-        <Link href="/" className="h-full text-background text-xl font-bold">
+        <Link href="/" className="h-full text-primary-700 text-xl font-bold">
           <div className="flex items-center md:flex-row gap-3 md:gap-5 md:mt-0">
             <KonfLogo className="fill-text h-fit" height={54} width={58} /> <div className="hidden lg:flex">XXIII. Simonyi Konferencia </div>
           </div>

@@ -47,7 +47,7 @@ export function NavbarMobile() {
               <KonfLogo className="fill-text h-fit" height={45} width={48} />
             </Link>
             <button onClick={toggle}>
-              <TbMenu2 size={40} className="text-background" />
+              <TbMenu2 size={40} className="text-primary-700" />
             </button>
           </div>
           {isOpen && <NavbarItems />}
