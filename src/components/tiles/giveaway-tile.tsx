@@ -17,12 +17,12 @@ export default function GiveawayTile({
   const [preText, shinyText, postText] = description.split("***");
 
   return (
-    <div className="bg-transparent mb-20 w-full">
+    <div className="bg-transparent my-10 w-full">
       <h1 className="text-center text-3xl sm:text-4xl">
             NYEREMÉNYJÁTÉK
         </h1>
-      <div className="flex flex-row items-center justify-evenly py-10">
-        <div className="flex max-w-xl flex-col gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-evenly gap-10 py-10 px-4">
+        <div className="flex max-w-xl flex-col gap-4 text-center md:text-left">
           <p className="text-lg sm:text-xl leading-relaxed">
             {preText}
             {shinyText && (

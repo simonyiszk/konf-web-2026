@@ -1,5 +1,4 @@
 import { MobilAppData } from "@/models/models";
-import { Ticket } from "../hero/ticket";
 
 type Props = {
   data: MobilAppData;
@@ -7,12 +6,12 @@ type Props = {
 
 export function MobilAppTile({ data }: Props) {
   return (
-      <div className="flex flex-col w-full bg-[#f4cda3] px-6 py-10 lg:px-12 justify-center items-center">
-        <h1 className="mb-8 text-center text-6xl tracking-[0.35em] sm:text-4xl">
+      <div className="flex flex-col w-full bg-[#F3C59B] px-6 py-10 lg:px-12 justify-center items-center">
+        <h1 className="mb-8 text-center text-3xl sm:text-4xl md:text-5xl">
           KONFERENCIAPP
         </h1>
 
-        <div className="flex flex-col items-center justify-between gap-32 lg:flex-row">
+        <div className="flex flex-col items-center justify-between gap-16 lg:flex-row lg:gap-32">
           <img
             src="/img/konferenciapp.png"
             className="h-auto w-full max-w-md"

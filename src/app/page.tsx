@@ -23,6 +23,8 @@ export default async function Landing() {
   }
   const appData = data.mobilApp;
 
+  console.log(data)
+
   return (
     <div className="flex-grow relative flex flex-col justify-center items-center w-full">
       <Hero/>

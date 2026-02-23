@@ -55,7 +55,6 @@ export interface PresentationModel {
   videoUrl?: string;
   imageUrls?: string[];
   isBreak?: boolean;
-  selector: string;
 }
 
 export interface Delay {

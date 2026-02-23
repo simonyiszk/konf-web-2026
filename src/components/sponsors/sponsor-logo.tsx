@@ -39,9 +39,9 @@ export function SponsorLogo({
           loading="lazy"
           src={logoUrl}
           alt={`${name} logo`}
-          height={category === SponsorCategory.MAIN_SPONSOR ? "auto" : "75"}
+          height={category === SponsorCategory.MAIN_SPONSOR ? "auto" : "150"}
           className={clsx(
-            category === SponsorCategory.MAIN_SPONSOR ? "" : "max-h-[75px]",
+            category === SponsorCategory.MAIN_SPONSOR ? "" : "max-h-[150px]",
             "mx-auto my-auto h-full object-contain block bg-white rounded-lg p-5"
           )}
         />

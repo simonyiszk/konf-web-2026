@@ -1,5 +1,5 @@
 export const HeroLogo = ({ className }: { className?: string }) => (
-    <svg width="500" height="199" viewBox="0 0 500 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 500 199" className={className ?? "w-full h-auto"} fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_18_86)">
         <path d="M238.158 72.825C243.268 87.971 258.406 87.7087 258.348 110.501L251.252 109.746C251.309 86.9472 238.388 93.6404 235.513 78.7375L238.158 72.825Z" fill="#46B06B"/>
         <path d="M421.651 110.84C416.305 101.581 456.431 96.1231 464.256 110.84H455.62C456.897 102.65 428.415 101.741 430.983 110.84H421.651Z" fill="#46B06B"/>

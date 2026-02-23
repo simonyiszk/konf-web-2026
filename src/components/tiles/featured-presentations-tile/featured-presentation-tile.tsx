@@ -18,7 +18,7 @@ function formatTimeRange(startTime: string, endTime: string) {
   const em = endDate.getMinutes().toString().padStart(2, "0");
 
   return (
-    <div className="text-4xl flex flex-col gap-4">
+    <div className="text-3xl sm:text-4xl flex flex-col gap-2">
         <p>
             <span>{sh}</span>
             <sup>{sm}</sup>
@@ -39,7 +39,7 @@ export default function FeaturedPresentationTile({
 
   return (
     <section className="w-full px-4 md:px-32 py-12 md:py-16 bg-background">
-      <h1 className="text-center text-3xl sm:text-4xl">
+      <h1 className="text-center text-text text-3xl sm:text-5xl">
         {sectionTitle}
       </h1>
 
@@ -107,16 +107,23 @@ export default function FeaturedPresentationTile({
                 <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3 md:gap-4">
                   <div className="w-full max-w-[230px] md:max-w-[260px] aspect-[260/220] bg-transparent overflow-hidden flex items-center justify-center shrink-0">
                     {imageSrc ? (
-                      <svg width="401" height="324" viewBox="0 0 401 324" fill="background" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 37.0147C0 13.3825 21.8524 -4.1925 44.9348 0.875526L371.726 72.6267C405.168 79.9692 411.556 124.885 381.487 141.26L54.6956 319.224C30.0403 332.65 0 314.804 0 286.729V37.0147Z" fill="#F4E1BE"/>
-                      </svg>
-                    ) : (
-                        
-                        <img
+                      <img
                         src={imageSrc}
                         alt=""
                         className="h-full w-full object-cover"
                       />
+                    ) : (
+                      <svg
+                        width="401"
+                        height="324"
+                        viewBox="0 0 401 324"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 37.0147C0 13.3825 21.8524 -4.1925 44.9348 0.875526L371.726 72.6267C405.168 79.9692 411.556 124.885 381.487 141.26L54.6956 319.224C30.0403 332.65 0 314.804 0 286.729V37.0147Z"
+                          fill="#F4E1BE"
+                        />
+                      </svg>
                     )}
                   </div>
 

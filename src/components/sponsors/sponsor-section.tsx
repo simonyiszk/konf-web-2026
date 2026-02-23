@@ -40,7 +40,7 @@ export function SponsorSection({ sectionTitle, companies }: Props) {
                   c.logoUrl && (
                     <div
                       key={c.name}
-                      className="mx-auto flex h-[75px] w-full max-w-[300px] items-center justify-center rounded-2xl bg-white px-4 py-2 shadow-sm"
+                      className="mx-auto flex h-[150px] w-full max-w-[300px] items-center justify-center rounded-2xl bg-white px-4 py-2 shadow-sm"
                     >
                       <SponsorLogo company={c} />
                     </div>
@@ -57,7 +57,7 @@ export function SponsorSection({ sectionTitle, companies }: Props) {
                   c.logoUrl && (
                     <div
                       key={c.name}
-                      className="mx-auto flex h-[75px] w-full max-w-[170px] items-center justify-center rounded-2xl bg-white px-4 py-2 shadow-sm"
+                      className="mx-auto flex h-[150px] w-full max-w-[300px] items-center justify-center rounded-2xl bg-white px-4 py-2 shadow-sm"
                     >
                       <SponsorLogo company={c} />
                     </div>
