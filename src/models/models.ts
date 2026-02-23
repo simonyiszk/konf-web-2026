@@ -55,6 +55,7 @@ export interface PresentationModel {
   videoUrl?: string;
   imageUrls?: string[];
   isBreak?: boolean;
+  selector: string;
 }
 
 export interface Delay {
@@ -118,6 +119,7 @@ export interface IndexPageData {
 export interface FeaturedPresentation {
   sectionTitle: string;
   description: string;
+  presentation: PresentationModel;
 }
 
 export interface StreamData {
