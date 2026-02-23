@@ -6,10 +6,13 @@ import { MobilAppTile } from "@/components/tiles/mobil-app-tile";
 import GiveawayTile from "@/components/tiles/giveaway-tile";
 import FeaturedPresentationTile from "@/components/tiles/featured-presentations-tile/featured-presentation-tile";
 import Hero from "@/components/hero/Hero";
+import {getStreams} from "@/models/get-youtube-video-data";
+import {StreamData} from "@/models/models";
+import YoutubeLive from "@/components/live-videos/youtube-live";
 
 export default async function Landing() {
   const data = await getIndexData();
-  //const streams: StreamData[] | undefined = getStreams();
+  const streams: StreamData[] | undefined = getStreams();
   if (!data) {
     redirect("/error");
   }
@@ -19,7 +22,7 @@ export default async function Landing() {
     <div className="flex-grow relative flex flex-col justify-center items-center w-full">
       <Hero/>
 
-        {/*<YoutubeLive ib025Link={""} ib028Link={""}/>*/}
+        <YoutubeLive ib025Link={streams[1].youtubeUrl} ib028Link={streams[0].youtubeUrl}/>
 
       <FeaturedPresentationTile
         sectionTitle={data.featuredPresentation.sectionTitle}
