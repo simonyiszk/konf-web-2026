@@ -9,27 +9,22 @@ type Props = {
 };
 
 function formatTimeRange(startTime: string, endTime: string) {
-  const startDate = new Date(startTime);
-  const endDate = new Date(endTime);
+    const [sh, sm] = startTime.split(":");
+    const [eh, em] = endTime.split(":");
 
-  const sh = startDate.getHours().toString().padStart(2, "0");
-  const sm = startDate.getMinutes().toString().padStart(2, "0");
-  const eh = endDate.getHours().toString().padStart(2, "0");
-  const em = endDate.getMinutes().toString().padStart(2, "0");
-
-  return (
-    <div className="text-3xl sm:text-4xl flex flex-col gap-2">
-        <p>
-            <span>{sh}</span>
-            <sup>{sm}</sup>
-            -
-        </p>
-        <p>
-            <span>{eh}</span>
-            <sup>{em}</sup>
-        </p>
-    </div>
-  )
+    return (
+        <div className="text-3xl sm:text-4xl flex flex-col gap-2">
+            <p>
+                <span>{sh}</span>
+                <sup>{sm}</sup>
+                -
+            </p>
+            <p>
+                <span>{eh}</span>
+                <sup>{em}</sup>
+            </p>
+        </div>
+    )
 }
 
 export default function FeaturedPresentationTile({
