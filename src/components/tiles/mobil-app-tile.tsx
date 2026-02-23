@@ -7,7 +7,7 @@ type Props = {
 export function MobilAppTile({ data }: Props) {
   return (
       <div className="flex flex-col w-full bg-[#F3C59B] px-6 py-10 lg:px-12 justify-center items-center">
-        <h1 className="mb-8 text-center text-3xl sm:text-4xl md:text-5xl">
+        <h1 className="mb-8 text-center text-4xl sm:text-6xl">
           KONFERENCIAPP
         </h1>
 

@@ -10,7 +10,7 @@ const mapLinks = {
 
 export function LocationTile() {
   return (
-    <Tile className="sm:col-span-2 lg:col-span-3 min-h-[500px] h-[800px] lg:h-auto md:h-auto">
+    <Tile className="sm:col-span-2 lg:col-span-3 min-h-[500px] h-[800px] lg:h-auto md:h-auto text-background">
       <Tile.Body className="max-w-6xl w-full md:px-12 flex lg:flex-row md:flex-row flex-col gap-4 justify-between">
         <div className="flex flex-col justify-center gap-4 min-w-[300px] flex-1 lg:max-w-[400px]">
           <h1 className="text-center">Helyszín</h1>

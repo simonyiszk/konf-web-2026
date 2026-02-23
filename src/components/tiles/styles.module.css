@@ -2,7 +2,7 @@
   --rotation: 150deg;
   --border-rounding: 30px;
 
-  background: var(--background-800);
+  background: var(--text-base);
   background-origin: border-box;
 }
 

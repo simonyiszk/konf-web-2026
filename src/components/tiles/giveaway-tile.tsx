@@ -18,7 +18,7 @@ export default function GiveawayTile({
 
   return (
     <div className="bg-transparent my-10 w-full">
-      <h1 className="text-center text-3xl sm:text-4xl">
+      <h1 className="text-center text-4xl sm:text-6xl">
             NYEREMÉNYJÁTÉK
         </h1>
       <div className="flex flex-col md:flex-row items-center justify-evenly gap-10 py-10 px-4">

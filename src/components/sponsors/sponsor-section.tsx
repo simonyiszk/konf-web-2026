@@ -20,7 +20,7 @@ export function SponsorSection({ sectionTitle, companies }: Props) {
   return (
     <div id="sponsor-container" className="w-full py-12">
       <section className="mx-auto flex max-w-5xl flex-col gap-10 px-6 text-center">
-        <h2 className="text-4xl font-semibold tracking-wide">{sectionTitle}</h2>
+        <h2 className="text-4xl sm:text-6xl font-semibold tracking-wide">{sectionTitle}</h2>
 
         <div className="flex flex-col items-center gap-4">
           <h3 className="text-3xl">Főtámogatónk</h3>
