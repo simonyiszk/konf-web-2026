@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { GiveawayData } from "@/models/models";
 
-import { Tile } from "./tile";
 
 type Props = {
   data: GiveawayData;
@@ -44,7 +43,7 @@ export default function GiveawayTile({
           {showLink && (
             <div className="mt-4">
               <Link
-                href="/giveaway"
+                href="/"
                 className="inline-flex items-center rounded-md bg-[#f4cda3] border border-background px-6 py-2 text-lg font-medium text-background transition hover:bg-background hover:text-text"
               >
                 Részletek

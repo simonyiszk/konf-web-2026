@@ -16,6 +16,8 @@ export function MobilAppTile({ data }: Props) {
             src="/img/konferenciapp.png"
             className="h-auto w-full max-w-md"
             alt="KonferenciApp képernyők"
+            width={0}
+            height={0}
           />
 
           <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
@@ -28,6 +30,8 @@ export function MobilAppTile({ data }: Props) {
                   className="h-[50px] min-w-[150px]"
                   src="/img/gplay.png"
                   alt="Google Play"
+                  width={0}
+                  height={0}
                 />
               </a>
               <a href={data.iosUrl} target="_blank" rel="noreferrer">
@@ -35,6 +39,8 @@ export function MobilAppTile({ data }: Props) {
                   className="h-[50px] min-w-[150px]"
                   src="/img/appstore.svg"
                   alt="App Store"
+                  width={0}
+                  height={0}
                 />
               </a>
             </div>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import KonfLogo from "../svgs/Konf";
 import { SocialButtons } from "./social-buttons";
 import { FullSand } from "../svgs/FullSand";
 
@@ -26,7 +25,7 @@ export function Footer() {
           <Link href="/contact" className="brand-link">
             Kapcsolat
           </Link>
-          <Link href="/giveaway" className="brand-link">
+          <Link href="/" className="brand-link">
             Nyereményjáték
           </Link>
           <Link

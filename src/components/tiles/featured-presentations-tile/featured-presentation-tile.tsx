@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FeaturedPresentation, PresentationModel } from "@/models/models";
+import { PresentationModel } from "@/models/models";
 import slugify from "@/utils/slugify";
 
 type Props = {

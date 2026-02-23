@@ -1,6 +1,5 @@
 import { HeroLogo } from "../svgs/HeroLogo";
 import { House } from "../svgs/House";
-import KonfLogo from "../svgs/Konf";
 
 export default function Hero() {
   return (

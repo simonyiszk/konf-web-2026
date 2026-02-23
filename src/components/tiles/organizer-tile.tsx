@@ -1,6 +1,5 @@
 import { Organiser } from "@/models/models";
 
-import { Tile } from "./tile";
 import Image from "next/image";
 
 type Props = Organiser;
