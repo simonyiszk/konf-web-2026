@@ -6,7 +6,7 @@ import { FullSand } from "../svgs/FullSand";
 
 export function Footer() {
   return (
-    <footer className="z-10 flex w-full flex-col gap-10 overflow-hidden bg-background px-8 py-16 text-[#fbead0]">
+    <footer className="z-10 flex w-full flex-col gap-10 overflow-hidden bg-background px-8 py-16 text-text">
       <section className="container mx-auto flex flex-col justify-between gap-10 md:flex-row">
         <div className="flex w-full flex-col gap-4 md:max-w-xl">
           <div className="flex flex-row items-center justify-center text-secondary md:justify-start">
@@ -25,9 +25,9 @@ export function Footer() {
           <Link href="/contact" className="brand-link">
             Kapcsolat
           </Link>
-          <Link href="/" className="brand-link">
+          {/*<Link href="/giveaway" className="brand-link">
             Nyereményjáték
-          </Link>
+          </Link>*/}
           <Link
             href="https://simonyi.bme.hu"
             target="blank"

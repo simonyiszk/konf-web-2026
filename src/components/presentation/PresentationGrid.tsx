@@ -229,7 +229,7 @@ export function PresentationTile({
                 {presenter.name}
               </h3>
               <div className="text-xs lg:text-sm">{presenter.rank}</div>
-              <div className="hidden lg:block text-xs pt-0.5">
+              <div className="text-xs pt-0.5">
                 {presenter.company?.name}
               </div>
             </div>
