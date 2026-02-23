@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { LocationTile } from "@/components/tiles/location-tile";
 import { OrganiserTile } from "@/components/tiles/organizer-tile";
 import { getIndexData } from "@/models/get-index-data";
+import {SponsorSection} from "@/components/sponsors/sponsor-section";
 
 export default async function asyncContact() {
   const data = await getIndexData();
@@ -19,8 +20,8 @@ export default async function asyncContact() {
   };*/
 
   return (
-    <div className="bg-background min-h-screen">
-      <div className="flex flex-col px-4 sm:px-6 xl:px-0 overflow-hidden container mx-auto text-text">
+    <div className="bg-[#eed7b1] min-h-screen">
+      <div className="flex flex-col px-4 sm:px-6 xl:px-0 overflow-hidden container mx-auto text-background">
       <h1 className="mb-16 mt-8">Kapcsolat</h1>
 
       <div className="flex flex-col gap-24 w-full pb-10">
@@ -29,13 +30,14 @@ export default async function asyncContact() {
             <OrganiserTile key={organiser.emailAddress} {...organiser} />
           ))}
         </div>*/}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {sortedOrganizers.map((organiser) => (
             <OrganiserTile key={organiser.emailAddress} {...organiser} />
           ))}
           <LocationTile />
         </div>
       </div>
+          <SponsorSection sectionTitle={data.sponsors.sectionTitle} companies={data.sponsors.companies} />
     </div>
     </div>
   );
