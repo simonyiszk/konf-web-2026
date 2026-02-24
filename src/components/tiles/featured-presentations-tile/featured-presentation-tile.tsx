@@ -15,13 +15,13 @@ function formatTimeRange(startTime: string, endTime: string) {
     return (
         <div className="text-3xl sm:text-4xl flex flex-col gap-2">
             <p>
-                <span>{sh}</span>
-                <sup>{sm}</sup>
+                <span>{sh.padStart(2,"0")}</span>
+                <sup>{sm.padStart(2,"0")}</sup>
                 -
             </p>
             <p>
-                <span>{eh}</span>
-                <sup>{em}</sup>
+                <span>{eh.padStart(2,"0")}</span>
+                <sup>{em.padStart(2,"0")}</sup>
             </p>
         </div>
     )
