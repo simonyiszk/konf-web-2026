@@ -22,22 +22,22 @@ export default async function Landing() {
     <div className="flex-grow relative flex flex-col justify-center items-center w-full">
       <Hero/>
 
-        <YoutubeLive ib025Link={streams[1].youtubeUrl} ib028Link={streams[0].youtubeUrl}/>
+      {/*<YoutubeLive ib025Link={streams[1].youtubeUrl} ib028Link={streams[0].youtubeUrl}/>*/}
 
       <FeaturedPresentationTile
         sectionTitle={data.featuredPresentation.sectionTitle}
-        featuredPresentations={[data.featuredPresentation.presentation]}
+        featuredPresentations={data.featuredPresentation.presentation}
       />
 
-      <GiveawayTile data={data.giveaway} />
+      {/*<GiveawayTile data={data.giveaway} />*/}
       <MobilAppTile data={appData} />
       {data.previousConferences.conferences.length > 0 && (
         <ImageCarouselSection data={data.previousConferences} />
       )}
-      <SponsorSection
+      {/*<SponsorSection
         companies={data.sponsors.companies}
         sectionTitle={data.sponsors.sectionTitle}
-      />
+      />*/}
     </div>
   );
 }

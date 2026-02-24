@@ -34,7 +34,7 @@ export function SponsorSection({ sectionTitle, companies }: Props) {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <h3 className="mb-4 text-2xl md:text-3xl">Kiemelt támogatóink</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {featuredSponsors.map(
                 (c) =>
                   c.logoUrl && (
@@ -51,7 +51,7 @@ export function SponsorSection({ sectionTitle, companies }: Props) {
 
           <div>
             <h3 className="mb-4 text-2xl md:text-3xl">További támogatóink</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {regularSponsors.map(
                 (c) =>
                   c.logoUrl && (

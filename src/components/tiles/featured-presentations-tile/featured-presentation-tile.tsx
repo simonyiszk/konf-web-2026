@@ -9,27 +9,22 @@ type Props = {
 };
 
 function formatTimeRange(startTime: string, endTime: string) {
-  const startDate = new Date(startTime);
-  const endDate = new Date(endTime);
+    const [sh, sm] = startTime.split(":");
+    const [eh, em] = endTime.split(":");
 
-  const sh = startDate.getHours().toString().padStart(2, "0");
-  const sm = startDate.getMinutes().toString().padStart(2, "0");
-  const eh = endDate.getHours().toString().padStart(2, "0");
-  const em = endDate.getMinutes().toString().padStart(2, "0");
-
-  return (
-    <div className="text-3xl sm:text-4xl flex flex-col gap-2">
-        <p>
-            <span>{sh}</span>
-            <sup>{sm}</sup>
-            -
-        </p>
-        <p>
-            <span>{eh}</span>
-            <sup>{em}</sup>
-        </p>
-    </div>
-  )
+    return (
+        <div className="text-3xl sm:text-4xl flex flex-col gap-2">
+            <p>
+                <span>{sh.padStart(2,"0")}</span>
+                <sup>{sm.padStart(2,"0")}</sup>
+                -
+            </p>
+            <p>
+                <span>{eh.padStart(2,"0")}</span>
+                <sup>{em.padStart(2,"0")}</sup>
+            </p>
+        </div>
+    )
 }
 
 export default function FeaturedPresentationTile({
@@ -39,6 +34,7 @@ export default function FeaturedPresentationTile({
 
   return (
     <section className="w-full px-4 md:px-32 py-12 md:py-16 bg-background">
+      <div className="p-1 bg-secondary mb-10 mt-5"></div>
       <h1 className="text-center text-text text-4xl sm:text-6xl">
         {sectionTitle}
       </h1>

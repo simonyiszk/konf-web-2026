@@ -19,7 +19,7 @@ export function SocialButtons() {
         <FaInstagram />
       </Link>
       <Link
-        href="https://www.facebook.com/events/551671120833294"
+        href="https://www.facebook.com/events/1148183997211576"
         className="brand-link"
         target="blank"
       >
