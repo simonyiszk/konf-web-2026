@@ -34,6 +34,7 @@ export default function FeaturedPresentationTile({
 
   return (
     <section className="w-full px-4 md:px-32 py-12 md:py-16 bg-background">
+      <div className="p-1 bg-secondary mb-10 mt-5"></div>
       <h1 className="text-center text-text text-4xl sm:text-6xl">
         {sectionTitle}
       </h1>
