@@ -77,7 +77,7 @@ export async function Footer() {
 
           <div className="flex items-center gap-10">
             <Link href="https://vik.bme.hu" className="brand-link" target="blank">
-              <Image src="/img/vik-brown.svg" alt="Vik" width={48} height={48} />
+              <Image src="/img/vik.svg" alt="Vik" width={48} height={48} />
             </Link>
             <Link
               href="https://simonyi.bme.hu"
@@ -85,7 +85,7 @@ export async function Footer() {
               target="blank"
             >
               <Image
-                src="/img/simonyi-brown.svg"
+                src="/img/simonyi.svg"
                 alt="Simonyi Károly Szakkollégium"
                 width={160}
                 height={34}
