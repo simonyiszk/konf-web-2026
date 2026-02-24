@@ -23,7 +23,7 @@ export function ImageCarouselSection({
   const [index, setIndex] = useState(-1);
   const sortedConferences = conferences.sort((a, b) => b.priority - a.priority);
   return (
-    <div className="my-16 sm:my-40 flex flex-col items-center">
+    <div className="my-16 sm:my-40 flex flex-col items-center w-full text-background">
       <h1 className="flex justify-center mb-4 max-w-[90dvw] text-wrap text-center">
         {sectionTitle}
       </h1>
@@ -35,19 +35,20 @@ export function ImageCarouselSection({
               <div className="flex flex-col items-center">
                 <Image
                   onClick={() => setIndex(i)}
-                  src={item.imageUrls[0]}
+                  src={item.imageUrls[0] || '/img/nintendo.png'}
                   key={item.priority}
                   alt="Kép korábbi konferenciáról"
                   className="h-full cursor-pointer rounded-[30px]"
                   height={200}
                   width={300}
                 />
-                <h1 className="text-2xl font-semibold mt-2 sm:text-base">
+                <h1 className="text-2xl font-facultyGlyphic mt-2 sm:text-4xl">
                   {item.priority}
                 </h1>
-                <h1 className="mt-1 sm:text-base text-sm font-medium max-w-sm text-center">
+                <h1 className="mt-1 sm:text-base text-sm font-facultyGlyphic max-w-sm text-center">
                   {item.title}
                 </h1>
+                <div className="h-1 w-1/2 bg-secondary mx-auto mt-1 rounded-full" />
               </div>
             </CarouselItem>
           )}

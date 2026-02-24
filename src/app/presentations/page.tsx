@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { PresentationGrid } from "@/components/presentation/PresentationGrid";
 import { getPresentationData } from "@/models/get-presentation-data";
 import { BreakWithDates, PresentationWithDates } from "@/models/models";
+import {SponsorSection} from "@/components/sponsors/sponsor-section";
 
 export const metadata: Metadata = {
   title: "Előadások",

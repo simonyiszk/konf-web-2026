@@ -11,5 +11,13 @@ export async function getIndexData(): Promise<IndexPageData | undefined> {
     console.error(res);
     return;
   }
-  return res.json();
+  return res.json().then(
+    (data) => {
+      // convert data.featuredPresentation.presentation to PresentationWithDates[]
+      if (data.featuredPresentation && data.featuredPresentation.presentation) {
+        data.featuredPresentation.presentation = [data.featuredPresentation.presentation]
+      }
+      return data;
+    }
+  );
 }

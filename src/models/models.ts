@@ -118,6 +118,7 @@ export interface IndexPageData {
 export interface FeaturedPresentation {
   sectionTitle: string;
   description: string;
+  presentation: PresentationModel[];
 }
 
 export interface StreamData {

@@ -1,63 +1,61 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import KonfLogo from "../svgs/Konf";
 import { SocialButtons } from "./social-buttons";
+import { FullSand } from "../svgs/FullSand";
+import {SponsorSection} from "@/components/sponsors/sponsor-section";
+import {Company} from "@/models/models";
+import {getIndexData} from "@/models/get-index-data";
 
-export function Footer() {
+export async function Footer() {
+  const sponsors = await getIndexData().then(
+    (data) => data?.sponsors || { sectionTitle: "", companies: [] as Company[] }
+  )
+
   return (
-    <footer className="w-full px-8 py-16 flex flex-col gap-10 overflow-hidden bg-text z-10 text-background">
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-between container mx-auto">
-        <div className="flex flex-col gap-4 w-full col-span-1 md:col-span-2">
-          <div className="flex flex-row items-center gap-2 justify-center md:justify-start text-secondary">
-            <KonfLogo className="fill-primary size-16 sm:size-24 shrink-0" />
-            <h1 className="font-bold leading-tight font-aboreto">
-              Simonyi
-              <br />
-              Konferencia
-            </h1>
+    <>
+      <SponsorSection
+        companies={sponsors.companies}
+        sectionTitle={sponsors.sectionTitle}
+      />
+      <footer className="z-10 flex w-full flex-col gap-10 overflow-hidden bg-background px-8 py-16 text-text">
+        <section className="container mx-auto flex flex-col justify-between gap-10 md:flex-row">
+          <div className="flex w-full flex-col gap-4 md:max-w-xl">
+            <div className="flex flex-row items-center justify-center text-secondary md:justify-start">
+              <FullSand className="h-auto w-full max-w-xs" />
+            </div>
+            <p className="text-center text-lg font-normal md:text-left md:text-xl">
+              Magyarország legnagyobb egyetemi hallgatók által szervezett éves
+              technológiai konferenciája.
+            </p>
+            <div className="mt-2 flex justify-center md:justify-start">
+              <SocialButtons />
+            </div>
           </div>
-          <p className="font-bold text-xl sm:text-2xl text-center md:text-left">
-            Magyarország legnagyobb egyetemi hallgatók által szervezett éves
-            technológiai konferenciája.
-          </p>
-          <SocialButtons />
-        </div>
 
-        <li className="flex flex-col gap-4 text-center md:text-right text-xl font-medium">
-          {/* <Link href="/presentations" className="brand-link">
-            Előadások
-          </Link> */}
-          {/*<Link href="/contact" className="brand-link">
-            Kapcsolat
-          </Link>
-          <Link href="/giveaway" className="brand-link">
-            Nyereményjáték
-          </Link>*/}
-          {/* <Link href="/conferences" className="brand-link">
-            Előző évek konferenciái
-          </Link> */}
-          <Link
-            href="https://simonyi.bme.hu"
-            target="blank"
-            className="brand-link"
-          >
-            Simonyi Károly Szakkollégium
-          </Link>
-        </li>
-      </section>
-
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="w-full md:w-auto flex flex-col items-center md:items-start">
-          <div className="flex items-center gap-8 ">
+          <nav className="flex flex-col items-center justify-start gap-3 text-right text-lg md:items-end md:text-xl">
+            <Link href="/contact" className="brand-link">
+              Kapcsolat
+            </Link>
+            {/*<Link href="/giveaway" className="brand-link">
+              Nyereményjáték
+            </Link>*/}
             <Link
-              href="https://kir-dev.hu"
-              className="brand-link"
+              href="https://simonyi.bme.hu"
               target="blank"
+              className="brand-link"
             >
+              Simonyi Károly Szakkollégium
+            </Link>
+          </nav>
+        </section>
+
+        <div className="container mx-auto flex flex-col items-center justify-between gap-10 md:flex-row">
+          <div className="flex items-center gap-10">
+            <Link href="https://kir-dev.hu" className="brand-link" target="blank">
               <Image
-                src="/img/kirdev-inline-brown.svg"
-                className="mb-4"
+                src="/img/kirdev-inline.svg"
+                className="mb-2"
                 alt="Kir-Dev"
                 width={193}
                 height={40}
@@ -69,49 +67,33 @@ export function Footer() {
               target="blank"
             >
               <Image
-                src="/img/schdesign-brown.svg"
+                src="/img/schdesign.svg"
                 alt="schdesign"
                 width={200}
                 height={60}
               />
             </Link>
           </div>
-        </div>
 
-        <div className="flex-grow md:self-end flex justify-center">
-          <Link
-            href="https://vercel.com"
-            className="brand-link "
-            target="blank"
-          >
-            <Image
-              src="/img/vercel-brown.svg"
-              alt="Vercel"
-              className="mx-auto"
-              width={100}
-              height={25}
-            />
-          </Link>
+          <div className="flex items-center gap-10">
+            <Link href="https://vik.bme.hu" className="brand-link" target="blank">
+              <Image src="/img/vik-brown.svg" alt="Vik" width={48} height={48} />
+            </Link>
+            <Link
+              href="https://simonyi.bme.hu"
+              className="brand-link"
+              target="blank"
+            >
+              <Image
+                src="/img/simonyi-brown.svg"
+                alt="Simonyi Károly Szakkollégium"
+                width={160}
+                height={34}
+              />
+            </Link>
+          </div>
         </div>
-
-        <div className="flex items-center gap-8 ">
-          <Link href="https://vik.bme.hu" className="brand-link" target="blank">
-            <Image src="/img/vik-brown.svg" alt="Vik" width={48} height={48} />
-          </Link>
-          <Link
-            href="https://simonyi.bme.hu"
-            className="brand-link"
-            target="blank"
-          >
-            <Image
-              src="/img/simonyi-brown.svg"
-              alt="Simonyi Károly Szakkollégium"
-              width={160}
-              height={34}
-            />
-          </Link>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
