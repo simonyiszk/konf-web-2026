@@ -22,11 +22,11 @@ export default async function Landing() {
     <div className="flex-grow relative flex flex-col justify-center items-center w-full">
       <Hero/>
 
-        <YoutubeLive ib025Link={streams[1].youtubeUrl} ib028Link={streams[0].youtubeUrl}/>
+      <YoutubeLive ib025Link={streams[1].youtubeUrl} ib028Link={streams[0].youtubeUrl}/>
 
       <FeaturedPresentationTile
         sectionTitle={data.featuredPresentation.sectionTitle}
-        featuredPresentations={[data.featuredPresentation.presentation]}
+        featuredPresentations={data.featuredPresentation.presentation}
       />
 
       <GiveawayTile data={data.giveaway} />
