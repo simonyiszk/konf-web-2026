@@ -29,7 +29,7 @@ export default async function asyncContact() {
               <OrganiserTile key={organiser.emailAddress} {...organiser} />
             ))}
           </div>*/}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {sortedOrganizers.map((organiser) => (
               <OrganiserTile key={organiser.emailAddress} {...organiser} />
             ))}
