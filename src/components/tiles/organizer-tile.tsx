@@ -6,7 +6,7 @@ type Props = Organiser;
 
 export function OrganiserTile({ name, emailAddress, pictureUrl, rank }: Props) {
   return (
-    <div className="rounded-[30px] overflow-hidden mx-12 lg:mx-20">
+    <div className="rounded-[30px] overflow-hidden mx-8 lg:mx-20">
       <div className="flex flex-col h-full">
         <div className="size-full relative aspect-square">
           <Image
