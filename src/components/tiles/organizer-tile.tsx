@@ -1,32 +1,30 @@
 import { Organiser } from "@/models/models";
 
-import { Tile } from "./tile";
 import Image from "next/image";
 
 type Props = Organiser;
 
 export function OrganiserTile({ name, emailAddress, pictureUrl, rank }: Props) {
   return (
-    <Tile>
-      <Tile.Body lessPadding="3">
-        <div className="flex flex-col h-full">
-          <div className="size-full relative aspect-square">
-            <Image
-              src={pictureUrl}
-              className="w-full aspect-square object-cover object-center"
-              alt={name}
-              fill
-            />
-          </div>
-          <div className="rounded-b-[30px] pt-4 px-3 pb-9 flex flex-col h-full gap-2 ">
-            <h2 className="text-center text-3xl font-extrabold ">{name}</h2>
-            <h2 className="text-center text-2xl font-semibold">{rank}</h2>
-            <p className="text-center text-base sm:text-sm md:text-base lg:text-sm xl:text-base text-primary">
-              {emailAddress}
-            </p>
-          </div>
+    <div className="rounded-[30px] overflow-hidden mx-8 lg:mx-20">
+      <div className="flex flex-col h-full">
+        <div className="size-full relative aspect-square">
+          <Image
+            src={pictureUrl}
+            className="w-full aspect-square object-cover object-center"
+            alt={name}
+            fill
+          />
         </div>
-      </Tile.Body>
-    </Tile>
+        <div className="pt-4 px-4 pb-8 flex flex-col h-full gap-1">
+          <h2 className="text-center text-3xl">{name}</h2>
+          <h2 className="text-center text-2xl">{rank}</h2>
+          <p className="text-center text-sm break-all mt-2">
+            {emailAddress}
+          </p>
+          <div className="p-0.5 bg-secondary w-1/4 mx-auto mt-1"></div>
+        </div>
+      </div>
+    </div>
   );
 }

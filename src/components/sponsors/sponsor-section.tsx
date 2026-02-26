@@ -1,7 +1,5 @@
 import { Company, SponsorCategory } from "@/models/models";
-
 import { SponsorLogo } from "./sponsor-logo";
-import styles from "./sponsor-section.module.css";
 
 type Props = {
   sectionTitle: string;
@@ -20,50 +18,52 @@ export function SponsorSection({ sectionTitle, companies }: Props) {
   );
 
   return (
-    <div id="sponsor-container" className="w-full bg-[beige] overflow-hidden">
-      <section className={styles.section}>
-        <h2 className="text-3xl font-bold order-first">{sectionTitle}</h2>
+    <div id="sponsor-container" className="w-full py-12">
+      <section className="mx-auto flex max-w-5xl flex-col gap-10 px-6 text-center">
+        <h2 className="text-4xl sm:text-6xl font-semibold tracking-wide">{sectionTitle}</h2>
 
-        <div>
-          <h3 className="text-3xl">Kiemelt támogatóink</h3>
-          <div className={styles.containerMany}>
-            {featuredSponsors.map(
-              (c) =>
-                c.logoUrl && (
-                  <div
-                    key={c.name}
-                    className="col-span-2 max-w-[200px] w-full h-[75px]"
-                  >
-                    <SponsorLogo company={c} />
-                  </div>
-                )
-            )}
-          </div>
+        <div className="flex flex-col items-center gap-4">
+          <h3 className="text-3xl">Főtámogatónk</h3>
+          {mainSponsor?.logoUrl && (
+            <div className="mx-auto w-full max-w-sm rounded-3xl bg-white px-10 py-8 shadow-md">
+              <SponsorLogo company={mainSponsor} />
+            </div>
+          )}
         </div>
-        <div className="flex flex-col justify-center -order-1 2xl:order-none">
-          <h3 className="mb-auto text-3xl">Főtámogatónk</h3>
-          <div className="my-auto flex flex-wrap items-center justify-evenly">
-            {mainSponsor?.logoUrl && (
-              <div
-                key={mainSponsor.name}
-                className="mx-0 h-auto w-72 sm:w-96 2xl:w-80"
-              >
-                <SponsorLogo company={mainSponsor} />
-              </div>
-            )}
+
+        <div className="grid gap-10 md:grid-cols-2">
+          <div>
+            <h3 className="mb-4 text-2xl md:text-3xl">Kiemelt támogatóink</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {featuredSponsors.map(
+                (c) =>
+                  c.logoUrl && (
+                    <div
+                      key={c.name}
+                      className="mx-auto flex h-[150px] w-full max-w-[300px] items-center justify-center rounded-2xl bg-white px-4 py-2 shadow-sm"
+                    >
+                      <SponsorLogo company={c} />
+                    </div>
+                  )
+              )}
+            </div>
           </div>
-        </div>
-        <div>
-          <h3 className="text-3xl">További támogatóink</h3>
-          <div className={styles.containerMany}>
-            {regularSponsors.map((c) => (
-              <div
-                key={c.name}
-                className="col-span-2 h-auto max-w-[170px] w-full max-h-[75px]"
-              >
-                <SponsorLogo company={c} />
-              </div>
-            ))}
+
+          <div>
+            <h3 className="mb-4 text-2xl md:text-3xl">További támogatóink</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {regularSponsors.map(
+                (c) =>
+                  c.logoUrl && (
+                    <div
+                      key={c.name}
+                      className="mx-auto flex h-[150px] w-full max-w-[300px] items-center justify-center rounded-2xl bg-white px-4 py-2 shadow-sm"
+                    >
+                      <SponsorLogo company={c} />
+                    </div>
+                  )
+              )}
+            </div>
           </div>
         </div>
       </section>
