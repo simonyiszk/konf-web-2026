@@ -1,10 +1,24 @@
 "use client";
 import {FormEvent, useState} from "react";
 import {SlArrowRight} from "react-icons/sl";
+import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
+import {register} from "@/app/actions";
+import {useRouter} from "next/router";
 
+
+function getErrorMessage(status: string) {
+  switch (status) {
+    case "FORM_NOT_AVAILABLE":
+      return "A regisztráció jelenleg nem elérhető";
+    case "INVALID_VALUES":
+      return "Az email cím vagy a név nem megfelelő";
+  }
+  return "Hiba történt a regisztráció során";
+}
 
 export function RegisterForm(){
-
+  const router = useRouter();
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,12 +30,37 @@ export function RegisterForm(){
     setError("");
     e.preventDefault();
     if (!firstName || !lastName || !email) {
+      setError("Kérem töltse ki a kötelező mezőket (vezetéknév, keresztnév, email).");
       return;
     }
-
+    if (plays && !phone) {
+      setError("Kérem adja meg a telefonszámát, ha részt szeretne venni a nyereményjátékban.");
+      return;
+    } else {
+      setPhone("");
+    }
+    if (!executeRecaptcha) {
+      console.log("Execute recaptcha not available yet");
+      return;
+    }
+    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+      submitEnquiryForm(gReCaptchaToken);
+    })
   }
 
-  const inputClasses = "w-full bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54]"
+  const submitEnquiryForm = (gReCaptchaToken: string) => {
+    register({firstName, lastName, email, plays, phone, recaptchaToken: gReCaptchaToken}).then(
+      (status) => {
+        if (status === "OK") {
+          router.push("/register/success");
+        } else {
+          setError(getErrorMessage(status));
+        }
+      }
+    )
+  }
+
+  const inputClasses = "w-full bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54] focus:outline-none focus-visible:outline-none focus:ring-0"
 
   return (
     <form
@@ -75,21 +114,22 @@ export function RegisterForm(){
         />
       </div>
 
-      <div>
+      {plays && (<div>
         <label className="block text-lg">Telefonszám</label>
         <input
           name="phone"
           type="tel"
           className={inputClasses}
-          placeholder="06 20 123 4567"
+          placeholder="06201234567"
           value={phone}
           onChange={(e) => setPhone(e?.target?.value)}
         />
-      </div>
+      </div>)}
 
-      <div className="w-full flex justify-center pb-3 pt-6">
+      <div className="w-full flex flex-col items-center pb-3 pt-6">
         <button
           type="submit"
+          onClick={() => console.log("RegisterForm: submit button clicked")}
           className="inline-flex items-center justify-center bg-primary-300 text-primary-700 gap-3 mb-2 border-2 border-primary-700 rounded-lg px-2 py-1 hover:bg-secondary shadow-md w-48 text-lg"
           aria-label="Regisztráció"
         >
@@ -99,7 +139,7 @@ export function RegisterForm(){
             />
         </button>
         {error && (
-          <p className="text-red-600 absolute -bottom-2 translate-y-full w-full text-center">
+          <p className="text-[red] mt-2 text-center max-w-[360px] px-2">
             {error}
           </p>
         )}

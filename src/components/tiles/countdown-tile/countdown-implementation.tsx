@@ -65,7 +65,7 @@ export default function CountdownTileImplementation() {
         </div>
 
 
-        {/*<div className="w-full flex justify-center pb-3">
+        <div className="w-full flex justify-center pb-3">
           <Link
             href="/register"
             className="inline-flex items-center justify-center gap-3 mb-2 border-2 border-primary-700 bg-primary-200 rounded-lg px-2 py-1 hover:bg-secondary shadow-md w-48 text-lg"
@@ -73,7 +73,7 @@ export default function CountdownTileImplementation() {
             <span className="whitespace-nowrap">Regisztráció</span>
             <SlArrowRight className="flex-shrink-0" size={18} />
           </Link>
-        </div>*/}
+        </div>
       </div>
     </>
   );
