@@ -8,7 +8,7 @@ import KonfLogo from "../svgs/Konf";
 
 export function DesktopNavbar() {
   return (
-    <nav className="w-full mx-auto hidden md:flex justify-end items-center flex-wrap gap-10 flex-col md:flex-row sticky p-5 top-0 z-50 overflow-hidden">
+    <nav className="w-full mx-auto hidden md:flex justify-end items-center flex-wrap gap-10 flex-col md:flex-row sticky p-5 pb-1 top-0 z-50 overflow-hidden">
       <div
         id="desktop-nav-container"
         className={clsx(
