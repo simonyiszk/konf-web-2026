@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const links = [
-  /*{
+  {
     href: "/",
     label: "főoldal",
-  },*/
-  {
+  },
+  /*{
     href: "https://xxii.konferencia.simonyi.bme.hu/",
     label: "XXII. Konferencia",
   },
@@ -16,19 +16,19 @@ const links = [
   {
     href: "https://xx.konferencia.simonyi.bme.hu/",
     label: "XX. Konferencia",
-  },
+  },*/
   {
     href: "/presentations",
     label: "előadások",
   },
-  /*{
+  {
     href: "/giveaway",
     label: "nyereményjáték",
   },
   {
     href: "/register",
     label: "regisztráció",
-  },*/
+  },
   {
     href: "/contact",
     label: "kapcsolat",
