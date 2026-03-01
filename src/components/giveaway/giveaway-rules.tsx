@@ -1,12 +1,48 @@
+import remarkGfm from "remark-gfm";
+import ReactMarkdown from "react-markdown";
 
 
-export default function GiveawayRules() {
+export default function GiveawayRules({rules}: {rules:string}) {
   return (
     <div className="w-full px-4 sm:px-6 mt-16 md:mt-24 text-primary-800 pb-20">
-      <h2 className="text-3xl md:text-5xl font-aboreto mb-8 md:mb-12 text-center uppercase tracking-wider">
+      <ReactMarkdown
+        children={rules}
+        remarkPlugins={[remarkGfm]}
+        components={{
+          h1: ({ children }) => (
+            <h1 className="text-3xl md:text-5xl font-aboreto mb-8 md:mb-12 text-center uppercase tracking-wider">
+              {children}
+            </h1>
+          ),
+          h2: ({ children }) => (
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-aboreto mt-3 md:mt-5 mb-2 md:mb-4">
+              {children}
+            </h2>
+          ),
+          p: ({ children }) => <p className="mb-2 md:mb-3">{children}</p>,
+          a: ({ children, href }) => (
+            <a
+              className="underline hover:text-primary-600 transition-colors underline-offset-4"
+              href={href as string}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {children}
+            </a>
+          ),
+          ul: ({ children }) => <ul className="space-y-1 mb-2">{children}</ul>,
+          li: ({ children }) => (
+              <li className="flex items-start">
+                  <span className="mr-3 font-bold text-xl leading-none">·</span>
+                  <span>{children}</span>
+              </li>
+          ),
+        }}
+      />
+      {/*<h2 className="text-3xl md:text-5xl font-aboreto mb-8 md:mb-12 text-center uppercase tracking-wider">
         NYEREMÉNYJÁTÉK-SZABÁLYZAT
       </h2>
-      
+
       <div className="flex flex-col gap-8 md:gap-12 text-base md:text-[1.1rem] lg:text-lg font-medium leading-relaxed">
         <p>
           A Nyereményjáték-szabályzat (a továbbiakban: Szabályzat) vonatkozik a Simonyi Károly Szakkollégium (továbbiakban: Szakkollégium) által szervezett XXII. Simonyi Konferencia (továbbiakban: Esemény) során folyó nyereményjátékokra (továbbiakban: Játék).
@@ -55,7 +91,7 @@ export default function GiveawayRules() {
             </li>
           </ul>
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 }
