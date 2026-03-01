@@ -64,7 +64,7 @@ export function RegisterForm(){
 
   return (
     <form
-      className="space-y-4 flex flex-col lg:min-w-[300px] max-lg:w-full"
+      className="space-y-4 flex flex-col lg:min-w-[300px] max-lg:w-full opacity-60"
       onSubmit={handleSubmit}
     >
       <div>
