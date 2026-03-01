@@ -3,7 +3,7 @@ import {FormEvent, useState} from "react";
 import {SlArrowRight} from "react-icons/sl";
 import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
 import {register} from "@/app/actions";
-import {useRouter} from "next/router";
+import {useRouter} from "next/navigation";
 
 
 function getErrorMessage(status: string) {
