@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function GiveAway() {
   return (
     <div className="flex flex-col items-center w-full px-4 sm:px-6 bg-[#F3C59B] relative py-12 md:py-16">
-      <div className="absolute top-0 inset-x-0 h-96 sm:h-[400px] md:h-[1000px] z-0 pointer-events-none w-full">
-        <Image 
-          src="/img/pileOfCubes.png" 
-          alt="pile of cubes background" 
-          fill 
-          className="object-cover object-bottom" 
+      <div className="absolute bottom-0 inset-x-0 h-96 sm:h-[400px] md:h-[1000px] z-0 pointer-events-none w-full">
+        <Image
+          src="/img/pileOfCubes.png"
+          alt="pile of cubes background"
+          fill
+          className="object-cover object-bottom"
         />
       </div>
 

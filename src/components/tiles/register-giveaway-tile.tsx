@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 export default function RegisterGiveawayTile() {
   return (
     <div className="flex flex-col items-center w-full relative">
-      <h2 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-aboreto text-primary-800 text-center uppercase tracking-wider">
+      <h2 className="relative z-10 text-4xl sm:text-5xl font-aboreto text-primary-800 text-center uppercase tracking-wider">
         NYEREMÉNYJÁTÉK
       </h2>
 
