@@ -1,7 +1,16 @@
 export const MysteryGift = ({ className = "w-full h-full object-contain" }: { className?: string }) => (
-  <svg id="Capa_3" data-name="Capa 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1348.96 1776.5" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" className={className}>
+  <svg
+    id="Capa_3"
+    data-name="Capa 3"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1348.96 1776.5"
+    width="100%"
+    height="100%"
+    preserveAspectRatio="xMidYMid meet"
+    className={`gift ${className}`}
+  >
     <defs>
-      <style>{`.cls-1{fill:#1c120c;} .cls-2{font-size:1106.05px; fill:#f2dfbb; stroke:#1c120c; stroke-linecap:round; stroke-linejoin:round; stroke-width:36px; font-family: var(--font-aboreto), Aboreto, Alberto-Regular-CSAK-BELSO-HASZNALAT, Georgia, "Times New Roman", serif; font-weight:400; paint-order:stroke fill;}`}</style>
+      <style>{`.gift .cls-1{fill:#1c120c;} .gift .cls-2{font-size:1106.05px; fill:#f2dfbb; stroke:#1c120c; stroke-linecap:round; stroke-linejoin:round; stroke-width:36px; font-family: var(--font-aboreto), Aboreto, Alberto-Regular-CSAK-BELSO-HASZNALAT, Georgia, "Times New Roman", serif; font-weight:400; paint-order:stroke fill;}`}</style>
     </defs>
     <path className="cls-1"
           d="M736.28,1201.65q6.83,130,13.66,260.09l1.38,26.32c54.5,56.85,122.11,99.41,195.93,130.27v-120.9H880.81a9.49,9.49,0,0,1-9.35-9.35V1295.75a9.48,9.48,0,0,1,9.35-9.36c22.14.5,44.29.77,66.44,1v-113q-106.11,1.32-212.19,4.19Q735.68,1190.11,736.28,1201.65Z"
