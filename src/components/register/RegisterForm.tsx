@@ -60,7 +60,7 @@ export function RegisterForm(){
     )
   }
 
-  const inputClasses = "w-full bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54] focus:outline-none focus-visible:outline-none focus:ring-0"
+  const inputClasses = "w-full cursor-not-allowed bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54] focus:outline-none focus-visible:outline-none focus:ring-0"
 
   return (
     <form
@@ -71,6 +71,7 @@ export function RegisterForm(){
         <label className="block text-lg">Vezetéknév</label>
         <input
           name="lastName"
+          disabled
           type="text"
           className={inputClasses}
           placeholder="Simonyi"
@@ -83,6 +84,7 @@ export function RegisterForm(){
         <label className="block text-lg">Keresztnév</label>
         <input
           name="firstName"
+          disabled
           type="text"
           className={inputClasses}
           placeholder="Károly"
@@ -95,6 +97,7 @@ export function RegisterForm(){
         <label className="block text-lg">Email</label>
         <input
           name="email"
+          disabled
           type="email"
           className={inputClasses}
           placeholder="simonyi@simonyi.bme.hu"
@@ -107,6 +110,7 @@ export function RegisterForm(){
         <label className="block text-lg">Szeretnék részt venni a nyereményjátékban</label>
         <input
           name="plays"
+          disabled
           type="checkbox"
           className="w-5 h-5 text-primary-700 bg-primary-300 border-primary-700 rounded focus:ring-primary-500 focus:ring-2"
           checked={plays}
@@ -118,6 +122,7 @@ export function RegisterForm(){
         <label className="block text-lg">Telefonszám</label>
         <input
           name="phone"
+          disabled
           type="tel"
           className={inputClasses}
           placeholder="06201234567"
