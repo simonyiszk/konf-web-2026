@@ -136,6 +136,7 @@ export function RegisterForm(){
           type="submit"
           onClick={() => console.log("RegisterForm: submit button clicked")}
           className="inline-flex items-center justify-center bg-primary-300 text-primary-700 gap-3 mb-2 border-2 border-primary-700 rounded-lg px-2 py-1 hover:bg-secondary shadow-md w-48 text-lg"
+          disabled
           aria-label="Regisztráció"
         >
             Regisztráció
