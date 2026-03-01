@@ -60,18 +60,17 @@ export function RegisterForm(){
     )
   }
 
-  const inputClasses = "w-full cursor-not-allowed bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54] focus:outline-none focus-visible:outline-none focus:ring-0"
+  const inputClasses = "w-full bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54] focus:outline-none focus-visible:outline-none focus:ring-0"
 
   return (
     <form
-      className="space-y-4 flex flex-col lg:min-w-[300px] max-lg:w-full opacity-60"
+      className="space-y-4 flex flex-col lg:min-w-[300px] max-lg:w-full"
       onSubmit={handleSubmit}
     >
       <div>
         <label className="block text-lg">Vezetéknév</label>
         <input
           name="lastName"
-          disabled
           type="text"
           className={inputClasses}
           placeholder="Simonyi"
@@ -84,7 +83,6 @@ export function RegisterForm(){
         <label className="block text-lg">Keresztnév</label>
         <input
           name="firstName"
-          disabled
           type="text"
           className={inputClasses}
           placeholder="Károly"
@@ -97,7 +95,6 @@ export function RegisterForm(){
         <label className="block text-lg">Email</label>
         <input
           name="email"
-          disabled
           type="email"
           className={inputClasses}
           placeholder="simonyi@simonyi.bme.hu"
@@ -110,7 +107,6 @@ export function RegisterForm(){
         <label className="block text-lg">Szeretnék részt venni a nyereményjátékban</label>
         <input
           name="plays"
-          disabled
           type="checkbox"
           className="w-5 h-5 text-primary-700 bg-primary-300 border-primary-700 rounded focus:ring-primary-500 focus:ring-2"
           checked={plays}
@@ -122,7 +118,6 @@ export function RegisterForm(){
         <label className="block text-lg">Telefonszám</label>
         <input
           name="phone"
-          disabled
           type="tel"
           className={inputClasses}
           placeholder="06201234567"
@@ -136,7 +131,6 @@ export function RegisterForm(){
           type="submit"
           onClick={() => console.log("RegisterForm: submit button clicked")}
           className="inline-flex items-center justify-center bg-primary-300 text-primary-700 gap-3 mb-2 border-2 border-primary-700 rounded-lg px-2 py-1 hover:bg-secondary shadow-md w-48 text-lg"
-          disabled
           aria-label="Regisztráció"
         >
             Regisztráció
