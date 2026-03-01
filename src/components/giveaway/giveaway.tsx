@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {MysteryGift} from "@/components/svgs/MysteryGift";
 
 export default function GiveAway() {
   return (
@@ -16,8 +17,8 @@ export default function GiveAway() {
         NYEREMÉNYJÁTÉK
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-6 lg:gap-8 w-full max-w-[1240px] relative z-10">
-        {/* Left Card */}
+      {/*<div className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-6 lg:gap-8 w-full max-w-[1240px] relative z-10">
+         Left Card
         <div className="bg-text rounded-[2rem] lg:rounded-[3rem] p-8 md:p-12 lg:p-14 flex flex-col gap-4 relative shadow-sm">
           <div className="text-primary-800 z-10 w-full lg:max-w-[90%] text-center lg:text-left">
             <p className="text-lg md:text-xl font-medium mb-1">
@@ -31,16 +32,16 @@ export default function GiveAway() {
             </p>
           </div>
           <div className="relative mt-4 h-48 sm:h-64 md:h-96 w-full">
-            <Image 
-              src="/img/nintendo.png" 
-              fill 
-              alt="Nintendo Switch 3" 
-              className="object-contain lg:object-left-top" 
+            <Image
+              src="/img/nintendo.png"
+              fill
+              alt="Nintendo Switch 3"
+              className="object-contain lg:object-left-top"
             />
           </div>
         </div>
 
-        {/* Right Cards */}
+         Right Cards
         <div className="flex flex-col gap-4 sm:gap-6 lg:gap-8 min-h-full">
           <div className="bg-background rounded-[1.5rem] lg:rounded-[2rem] p-6 lg:p-8 text-center text-primary-50 flex flex-col justify-between flex-1 shadow-sm">
             <div>
@@ -52,11 +53,11 @@ export default function GiveAway() {
               </h3>
             </div>
             <div className="relative mt-auto h-24 sm:h-32 md:h-40 w-full">
-               <Image 
-                 src="/register/monitor.svg" 
-                 fill 
-                 alt="Monitor" 
-                 className="object-contain" 
+               <Image
+                 src="/register/monitor.svg"
+                 fill
+                 alt="Monitor"
+                 className="object-contain"
                />
             </div>
           </div>
@@ -71,14 +72,30 @@ export default function GiveAway() {
               </h3>
             </div>
             <div className="relative mt-auto h-24 sm:h-32 md:h-40 w-full">
-               <Image 
-                 src="/register/totebag.svg" 
-                 fill 
-                 alt="Vászontáska" 
-                 className="object-contain" 
+               <Image
+                 src="/register/totebag.svg"
+                 fill
+                 alt="Vászontáska"
+                 className="object-contain"
                />
             </div>
           </div>
+        </div>
+      </div>*/}
+      <div className="bg-text rounded-[2rem] lg:rounded-[3rem] p-8 md:p-12 lg:p-14 flex flex-col gap-4 relative shadow-sm">
+        <div className="text-primary-800 z-10 w-full lg:max-w-[90%] text-center lg:text-left">
+          <p className="text-lg md:text-xl font-medium mb-1">
+            A regisztrált résztvevők között az esemény végén
+          </p>
+          <h3 className="text-3xl sm:text-4xl md:text-6xl font-bold text-secondary mb-2 mt-2 leading-none">
+            értékes nyereményeket
+          </h3>
+          <p className="text-base sm:text-lg md:text-xl font-medium">
+            sorsolunk ki
+          </p>
+        </div>
+        <div className="relative mt-4 h-36 sm:h-48 md:h-72 w-full">
+          <MysteryGift />
         </div>
       </div>
     </div>
