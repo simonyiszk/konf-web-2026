@@ -125,7 +125,7 @@ export function RegisterForm(){
           disabled
           type="tel"
           className={inputClasses}
-          placeholder="06201234567"
+          placeholder="+36201234567"
           value={phone}
           onChange={(e) => setPhone(e?.target?.value)}
         />
