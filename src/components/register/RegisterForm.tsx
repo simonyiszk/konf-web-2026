@@ -11,7 +11,7 @@ function getErrorMessage(status: string) {
     case "FORM_NOT_AVAILABLE":
       return "A regisztráció jelenleg nem elérhető";
     case "INVALID_VALUES":
-      return "Az email cím vagy a név nem megfelelő";
+      return "Az email cím, a név vagy a telefonszám nem megfelelő";
   }
   return "Hiba történt a regisztráció során";
 }

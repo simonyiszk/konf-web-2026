@@ -17,7 +17,7 @@ export async function register({
 }) {
   const isRecaptchaValid = await validateRecaptcha(recaptchaToken);
   if (!isRecaptchaValid) {
-    return "INVALID_VALUES";
+    return "INVALID_RECAPTCHA";
   }
   if (!email || !firstName || !lastName) {
     return "INVALID_VALUES";
