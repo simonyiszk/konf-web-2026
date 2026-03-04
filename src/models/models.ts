@@ -111,14 +111,14 @@ export interface IndexPageData {
     companies: Company[];
   };
   organisers: Organiser[];
-  featuredPresentation: FeaturedPresentation;
+  featuredPresentations: FeaturedPresentation;
   presentations: PresentationModel[];
 }
 
 export interface FeaturedPresentation {
   sectionTitle: string;
   description: string;
-  presentation: PresentationModel[];
+  presentations: PresentationModel[];
 }
 
 export interface StreamData {
