@@ -25,8 +25,8 @@ export default async function Landing() {
       {/*<YoutubeLive ib025Link={streams[1].youtubeUrl} ib028Link={streams[0].youtubeUrl}/>*/}
 
       <FeaturedPresentationTile
-        sectionTitle={data.featuredPresentation.sectionTitle}
-        featuredPresentations={data.featuredPresentation.presentation}
+        sectionTitle={data.featuredPresentations.sectionTitle}
+        featuredPresentations={data.featuredPresentations.presentations}
       />
 
       {/*<GiveawayTile data={data.giveaway} />*/}
