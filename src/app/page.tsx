@@ -29,7 +29,7 @@ export default async function Landing() {
         featuredPresentations={data.featuredPresentations.presentations}
       />
 
-      {/*<GiveawayTile data={data.giveaway} />*/}
+      <GiveawayTile data={data.giveaway} />
       <MobilAppTile data={appData} />
       {data.previousConferences.conferences.length > 0 && (
         <ImageCarouselSection data={data.previousConferences} />
