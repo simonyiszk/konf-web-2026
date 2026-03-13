@@ -65,8 +65,11 @@ export default function GiveAway() {
                 A jelentkezők között kisorsolunk egy
               </p>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mt-1 mb-2">
-                monitort
+                LG UltraGear
               </h3>
+              <p className="text-sm md:text-base font-light">
+                27&quot; monitort
+              </p>
             </div>
             <div className="relative mt-0 h-24 sm:h-32 md:h-40 w-full">
                <Image
