@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import {MysteryGift} from "@/components/svgs/MysteryGift";
+import Image from "next/image";
 
 export default function RegisterGiveawayTile() {
   return (
@@ -41,13 +41,13 @@ export default function RegisterGiveawayTile() {
           </div>*/}
           <div className="text-primary-800 z-10 w-full text-center lg:text-left">
             <p className="text-lg md:text-xl font-medium mb-1">
-              A regisztrált résztvevők között az esemény végén
+              A regisztrált résztvevők között az esemény végén kisorsolunk egy
             </p>
             <h3 className="text-2xl md:text-4xl font-bold text-secondary mb-2 mt-2 leading-none">
-              értékes nyereményeket
+              Lenovo Idea Tab
             </h3>
             <p className="text-lg md:text-xl font-medium mb-6">
-              sorsolunk ki!
+              tabletet!
             </p>
 
             <Link
@@ -60,7 +60,12 @@ export default function RegisterGiveawayTile() {
           </div>
 
           <div className="relative mt-8 h-64 md:h-96 w-full lg:w-[120%] lg:-ml-[10%] pointer-events-none">
-            <MysteryGift />
+            <Image
+              src="/img/lenovo_ideatab.webp"
+              fill
+              alt="Lenovo Idea Tab"
+              className="object-contain lg:object-center"
+            />
           </div>
         </div>
       </div>
