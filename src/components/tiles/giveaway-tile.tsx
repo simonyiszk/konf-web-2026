@@ -18,7 +18,7 @@ export default function GiveawayTile() {
             Lenovo Idea Tab
           </h3>
           <p className="text-lg md:text-xl font-medium mb-6">
-            tabletet!
+            tabletet
           </p>
 
           <Link

@@ -30,7 +30,7 @@ export default function GiveAway() {
               tabletet
             </p>
           </div>
-          <div className="relative mt-4 h-48 sm:h-64 md:h-96 w-full">
+          <div className="relative mt-4 h-48 sm:h-64 md:h-96 lg:mt-32 w-full">
             <Image
               src="/img/lenovo_ideatab.webp"
               fill
@@ -47,7 +47,7 @@ export default function GiveAway() {
                 LG UltraGear
               </h3>
               <p className="text-sm md:text-base font-light">
-                27&quot; 144Hz monitor
+                27&quot; 144Hz monitort
               </p>
             </div>
             <div className="relative mt-0 h-24 sm:h-32 md:h-40 w-full">
@@ -66,7 +66,7 @@ export default function GiveAway() {
                 JBL Tune Buds 2
               </h3>
               <p className="text-sm md:text-base font-light">
-                vezeték nélküli fülhallgató
+                vezeték nélküli fülhallgatót
               </p>
             </div>
             <div className="relative mt-4 h-24 sm:h-32 md:h-40 w-full">
@@ -82,7 +82,7 @@ export default function GiveAway() {
           <div className="bg-background rounded-[1.5rem] lg:rounded-[2rem] p-6 lg:p-8 text-center text-primary-50 flex flex-col justify-between flex-1 shadow-sm">
             <div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mt-1 mb-2">
-                Páros napijegy
+                Páros napijegyet
               </h3>
               <p className="text-sm md:text-base font-light">
                 a 2026-os Művészetek Völgyére
