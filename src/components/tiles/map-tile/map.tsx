@@ -9,7 +9,7 @@ export function Map({ active }: MapProps) {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 436.39 700.05'
-      className='max-h-max md:max-h-[800px] h-[365px] xxs:h-[500px] xs:h-[600px] sm:h-[650px] md:h[800px] max-w-full'
+      className='map-svg max-h-max md:max-h-[800px] h-[365px] xxs:h-[500px] xs:h-[600px] sm:h-[650px] md:h[800px] max-w-full'
     >
       <g id='Layer_2' data-name='Layer 2'>
         <g id='Layer_2-2' data-name='Layer 2'>
@@ -378,14 +378,6 @@ export function Map({ active }: MapProps) {
             </>
           )}
         </circle>
-        <circle className='yellow' cx='179.66' cy='640.82' r='0'>
-          {active == 23 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
         <g id='szamok'>
           <text className='cls-6' transform='translate(252.27 447.87)'>
             1
@@ -453,9 +445,6 @@ export function Map({ active }: MapProps) {
           </text>
           <text className='cls-6' transform='translate(252.27 118.88)'>
             22
-          </text>
-          <text className='cls-6' transform='translate(169.66 644.82)'>
-            23
           </text>
         </g>
         <g id='feliratok'>
