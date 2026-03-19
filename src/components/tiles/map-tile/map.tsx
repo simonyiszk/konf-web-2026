@@ -1,4 +1,4 @@
-import './mapStyle.css';
+import "./mapStyle.css";
 
 type MapProps = {
   active: number;
@@ -7,562 +7,793 @@ type MapProps = {
 export function Map({ active }: MapProps) {
   return (
     <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 436.39 700.05'
-      className='map-svg max-h-max md:max-h-[800px] h-[365px] xxs:h-[500px] xs:h-[600px] sm:h-[650px] md:h[800px] max-w-full'
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 244.81 392.73"
+      className="map-svg max-h-max md:max-h-[800px] h-[365px] xxs:h-[500px] xs:h-[600px] sm:h-[650px] md:h[800px] max-w-full"
     >
-      <g id='Layer_2' data-name='Layer 2'>
-        <g id='Layer_2-2' data-name='Layer 2'>
-          <polygon
-            className='cls-1'
-            points='333.26 575.87 180.17 545.56 148.11 611.33 101.79 588.95 96.62 598.29 4.04 551.66 33.11 494.46 23.24 486.28 195.85 155.16 203.94 159.02 217.44 115.88 206.66 108.21 260 4.26 337.41 52.32 433.37 52.32 433.37 697.05 332.26 697.05 333.26 575.87'
-          />
-          <polygon className='cls-2' points='337.45 334.9 337.45 404.31 315.1 415.18 285.04 363.13 337.45 334.9' />
-          <polyline
-            className='cls-3'
-            points='333.43 575.83 433.39 575.83 433.39 533.54 337.45 533.54 337.45 408.31 337.45 338.9 337.45 212.68 433.39 212.68 433.39 158.96 337.45 158.96 337.45 62.91 337.58 51.29'
-          />
-          <path
-            className='cls-4'
-            d='M290.53,240.48a106.75,106.75,0,0,1-129.91,74.4l57.7-205.52A106.75,106.75,0,0,1,290.53,240.48Z'
-          />
-          <polygon
-            className='cls-2'
-            points='96.71 597.02 126.95 537.07 106.73 530.65 118.9 456.93 162.59 464.04 200.65 396.45 133.92 343.62 106.78 396.45 77.1 382.35 23.41 485.33 33.28 493.51 4.21 550.71 96.71 597.02'
-          />
-          <polyline
-            className='cls-4'
-            points='337.44 511.75 337.45 427.82 433.39 427.72 433.39 533.54 337.45 533.54 337.44 511.75'
-          />
-          <rect x='137.47' y='499.47' width='20.04' height='15.66' transform='translate(146.39 -21) rotate(16.09)' />
-        </g>
+      <rect
+        className="cls-1"
+        x="187.32"
+        y="324.03"
+        width="55.71"
+        height="67.52"
+      />
+      <polygon
+        className="cls-2"
+        points="186.96 323.07 101.07 306.06 83.09 342.96 57.11 330.4 54.2 335.64 2.27 309.48 18.58 277.4 13.04 272.81 109.87 87.05 114.41 89.22 121.98 65.01 115.94 60.71 145.86 2.4 189.29 29.36 243.12 29.36 243.12 391.05 186.4 391.05 186.96 323.07"
+      />
+      <polygon
+        className="cls-3"
+        points="189.21 188.38 189.21 227.32 176.68 233.42 159.81 204.22 189.21 188.38"
+      />
+      <polyline
+        className="cls-4"
+        points="186.96 323.24 243.04 323.24 243.04 299.82 189.21 299.82 189.21 229.56 189.21 190.62 189.21 119.81 243.04 119.81 243.04 89.68 189.21 89.68 189.21 35.79 189.29 29.28"
+      />
+      <path
+        className="cls-5"
+        d="M197.58,170.88a59.89,59.89,0,0,1-72.88,41.74l32.37-115.3A59.89,59.89,0,0,1,197.58,170.88Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <polygon
+        className="cls-3"
+        points="54.16 335.43 71.12 301.8 59.78 298.19 66.61 256.84 91.12 260.83 112.47 222.91 75.03 193.27 59.81 222.91 43.16 215 13.04 272.77 18.58 277.36 2.27 309.45 54.16 335.43"
+      />
+      <polyline
+        className="cls-6"
+        points="189.21 287.59 189.21 240.51 243.04 240.45 243.04 299.82 189.21 299.82 189.21 287.59"
+      />
+      <rect
+        className="cls-7"
+        x="110.71"
+        y="312.07"
+        width="13.29"
+        height="17"
+        transform="translate(-257.88 309.01) rotate(-73.91)"
+      />
+      <path
+        className="cls-8"
+        d="M101.44,375.21l-7.64,3a.81.81,0,0,0-.49.69.78.78,0,0,0,.42.72l2.06,1.06-3.87,7.6a.78.78,0,0,0,.34,1l4.12,2.12a.77.77,0,0,0,1-.31h0l3.89-7.56,2.06,1.07a.8.8,0,0,0,.84-.09.82.82,0,0,0,.2-.25.73.73,0,0,0,.06-.56l-2-7.95a.82.82,0,0,0-.4-.51A.76.76,0,0,0,101.44,375.21Zm1.13,7.22-1.24-.64a.78.78,0,0,0-1,.34l-3.89,7.55-2.75-1.41,3.89-7.56a.77.77,0,0,0-.33-1h0L96,379.08l5.24-2.07Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-7"
+        d="M161.92,213.66l-1.82,5a.5.5,0,0,0,.65.64l1.4-.56,2,5.13a.5.5,0,0,0,.65.29l2.8-1.09a.5.5,0,0,0,.28-.65h0l-2-5.11,1.4-.56a.5.5,0,0,0,.32-.44.74.74,0,0,0,0-.21.47.47,0,0,0-.24-.26l-4.71-2.47a.51.51,0,0,0-.42,0A.47.47,0,0,0,161.92,213.66Zm4,2.57-.84.33a.5.5,0,0,0-.29.63h0l2,5.13-1.87.73-2-5.13a.5.5,0,0,0-.64-.29h0l-.84.32,1.25-3.42Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-7"
+        d="M220.07,326.72l-4.15-3.36a.48.48,0,0,0-.69.05h0a.54.54,0,0,0-.12.34v1.5l-5.5.17a.5.5,0,0,0-.49.51h0l.1,3a.49.49,0,0,0,.5.48h0l5.5-.17.06,1.5a.49.49,0,0,0,.3.45.74.74,0,0,0,.21,0,.55.55,0,0,0,.32-.14l3.89-3.63a.5.5,0,0,0,0-.71h.07Zm-3.71,2.9v-.9a.5.5,0,0,0-.53-.47h0l-5.51.17-.06-2,5.5-.17a.52.52,0,0,0,.49-.51h0v-.9l2.8,2.32Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-7"
+        d="M100.27,354.81l2.17,4.86a.49.49,0,0,0,.66.24h0a.49.49,0,0,0,.25-.24l.63-1.36,5,2.3a.5.5,0,0,0,.66-.24h0l1.25-2.72a.51.51,0,0,0-.23-.67h0l-5-2.3.63-1.36a.5.5,0,0,0-.08-.56.55.55,0,0,0-.17-.13.53.53,0,0,0-.35,0l-5.1,1.51a.49.49,0,0,0-.31.27A.47.47,0,0,0,100.27,354.81Zm4.65-.93-.38.81a.48.48,0,0,0,.23.65h0l5,2.31-.85,1.82-5-2.31a.52.52,0,0,0-.67.25h0l-.37.82-1.49-3.33Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-9 wardrobe-icon"
+        d="M219,249.34l-4.73-3.25-.14-.13c-.14-.14-.14-.14-.14-.38s.24-.56.63-.87a1.9,1.9,0,0,0,.95-1.49,2,2,0,0,0-3.93,0,.38.38,0,0,0,.39.39h0a.38.38,0,0,0,.39-.37v0a1.18,1.18,0,0,1,2.36,0c0,.36-.24.56-.63.87a1.89,1.89,0,0,0-.94,1.49,1.09,1.09,0,0,0,.39,1l5,3.44a.39.39,0,0,1-.23.71H208.12a.39.39,0,0,1-.37-.27.39.39,0,0,1,.14-.44l4-2.9a.4.4,0,0,0,.1-.55h0a.4.4,0,0,0-.56-.09h0l-4,2.91a1.17,1.17,0,0,0-.28,1.63h0a1.2,1.2,0,0,0,1,.49h10.22a1.18,1.18,0,0,0,1.18-1.18,1.15,1.15,0,0,0-.49-1Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <g className="cls-12"></g>
+      <g id="Environment_Coffee" data-name="Environment Coffee">
+        <path
+          id="Vector"
+          className="cls-18"
+          d="M128.92,238.79h5m0,0h0m-.08,0h.08m-.08,0a5.05,5.05,0,0,1-5-5v-2.86a.67.67,0,0,1,.67-.65h8.73a.65.65,0,0,1,.64.65h0m-5,7.91h5m-5,0a5,5,0,0,0,5-5v0m0-2.87H140a1.8,1.8,0,0,1,0,3.59h-1v-.69m0-2.87v2.87m-2.15-7.18-.72,1.43m-1.43-1.43L133.9,228m-1.44-1.44-.72,1.44"
+          transform="translate(-34.69 -35.47)"
+        />
+      </g>
+      <path
+        className="cls-19"
+        d="M81.23,303.12a.87.87,0,1,0,.87.87h0A.87.87,0,0,0,81.23,303.12Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-19"
+        d="M86.54,303.12a.87.87,0,1,0,.87.87h0A.87.87,0,0,0,86.54,303.12Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-19"
+        d="M89.57,299.64H78.17a1.6,1.6,0,0,0-1.58,1.59v12.21A1.6,1.6,0,0,0,78.17,315h11.4a1.59,1.59,0,0,0,1.59-1.59V301.23a1.6,1.6,0,0,0-1.58-1.59ZM81,314a.06.06,0,0,0,0-.06l.18-4,.18,4V314Zm5.32,0V314l.18-4,.17,4V314Zm3.82-.58a.56.56,0,0,1-.52.58H87.58V314l.19-6.48.16,1.75a.36.36,0,0,0,.39.28.35.35,0,0,0,.29-.32v-2.86c0-1.2-1.45-1.26-2.07-1.26s-2.07.06-2.07,1.26v2.84a.34.34,0,0,0,.39.28.35.35,0,0,0,.28-.28l.16-1.74.18,6.48V314h-3.2v-.06l.18-6.46.16,1.75a.35.35,0,0,0,.39.28.35.35,0,0,0,.29-.32v-2.86c0-1.2-1.46-1.26-2.07-1.26s-2.07.06-2.07,1.26v2.84a.34.34,0,0,0,.39.28.35.35,0,0,0,.28-.28l.16-1.74.18,6.48V314h-2a.56.56,0,0,1-.56-.56V301.23a.56.56,0,0,1,.56-.56h11.4a.56.56,0,0,1,.56.56v12.22Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-19"
+        d="M85.12,297l1.19-1.19v2.68a.45.45,0,0,0,.89,0h0v-2.64l1.2,1.19a.43.43,0,0,0,.61,0h0a.45.45,0,0,0,0-.63h0l-2-1.94-.3-.32-.32.32-1.93,1.94a.45.45,0,0,0,.63.63h0Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-19"
+        d="M80.92,298.88l.32.32.31-.32,2-1.94a.45.45,0,0,0,0-.63h0a.44.44,0,0,0-.62,0h0l-1.19,1.19v-2.67a.44.44,0,0,0-.38-.51.45.45,0,0,0-.51.38.29.29,0,0,0,0,.13v2.67l-1.18-1.19a.45.45,0,0,0-.63,0,.44.44,0,0,0,0,.61l0,0Z"
+        transform="translate(-34.69 -35.47)"
+      />
 
-        <g id='Layer_7' data-name='Layer 7'>
-          <rect
-            className='cls-5'
-            x='220.24'
-            y='510.76'
-            width='8.79'
-            height='24.76'
-            transform='translate(-333.01 637.9) rotate(-78.39)'
+      <path
+        className="cls-7"
+        d="M120.15,268.46h-3.09a1.37,1.37,0,0,0-1.35,1.35V274a.56.56,0,0,0,.55.57h0a.58.58,0,0,0,.57-.57h0v-4.21h0a.13.13,0,0,1,.12-.11.11.11,0,0,1,.11.11v9.64a.69.69,0,0,0,1.38,0V274h.3v5.5a.67.67,0,0,0,.67.69h0a.69.69,0,0,0,.69-.69h0v-9.63a.11.11,0,0,1,.1-.12h0a.14.14,0,0,1,.13.11h0V274a.56.56,0,0,0,.55.57h0a.56.56,0,0,0,.57-.55v-4.23h0A1.37,1.37,0,0,0,120.15,268.46Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <circle className="cls-7" cx="83.92" cy="231.43" r="1.19" />
+      <path
+        className="cls-7"
+        d="M131.24,273.14s-1.06-3-1.22-3.48c-.26-.77-.71-1.16-1.32-1.16h-2c-.61,0-1,.39-1.32,1.16l-1.21,3.48a.57.57,0,0,0,1,.5.65.65,0,0,0,0-.13c0-.09.66-1.83,1-2.84a41,41,0,0,1-.81,4.24.31.31,0,0,0,.24.36h.5v4.13a.69.69,0,0,0,.6.77.7.7,0,0,0,.77-.6.49.49,0,0,0,0-.17v-4.13h.29v4.13a.69.69,0,0,0,.6.77.7.7,0,0,0,.77-.6.49.49,0,0,0,0-.17v-4.13h.43A.32.32,0,0,0,130,275v0c-.88-4.52-.78-4-.81-4.24l1,2.84a.58.58,0,0,0,.73.36.58.58,0,0,0,.35-.73Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <circle className="cls-7" cx="93.03" cy="231.47" r="1.18" />
+      <path
+        className="cls-7"
+        d="M123,266.47a.44.44,0,0,0-.44.44h0v12a.44.44,0,0,0,.44.44h0a.43.43,0,0,0,.44-.42V266.88A.45.45,0,0,0,123,266.47Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-7"
+        d="M260.19,342.21h-3.08a1.36,1.36,0,0,0-1.36,1.35v4.22a.58.58,0,0,0,.57.57h0a.58.58,0,0,0,.58-.57v-4.21h0a.11.11,0,1,1,.22,0v9.64a.69.69,0,0,0,1.38,0h0v-5.5h.3v5.5a.69.69,0,0,0,.69.69h0a.67.67,0,0,0,.68-.68h0v-9.63a.12.12,0,0,1,.12-.12.11.11,0,0,1,.12.1h0v4.21a.56.56,0,0,0,.55.57h0a.56.56,0,0,0,.57-.55v-4.23h0A1.37,1.37,0,0,0,260.19,342.21Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <circle className="cls-7" cx="223.96" cy="305.18" r="1.19" />
+      <path
+        className="cls-7"
+        d="M271.28,346.88l-1.22-3.49c-.26-.76-.71-1.15-1.31-1.15h-2c-.61,0-1,.39-1.31,1.15l-1.21,3.49a.57.57,0,0,0,1,.5.65.65,0,0,0,0-.13c0-.09.66-1.84,1-2.84a41,41,0,0,1-.81,4.24.31.31,0,0,0,.24.36h.51v4.13a.68.68,0,0,0,1.36,0h0V349h.3v4.13a.68.68,0,0,0,1.36,0h0V349h.44a.32.32,0,0,0,.32-.3s0-.05,0-.07c-.88-4.52-.78-4-.81-4.24l1,2.84a.56.56,0,0,0,.72.35.57.57,0,0,0,.36-.72Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <circle className="cls-7" cx="233.07" cy="305.22" r="1.18" />
+      <path
+        className="cls-7"
+        d="M263,340.22a.44.44,0,0,0-.44.44h0v12a.44.44,0,1,0,.87.13.29.29,0,0,0,0-.13v-12A.44.44,0,0,0,263,340.22Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <path
+        className="cls-7"
+        d="M260.19,134.65h-3.08a1.36,1.36,0,0,0-1.36,1.35v4.22a.58.58,0,0,0,.57.57h0a.58.58,0,0,0,.58-.57V136h0a.11.11,0,0,1,.1-.12h0a.13.13,0,0,1,.11.12v9.64a.69.69,0,1,0,1.38,0v-5.5h.3v5.5a.69.69,0,0,0,.69.69h0a.67.67,0,0,0,.68-.68h0V136a.12.12,0,0,1,.12-.12.11.11,0,0,1,.12.1h0v4.21a.58.58,0,0,0,.57.57h0a.56.56,0,0,0,.57-.55V136h0A1.37,1.37,0,0,0,260.19,134.65Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <circle className="cls-7" cx="223.96" cy="97.61" r="1.19" />
+      <path
+        className="cls-7"
+        d="M271.28,139.33l-1.22-3.45c-.26-.77-.71-1.16-1.31-1.16h-2c-.61,0-1,.39-1.31,1.16l-1.22,3.49a.57.57,0,0,0,.34.72h0a.57.57,0,0,0,.72-.35c0-.09.66-1.84,1-2.84a40.85,40.85,0,0,1-.81,4.23.32.32,0,0,0,.25.37h.5v4.13a.68.68,0,0,0,1.36,0v-4.13h.3v4.13a.68.68,0,1,0,1.36,0v-4.13h.44a.32.32,0,0,0,.32-.32s0,0,0-.06c-.88-4.51-.78-4-.81-4.23l1,2.84a.58.58,0,0,0,1.11-.36Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <circle className="cls-7" cx="233.07" cy="97.66" r="1.18" />
+      <path
+        className="cls-7"
+        d="M263,132.66a.44.44,0,0,0-.44.44h0v12a.44.44,0,0,0,.87.13.29.29,0,0,0,0-.13v-12A.44.44,0,0,0,263,132.66Z"
+        transform="translate(-34.69 -35.47)"
+      />
+      <rect
+        className="cls-8"
+        x="171.02"
+        y="278.9"
+        width="11.62"
+        height="11.62"
+        transform="translate(-167.34 377.89) rotate(-80.73)"
+      />
+      <rect
+        className="cls-8"
+        x="149.98"
+        y="251.43"
+        width="9.59"
+        height="8.09"
+        transform="translate(-162.83 315.81) rotate(-77.5)"
+      />
+      <rect
+        className="cls-8"
+        x="149.76"
+        y="262.85"
+        width="9.59"
+        height="4.41"
+        transform="translate(-172.36 323.1) rotate(-77.5)"
+      />
+      <rect
+        className="cls-8"
+        x="178.03"
+        y="266.41"
+        width="2.04"
+        height="7.06"
+        transform="translate(-150.69 368.15) rotate(-80.82)"
+      />
+      <rect
+        className="cls-8"
+        x="179.97"
+        y="268.73"
+        width="2.01"
+        height="4.97"
+        transform="translate(-128.93 60.91) rotate(-23.86)"
+      />
+      <rect
+        className="cls-8"
+        x="177.89"
+        y="118.96"
+        width="5.46"
+        height="12.96"
+      />
+      <rect
+        className="cls-8"
+        x="177.89"
+        y="133.25"
+        width="3.8"
+        height="21.64"
+      />
+      <rect
+        className="cls-8"
+        x="186.2"
+        y="190.34"
+        width="20.2"
+        height="6.12"
+        transform="translate(-110.29 202.73) rotate(-53.93)"
+      />
+      <rect
+        className="cls-8"
+        x="175.95"
+        y="205.53"
+        width="13.96"
+        height="2.83"
+        transform="translate(-123.08 119.79) rotate(-37.74)"
+      />
+      <rect
+        className="cls-8"
+        x="152.01"
+        y="219.78"
+        width="6.88"
+        height="3.4"
+        transform="translate(-92.1 18.94) rotate(-16.81)"
+      />
+      <rect className="cls-8" x="100.75" y="183.1" width="6.86" height="3.39" />
+      <rect
+        className="cls-8"
+        x="186.07"
+        y="228.04"
+        width="18.29"
+        height="5.49"
+        transform="translate(-139.51 158.51) rotate(-42.78)"
+      />
+      <rect className="cls-8" x="179.79" y="156.37" width="3.8" height="8.4" />
+      <rect
+        className="cls-8"
+        x="140.26"
+        y="277.77"
+        width="15.22"
+        height="4.06"
+        transform="translate(-186.79 345.2) rotate(-80.73)"
+      />
+      <rect
+        className="cls-8"
+        x="198.44"
+        y="271.55"
+        width="2.46"
+        height="6.52"
+        transform="translate(-156.7 130.21) rotate(-35.26)"
+      />
+      <rect
+        className="cls-8"
+        x="193.87"
+        y="265.13"
+        width="2.41"
+        height="6.37"
+        transform="translate(-153.8 126.37) rotate(-35.26)"
+      />
+      <rect
+        className="cls-8"
+        x="187.24"
+        y="250.54"
+        width="2.98"
+        height="14.72"
+        transform="translate(-138.36 93.45) rotate(-30)"
+      />
+      <rect
+        className="cls-8"
+        x="191.13"
+        y="293.11"
+        width="13.49"
+        height="3.01"
+        transform="translate(-175.53 365.08) rotate(-73.48)"
+      />
+      <rect
+        className="cls-8"
+        x="145.1"
+        y="323.57"
+        width="3.01"
+        height="14.72"
+        transform="translate(-243.11 365.91) rotate(-77.33)"
+      />
+      <rect
+        className="cls-8"
+        x="160.4"
+        y="329.64"
+        width="2.8"
+        height="7.95"
+        transform="translate(-239.05 356.55) rotate(-73.19)"
+      />
+      <rect
+        className="cls-8"
+        x="170.6"
+        y="331.59"
+        width="2.83"
+        height="7.24"
+        transform="translate(-225.47 401.4) rotate(-78.49)"
+      />
+      <rect
+        className="cls-8"
+        x="184.37"
+        y="329.26"
+        width="2.92"
+        height="17.53"
+        transform="translate(-217.18 417.19) rotate(-78.49)"
+      />
+      <rect
+        className="cls-8"
+        x="180.53"
+        y="298.95"
+        width="3.9"
+        height="19.58"
+        transform="translate(-191.15 390.47) rotate(-78.49)"
+      />
+      <rect
+        className="cls-8"
+        x="140.25"
+        y="292.57"
+        width="10.75"
+        height="2.08"
+        transform="translate(-202.3 354.56) rotate(-80.73)"
+      />
+      {active === 0 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="80.78"
+            cy="285.62"
+            r="6"
+            style={{ transformOrigin: "80.78px 285.62px" }}
           />
-          <rect
-            className='cls-5'
-            x='195.17'
-            y='505.45'
-            width='8.79'
-            height='24.76'
-            transform='translate(-347.83 609.1) rotate(-78.39)'
+          <circle fill="#EA7311" cx="80.78" cy="285.62" r="3" />
+        </>
+      )}
+      {active === 1 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="143.38"
+            cy="248.70"
+            r="6"
+            style={{ transformOrigin: "143.38px 248.70px" }}
           />
-          <rect className='cls-5' x='166.84' y='636.18' width='24.76' height='8.79' />
-          {/* this is the solar team ↑*/}
-          <rect
-            className='cls-5'
-            x='254.63'
-            y='517.68'
-            width='8.79'
-            height='24.76'
-            transform='translate(-312.31 677.12) rotate(-78.39)'
+          <circle fill="#EA7311" cx="143.38" cy="248.70" r="3" />
+        </>
+      )}
+      {active === 2 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="127.00"
+            cy="223.04"
+            r="6"
+            style={{ transformOrigin: "127.00px 223.04px" }}
           />
-          <rect
-            className='cls-5'
-            x='253.08'
-            y='464.42'
-            width='8.79'
-            height='24.76'
-            transform='translate(-261.39 633.06) rotate(-78.39)'
+          <circle fill="#EA7311" cx="127.00" cy="223.04" r="3" />
+        </>
+      )}
+      {active === 3 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="108.62"
+            cy="243.02"
+            r="6"
+            style={{ transformOrigin: "108.62px 243.02px" }}
           />
-          <rect
-            className='cls-5'
-            x='190.99'
-            y='458.09'
-            width='24.76'
-            height='8.79'
-            transform='matrix(0.16, -0.99, 0.99, 0.16, -286.04, 587.94)'
+          <circle fill="#EA7311" cx="108.62" cy="243.02" r="3" />
+        </>
+      )}
+      {active === 4 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="107.04"
+            cy="257.00"
+            r="6"
+            style={{ transformOrigin: "107.04px 257.00px" }}
           />
-          <rect
-            className='cls-5'
-            x='195.92'
-            y='429.63'
-            width='24.76'
-            height='8.79'
-            transform='translate(-253.83 568.98) rotate(-80.64)'
+          <circle fill="#EA7311" cx="107.04" cy="257.00" r="3" />
+        </>
+      )}
+      {active === 5 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="113.38"
+            cy="289.51"
+            r="6"
+            style={{ transformOrigin: "113.38px 289.51px" }}
           />
-          <rect
-            className='cls-5'
-            x='242.82'
-            y='440.15'
-            width='24.76'
-            height='8.79'
-            transform='translate(-224.94 624.05) rotate(-80.64)'
+          <circle fill="#EA7311" cx="113.38" cy="289.51" r="3" />
+        </>
+      )}
+      {active === 6 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="129.20"
+            cy="292.46"
+            r="6"
+            style={{ transformOrigin: "129.20px 292.46px" }}
           />
-          <rect
-            className='cls-5'
-            x='279.64'
-            y='438.64'
-            width='24.76'
-            height='8.79'
-            transform='translate(-192.62 659.12) rotate(-80.64)'
+          <circle fill="#EA7311" cx="129.20" cy="292.46" r="3" />
+        </>
+      )}
+      {active === 7 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="139.44"
+            cy="294.88"
+            r="6"
+            style={{ transformOrigin: "139.44px 294.88px" }}
           />
-          <rect
-            className='cls-5'
-            x='285.5'
-            y='390.32'
-            width='8.79'
-            height='24.76'
-            transform='translate(-162.52 198.9) rotate(-30)'
+          <circle fill="#EA7311" cx="139.44" cy="294.88" r="3" />
+        </>
+      )}
+      {active === 8 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="151.63"
+            cy="297.46"
+            r="6"
+            style={{ transformOrigin: "151.63px 297.46px" }}
           />
-          <rect
-            className='cls-5'
-            x='269.53'
-            y='362.68'
-            width='8.79'
-            height='24.76'
-            transform='translate(-150.83 187.22) rotate(-30)'
+          <circle fill="#EA7311" cx="151.63" cy="297.46" r="3" />
+        </>
+      )}
+      {active === 9 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="146.42"
+            cy="277.26"
+            r="6"
+            style={{ transformOrigin: "146.42px 277.26px" }}
           />
-          <rect
-            className='cls-5'
-            x='202.14'
-            y='390.23'
-            width='24.76'
-            height='8.79'
-            transform='translate(-209.74 542.11) rotate(-80.64)'
+          <circle fill="#EA7311" cx="146.42" cy="277.26" r="3" />
+        </>
+      )}
+      {active === 10 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="167.80"
+            cy="259.94"
+            r="6"
+            style={{ transformOrigin: "167.80px 259.94px" }}
           />
-          <rect
-            className='cls-5'
-            x='191.86'
-            y='326.25'
-            width='24.76'
-            height='8.79'
-            transform='translate(-28.64 19.51) rotate(-5.11)'
+          <circle fill="#EA7311" cx="167.80" cy="259.94" r="3" />
+        </>
+      )}
+      {active === 11 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="169.18"
+            cy="235.93"
+            r="6"
+            style={{ transformOrigin: "169.18px 235.93px" }}
           />
-          <rect
-            className='cls-5'
-            x='244.16'
-            y='309.43'
-            width='24.76'
-            height='8.79'
-            transform='translate(-134.74 208) rotate(-35.6)'
+          <circle fill="#EA7311" cx="169.18" cy="235.93" r="3" />
+        </>
+      )}
+      {active === 12 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="163.85"
+            cy="229.29"
+            r="6"
+            style={{ transformOrigin: "163.85px 229.29px" }}
           />
-          <rect
-            className='cls-5'
-            x='271.24'
-            y='285'
-            width='24.76'
-            height='8.79'
-            transform='translate(-120.84 313.8) rotate(-49.03)'
+          <circle fill="#EA7311" cx="163.85" cy="229.29" r="3" />
+        </>
+      )}
+      {active === 13 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="158.62"
+            cy="218.79"
+            r="6"
+            style={{ transformOrigin: "158.62px 218.79px" }}
           />
-          <rect className='cls-5' x='319.49' y='277.91' width='8.79' height='24.76' />
-          <rect className='cls-5' x='319.5' y='243.62' width='8.79' height='24.76' />
-          <rect className='cls-5' x='321.72' y='190.07' width='8.79' height='24.76' />
-          <rect
-            className='cls-5'
-            x='294.25'
-            y='150.71'
-            width='8.79'
-            height='24.76'
-            transform='translate(-40.02 129.96) rotate(-23.05)'
+          <circle fill="#EA7311" cx="158.62" cy="218.79" r="3" />
+        </>
+      )}
+      {active === 14 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="144.01"
+            cy="228.45"
+            r="6"
+            style={{ transformOrigin: "144.01px 228.45px" }}
           />
-          <rect className='cls-5' x='319.86' y='124.15' width='8.79' height='24.76' />
-          <rect className='cls-5' x='319.86' y='93.45' width='8.79' height='24.76' />
-          <rect
-            className='cls-5'
-            x='275.36'
-            y='121.18'
-            width='8.79'
-            height='24.76'
-            transform='translate(-17.82 220.47) rotate(-41.8)'
+          <circle fill="#EA7311" cx="144.01" cy="228.45" r="3" />
+        </>
+      )}
+      {active === 15 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="96.99"
+            cy="183.87"
+            r="6"
+            style={{ transformOrigin: "96.99px 183.87px" }}
           />
-          <rect
-            className='cls-5'
-            x='254.2'
-            y='103.24'
-            width='8.79'
-            height='24.76'
-            transform='translate(22.41 272.01) rotate(-57.6)'
+          <circle fill="#EA7311" cx="96.99" cy="183.87" r="3" />
+        </>
+      )}
+      {active === 16 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="121.58"
+            cy="187.73"
+            r="6"
+            style={{ transformOrigin: "121.58px 187.73px" }}
           />
-          <rect
-            className='cls-5'
-            x='229.49'
-            y='48.82'
-            width='59.57'
-            height='33.02'
-            transform='translate(81.19 264.78) rotate(-62.38)'
+          <circle fill="#EA7311" cx="121.58" cy="187.73" r="3" />
+        </>
+      )}
+      {active === 17 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="149.99"
+            cy="174.58"
+            r="6"
+            style={{ transformOrigin: "149.99px 174.58px" }}
           />
-        </g>
-        {/* <circle className='anim' cx='200.2' cy='517.8' r='3.2'>
-          <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-          <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-        </circle> */}
-        <circle className='yellow' cx='225.2' cy='522.4' r='0'>
-          {active == 6 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='258.7' cy='474.5' r='0'>
-          {active == 8 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='293' cy='442.2' r='0'>
-          {active == 9 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='201.5' cy='519.8' r='0'>
-          {active == 5 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='291' cy='400.5' r='0'>
-          {active == 10 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='276' cy='375' r='0'>
-          {active == 11 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='215.2' cy='394' r='0'>
-          {active == 2 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='208.3' cy='329.5' r='0'>
-          {active == 12 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='260' cy='312.7' r='0'>
-          {active == 13 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='325.3' cy='288.9' r='0'>
-          {active == 15 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='285' cy='290.2' r='0'>
-          {active == 14 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='325.2' cy='254' r='0'>
-          {active == 16 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='325' cy='201.2' r='0'>
-          {active == 17 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='301.5' cy='162.1' r='0'>
-          {active == 20 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='325.1' cy='133.7' r='0'>
-          {active == 18 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='325.1' cy='105.8' r='0'>
-          {active == 19 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='283' cy='133' r='0'>
-          {active == 21 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='263' cy='114' r='0'>
-          {active == 22 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='210' cy='432.5' r='0'>
-          {active == 3 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='257' cy='443.6' r='0'>
-          {active == 1 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='260' cy='530' r='0'>
-          {active == 7 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='147.1' cy='507.2' r='0'>
-          {active == 0 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <circle className='yellow' cx='204' cy='461' r='0'>
-          {active == 4 && (
-            <>
-              <animate attributeName='r' from='3.2' to='20' dur='2s' repeatCount='indefinite' />
-              <animate attributeName='opacity' from='1' to='0.5' dur='2s' repeatCount='indefinite' />
-            </>
-          )}
-        </circle>
-        <g id='szamok'>
-          <text className='cls-6' transform='translate(252.27 447.87)'>
-            1
-          </text>
-          <text className='cls-6' transform='translate(210.81 398.72)'>
-            2
-          </text>
-          <text className='cls-6' transform='translate(204.85 436.27)'>
-            3
-          </text>
-          <text className='cls-6' transform='translate(199.55 464.32)'>
-            4
-          </text>
+          <circle fill="#EA7311" cx="149.99" cy="174.58" r="3" />
+        </>
+      )}
+      {active === 18 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="155.50"
+            cy="188.84"
+            r="6"
+            style={{ transformOrigin: "155.50px 188.84px" }}
+          />
+          <circle fill="#EA7311" cx="155.50" cy="188.84" r="3" />
+        </>
+      )}
+      {active === 19 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="174.05"
+            cy="124.47"
+            r="6"
+            style={{ transformOrigin: "174.05px 124.47px" }}
+          />
+          <circle fill="#EA7311" cx="174.05" cy="124.47" r="3" />
+        </>
+      )}
+      {active === 20 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="172.00"
+            cy="142.77"
+            r="6"
+            style={{ transformOrigin: "172.00px 142.77px" }}
+          />
+          <circle fill="#EA7311" cx="172.00" cy="142.77" r="3" />
+        </>
+      )}
+      {active === 21 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="162.29"
+            cy="163.98"
+            r="6"
+            style={{ transformOrigin: "162.29px 163.98px" }}
+          />
+          <circle fill="#EA7311" cx="162.29" cy="163.98" r="3" />
+        </>
+      )}
+      {active === 22 && (
+        <>
+          <circle
+            className="active-marker-pulse"
+            cx="174.34"
+            cy="160.48"
+            r="6"
+            style={{ transformOrigin: "174.34px 160.48px" }}
+          />
+          <circle fill="#EA7311" cx="174.34" cy="160.48" r="3" />
+        </>
+      )}
 
-          <text className='cls-6' transform='translate(197.01 523.94)'>
-            5
-          </text>
-          <text className='cls-6' transform='translate(220.49 527.79)'>
-            6
-          </text>
-          <text className='cls-6' transform='translate(255.34 534.88)'>
-            7
-          </text>
-          <text className='cls-6' transform='translate(253.81 480.75)'>
-            8
-          </text>
-          <text className='cls-6' transform='translate(288.56 445.42)'>
-            9
-          </text>
-          <text className='cls-6' transform='translate(282.12 405.58)'>
-            10
-          </text>
-          <text className='cls-6' transform='translate(267.16 379.27)'>
-            11
-          </text>
-          <text className='cls-6' transform='translate(197.97 333.86)'>
-            12
-          </text>
-          <text className='cls-6' transform='translate(249.95 316.93)'>
-            13
-          </text>
-          <text transform='translate(275.29 294.64)' className='cls-6'>
-            14
-          </text>
-          <text className='cls-6' transform='translate(314.81 293.35)'>
-            15
-          </text>
-          <text className='cls-6' transform='translate(314.81 259.06)'>
-            16
-          </text>
-          <text className='cls-6' transform='translate(314.81 205.26)'>
-            17
-          </text>
-          <text className='cls-6' transform='translate(314.81 139.48)'>
-            18
-          </text>
-          <text className='cls-6' transform='translate(314.43 110.27)'>
-            19
-          </text>
-          <text className='cls-6' transform='translate(292.02 166.3)'>
-            20
-          </text>
-          <text className='cls-6' transform='translate(273.06 137.51)'>
-            21
-          </text>
-          <text className='cls-6' transform='translate(252.27 118.88)'>
-            22
-          </text>
-        </g>
-        <g id='feliratok'>
-          <path
-            className='cls-7'
-            d='M406.24,181.73a1.23,1.23,0,0,0-1.18-.77h-4.92a1.18,1.18,0,0,0-1.18.76l-2.17,6.61a1.07,1.07,0,1,0,2,.76l.58-1.56s0-.16,0,.53v9.17a1.44,1.44,0,1,0,2.87,0v-6a0,0,0,0,1,.05-.05h.54c.06,0,.05.05.05.05v6a1.44,1.44,0,1,0,2.88,0v-9.17c0-.7.06-.48.06-.48l.56,1.51a1.06,1.06,0,0,0,1.37.63,1.08,1.08,0,0,0,.63-1.39Z'
-          />
-          <ellipse className='cls-7' cx='402.63' cy='177.18' rx='3.09' ry='3.06' />
-          <circle className='cls-7' cx='418.38' cy='177.16' r='3.09' />
-          <path
-            className='cls-7'
-            d='M424.45,188.19l-2.63-6.41c-.15-.33-.28-.76-.9-.76h-4.68a1.19,1.19,0,0,0-1.11.76l-2.74,6.37a1.09,1.09,0,0,0,.49,1.45,1.07,1.07,0,0,0,1.43-.5l.2-.42s.07-.11,0,0c-.15.79-.56,3.14-.56,3.14a.72.72,0,0,0,.73.9h1.19c.09,0,.07.06.07.06v4.74a1.11,1.11,0,1,0,2.21,0v-4.76s0,0,.05,0h.3s0,.05,0,.05v4.75a1.11,1.11,0,1,0,2.21,0V192.8s0-.07.09-.07h1.28a.74.74,0,0,0,.75-.9l-.52-3.22c0-.2.29.51.29.51a.9.9,0,0,0,1.27.51A1.07,1.07,0,0,0,424.45,188.19Z'
-          />
-          <path
-            className='cls-7'
-            d='M411.15,198.16a.53.53,0,0,1-.53.54h-.22a.54.54,0,0,1-.53-.54V174.92a.53.53,0,0,1,.53-.53h.22a.53.53,0,0,1,.53.53Z'
-          />
-          <path
-            className='cls-7'
-            d='M406.24,549.73a1.23,1.23,0,0,0-1.18-.77h-4.92a1.19,1.19,0,0,0-1.18.77l-2.17,6.61a1.07,1.07,0,1,0,2,.76l.58-1.56s0-.16,0,.53v9.17a1.44,1.44,0,1,0,2.87,0v-6a0,0,0,0,1,.05,0h.54c.06,0,.05,0,.05,0v6a1.44,1.44,0,1,0,2.88,0v-9.17c0-.7.06-.48.06-.48l.56,1.51a1.07,1.07,0,1,0,2-.76Z'
-          />
-          <ellipse className='cls-7' cx='402.63' cy='545.18' rx='3.09' ry='3.06' />
-          <circle className='cls-7' cx='418.38' cy='545.16' r='3.09' />
-          <path
-            className='cls-7'
-            d='M424.45,556.19l-2.63-6.41c-.15-.33-.28-.76-.9-.76h-4.68a1.19,1.19,0,0,0-1.11.76l-2.74,6.37a1.08,1.08,0,0,0,.49,1.44,1.06,1.06,0,0,0,1.43-.49l.2-.42s.07-.12,0,0c-.15.78-.56,3.14-.56,3.14a.72.72,0,0,0,.73.9h1.19c.09,0,.07.06.07.06v4.74a1.11,1.11,0,1,0,2.21,0v-4.76a0,0,0,0,1,.05,0h.3s0,0,0,0v4.75a1.11,1.11,0,1,0,2.21,0V560.8s0-.07.09-.07h1.28a.74.74,0,0,0,.75-.9l-.52-3.22c0-.2.29.5.29.5a.91.91,0,0,0,1.27.52A1.08,1.08,0,0,0,424.45,556.19Z'
-          />
-          <path
-            className='cls-7'
-            d='M411.15,566.16a.52.52,0,0,1-.53.53h-.22a.53.53,0,0,1-.53-.53V542.92a.53.53,0,0,1,.53-.53h.22a.53.53,0,0,1,.53.53Z'
-          />
-          <path
-            className='cls-7'
-            d='M154.41,415.81a1.24,1.24,0,0,0-1.18-.77h-4.92a1.18,1.18,0,0,0-1.18.77L145,422.42a1.07,1.07,0,1,0,2,.76l.57-1.56s.05-.16.05.53v9.17a1.44,1.44,0,1,0,2.87,0v-6s0-.05.05-.05H151a0,0,0,0,1,.05.05v6a1.44,1.44,0,1,0,2.88,0v-9.17c0-.7.06-.48.06-.48l.56,1.51a1.06,1.06,0,0,0,1.37.63,1.09,1.09,0,0,0,.63-1.39Z'
-          />
-          <ellipse className='cls-7' cx='150.8' cy='411.26' rx='3.09' ry='3.06' />
-          <circle className='cls-7' cx='166.55' cy='411.24' r='3.09' />
-          <path
-            className='cls-7'
-            d='M172.62,422.27,170,415.86c-.15-.33-.29-.76-.91-.76h-4.67a1.22,1.22,0,0,0-1.12.76l-2.73,6.37a1.07,1.07,0,0,0,.48,1.44,1.05,1.05,0,0,0,1.43-.49l.21-.42s.06-.12,0,0c-.15.78-.56,3.14-.56,3.14a.72.72,0,0,0,.73.9h1.19c.08,0,.07.06.07.06v4.74a1.11,1.11,0,1,0,2.21,0v-4.76a0,0,0,0,1,0,0h.3s0,.05,0,.05v4.75a1.11,1.11,0,1,0,2.21,0v-4.73s0-.07.09-.07h1.28a.73.73,0,0,0,.74-.9l-.52-3.22c0-.2.3.5.3.5a.91.91,0,0,0,1.27.52A1.09,1.09,0,0,0,172.62,422.27Z'
-          />
-          <path
-            className='cls-7'
-            d='M159.32,432.24a.53.53,0,0,1-.53.53h-.23a.53.53,0,0,1-.53-.53V409a.53.53,0,0,1,.53-.53h.23a.53.53,0,0,1,.53.53Z'
-          />
-          <path
-            className='cls-7'
-            d='M119.16,604.7l-13.62,5.38a1.4,1.4,0,0,0-.87,1.22,1.37,1.37,0,0,0,.74,1.29l3.68,1.89L102.15,628a1.39,1.39,0,0,0,.6,1.86l7.35,3.78A1.37,1.37,0,0,0,112,633l6.94-13.48,3.67,1.9a1.39,1.39,0,0,0,1.49-.15,1.46,1.46,0,0,0,.37-.45,1.38,1.38,0,0,0,.11-1L121,605.65a1.37,1.37,0,0,0-.71-.9A1.35,1.35,0,0,0,119.16,604.7Zm2,12.88-2.2-1.14a1.38,1.38,0,0,0-1.85.6l-6.94,13.47-4.9-2.52,6.94-13.47a1.38,1.38,0,0,0-.6-1.86l-2.2-1.13,9.34-3.69Z'
-          />
-          <path
-            className='cls-7'
-            d='M226.9,316.74l-3.24,8.91a.88.88,0,0,0,.21.94.9.9,0,0,0,.95.2l2.49-1,3.55,9.15a.91.91,0,0,0,1.16.51l5-1.94a.9.9,0,0,0,.5-1.16L234,323.24l2.5-1a.89.89,0,0,0,.57-.78,1.21,1.21,0,0,0-.06-.38.89.89,0,0,0-.42-.46l-8.4-4.4a.91.91,0,0,0-.74,0A.89.89,0,0,0,226.9,316.74Zm7.08,4.58-1.49.58a.88.88,0,0,0-.51,1.15l3.55,9.15-3.33,1.29-3.55-9.15a.89.89,0,0,0-1.15-.51l-1.5.58,2.22-6.1Z'
-          />
-          <path
-            className='cls-7'
-            d='M330.62,518.28l-7.33-6a.89.89,0,0,0-1.46.71l.09,2.68-9.81.31a.9.9,0,0,0-.87.92l.17,5.35a.89.89,0,0,0,.92.86l9.81-.31.09,2.68a.89.89,0,0,0,.54.79,1,1,0,0,0,.38.07.89.89,0,0,0,.57-.24l6.94-6.47a.9.9,0,0,0,0-1.34ZM324,523.44l-.05-1.6A.89.89,0,0,0,323,521l-9.81.31-.11-3.57,9.8-.31a.89.89,0,0,0,.87-.92l-.05-1.6,5,4.12Z'
-          />
-          <path
-            className='cls-7'
-            d='M117.07,568.35l3.87,8.66a.9.9,0,0,0,1.63,0l1.12-2.43,8.91,4.1a.88.88,0,0,0,1.18-.44l2.24-4.86a.89.89,0,0,0-.44-1.18l-8.91-4.1,1.12-2.43a.89.89,0,0,0-.14-1,.76.76,0,0,0-.3-.23.83.83,0,0,0-.62,0l-9.1,2.69a.85.85,0,0,0-.55.48A.89.89,0,0,0,117.07,568.35Zm8.28-1.63-.67,1.45a.89.89,0,0,0,.43,1.18l8.92,4.11-1.5,3.24-8.91-4.11a.89.89,0,0,0-1.18.44l-.67,1.46-2.65-5.93Z'
-          />
-          <path
-            className='cls-8'
-            d='M328.76,380.34l-8.43-5.79-.24-.23c-.26-.25-.26-.25-.26-.68,0-.64.43-1,1.13-1.55a3.34,3.34,0,0,0,1.68-2.66,3.51,3.51,0,0,0-7,0,.7.7,0,0,0,1.4,0,2.1,2.1,0,1,1,4.2,0c0,.64-.43,1-1.13,1.55a3.37,3.37,0,0,0-1.67,2.66,1.91,1.91,0,0,0,.7,1.7l8.82,6.14a.7.7,0,0,1,.26.78.69.69,0,0,1-.67.49H309.32a.69.69,0,0,1-.67-.49.7.7,0,0,1,.26-.78l7.13-5.17a.7.7,0,0,0,.15-1,.71.71,0,0,0-1-.16l-7.13,5.18a2.1,2.1,0,0,0,1.24,3.8h18.22a2.1,2.1,0,0,0,1.22-3.81Z'
-          />
-          <text className='cls-6' transform='translate(374.62 640.57)'>
-            VI
-            <tspan className='cls-9' x='17.46' y='0'>
-              P
-            </tspan>
-          </text>
-          <text className='cls-10' transform='translate(57.77 557.64) rotate(-1.81)'>
-            Ipa
-            <tspan className='cls-11' x='20.92' y='0'>
-              r
-            </tspan>
-            <tspan x='26.03' y='0' xmlSpace='preserve'>
-              {' '}
-              4.0
-            </tspan>
-          </text>
-          <text className='cls-12' transform='translate(208.88 234.45)'>
-            IB028
-          </text>
-          <text className='cls-12' transform='translate(360.78 488.13)'>
-            IB025
-          </text>
-          <text className='cls-13' transform='translate(141.85 511.4) rotate(-1.81)'>
-            R
-          </text>
-          <g id='Environment_Coffee' data-name='Environment / Coffee'>
-            <path
-              id='Vector'
-              className='cls-14'
-              d='M247.77,76.2h8.88m0,0h.14m-.14,0h.14m-.14,0a9,9,0,0,1-8.88-9V62A1.18,1.18,0,0,1,249,60.85h15.54A1.18,1.18,0,0,1,265.68,62v.1M256.79,76.2h8.89m-8.89,0a9,9,0,0,0,8.89-9m0-5.12h1.91a3.2,3.2,0,1,1,0,6.4h-1.91V67.25m0-5.12v5.12m-3.84-12.8L260.56,57M258,54.45,256.72,57m-2.56-2.56L252.88,57'
-            />
-          </g>
-          <path className='cls-15' d='M83.12,476.2a1.55,1.55,0,1,0,1.55,1.55A1.55,1.55,0,0,0,83.12,476.2Z' />
-          <path className='cls-15' d='M92.59,476.2a1.55,1.55,0,1,0,1.55,1.55A1.55,1.55,0,0,0,92.59,476.2Z' />
-          <path
-            className='cls-15'
-            d='M98,470H77.68a2.83,2.83,0,0,0-2.83,2.83v21.77a2.84,2.84,0,0,0,2.83,2.84H98a2.84,2.84,0,0,0,2.83-2.84V472.84A2.83,2.83,0,0,0,98,470ZM82.78,495.66a.43.43,0,0,0,0-.11l.32-7.1.31,7.1s0,.07,0,.11Zm9.47,0a.43.43,0,0,0,0-.11l.32-7.1.31,7.1s0,.07,0,.11Zm6.82-1.05a1,1,0,0,1-1,1.05H94.45a.45.45,0,0,0,0-.11L94.79,484l.28,3.11a.61.61,0,0,0,1.21-.06v-5.11c0-2.14-2.59-2.25-3.69-2.25s-3.69.11-3.69,2.25V487a.6.6,0,0,0,1.2.06l.29-3.11.31,11.56a.43.43,0,0,0,0,.11H85a.45.45,0,0,0,0-.11L85.32,484l.28,3.11a.61.61,0,0,0,1.21-.06v-5.11c0-2.14-2.59-2.25-3.69-2.25s-3.69.11-3.69,2.25V487a.6.6,0,0,0,1.2.06l.29-3.11.31,11.56s0,.07,0,.11H77.68a1,1,0,0,1-1-1.05V472.84a1,1,0,0,1,1-1H98a1,1,0,0,1,1,1v21.77Z'
-          />
-          <path
-            className='cls-15'
-            d='M90.07,465.35l2.12-2.13V468a.79.79,0,0,0,1.58,0v-4.78l2.13,2.13a.78.78,0,0,0,1.11,0,.79.79,0,0,0,0-1.12l-3.47-3.47L93,460.2l-.56.56L89,464.23a.79.79,0,1,0,1.12,1.12Z'
-          />
-          <path
-            className='cls-15'
-            d='M82.53,468.56l.56.56.56-.56,3.47-3.47a.79.79,0,0,0,0-1.12A.78.78,0,0,0,86,464l-2.13,2.12v-4.77a.79.79,0,1,0-1.58,0v4.77L80.18,464a.79.79,0,1,0-1.12,1.12Z'
-          />
-          <text className='cls-10' transform='translate(66.6 510.13)'>
-            IB110
-          </text>
-        </g>
+      <g id="szamok">
+        <text
+          className="cls-10"
+          transform="translate(32.35 313.29) rotate(-1.81)"
+        >
+          Ipa
+        </text>
+        <text
+          className="cls-11"
+          transform="translate(44.08 312.92) rotate(-1.81)"
+        >
+          r
+        </text>
+        <text
+          className="cls-13"
+          transform="translate(48.83 312.77) rotate(-1.81)"
+        >
+          4
+        </text>
+        <text
+          className="cls-14"
+          transform="translate(53.59 312.62) rotate(-1.81)"
+        >
+          .
+        </text>
+        <text
+          className="cls-10"
+          transform="translate(54.74 312.58) rotate(-1.81)"
+        >
+          0
+        </text>
+        <text className="cls-15" transform="translate(108.89 133.76)">
+          IB028
+        </text>
+        <text className="cls-16" transform="translate(194.3 276.02)">
+          IB025
+        </text>
+        <text
+          className="cls-17"
+          transform="translate(78.78 288.62) rotate(-1.81)"
+        >
+          R
+        </text>
+        <text className="cls-10" transform="translate(40.33 289.49)">
+          IB110
+        </text>
+        <text className="cls-20" transform="translate(141.38 251.7)">
+          1
+        </text>
+        <text className="cls-21" transform="translate(141.38 251.7)">
+          1
+        </text>
+        <text className="cls-20" transform="translate(106.62 246.02)">
+          3
+        </text>
+        <text className="cls-21" transform="translate(106.62 246.02)">
+          3
+        </text>
+        <text className="cls-20" transform="translate(125 226.04)">
+          2
+        </text>
+        <text className="cls-21" transform="translate(125 226.04)">
+          2
+        </text>
+        <text className="cls-20" transform="translate(105.04 260)">
+          4
+        </text>
+        <text className="cls-21" transform="translate(105.04 260)">
+          4
+        </text>
+        <text className="cls-20" transform="translate(142.01 231.45)">
+          14
+        </text>
+        <text className="cls-21" transform="translate(142.01 231.45)">
+          14
+        </text>
+        <text className="cls-20" transform="translate(156.62 221.79)">
+          13
+        </text>
+        <text className="cls-21" transform="translate(156.62 221.79)">
+          13
+        </text>
+        <text className="cls-20" transform="translate(161.85 232.29)">
+          12
+        </text>
+        <text className="cls-21" transform="translate(161.85 232.29)">
+          12
+        </text>
+        <text className="cls-20" transform="translate(167.18 238.93)">
+          11
+        </text>
+        <text className="cls-21" transform="translate(167.18 238.93)">
+          11
+        </text>
+        <text className="cls-20" transform="translate(165.8 262.94)">
+          10
+        </text>
+        <text className="cls-21" transform="translate(165.8 262.94)">
+          10
+        </text>
+        <text className="cls-20" transform="translate(149.63 300.46)">
+          8
+        </text>
+        <text className="cls-21" transform="translate(149.63 300.46)">
+          8
+        </text>
+        <text className="cls-20" transform="translate(144.42 280.26)">
+          9
+        </text>
+        <text className="cls-21" transform="translate(144.42 280.26)">
+          9
+        </text>
+        <text className="cls-20" transform="translate(172.05 127.47)">
+          19
+        </text>
+        <text className="cls-21" transform="translate(172.05 127.47)">
+          19
+        </text>
+        <text className="cls-20" transform="translate(170 145.77)">
+          20
+        </text>
+        <text className="cls-21" transform="translate(170 145.77)">
+          20
+        </text>
+        <text className="cls-20" transform="translate(172.34 163.48)">
+          22
+        </text>
+        <text className="cls-21" transform="translate(172.34 163.48)">
+          22
+        </text>
+        <text className="cls-20" transform="translate(160.29 166.98)">
+          21
+        </text>
+        <text className="cls-21" transform="translate(160.29 166.98)">
+          21
+        </text>
+        <text className="cls-20" transform="translate(147.99 177.58)">
+          17
+        </text>
+        <text className="cls-21" transform="translate(147.99 177.58)">
+          17
+        </text>
+        <text className="cls-20" transform="translate(119.58 190.73)">
+          16
+        </text>
+        <text className="cls-21" transform="translate(119.58 190.73)">
+          16
+        </text>
+        <text className="cls-20" transform="translate(94.99 186.87)">
+          15
+        </text>
+        <text className="cls-21" transform="translate(94.99 186.87)">
+          15
+        </text>
+        <text className="cls-20" transform="translate(153.5 191.84)">
+          18
+        </text>
+        <text className="cls-21" transform="translate(153.5 191.84)">
+          18
+        </text>
+        <text className="cls-20" transform="translate(137.44 297.88)">
+          7
+        </text>
+        <text className="cls-21" transform="translate(137.44 297.88)">
+          7
+        </text>
+        <text className="cls-20" transform="translate(127.2 295.46)">
+          6
+        </text>
+        <text className="cls-21" transform="translate(127.2 295.46)">
+          6
+        </text>
+        <text className="cls-20" transform="translate(111.38 292.51)">
+          5
+        </text>
+        <text className="cls-21" transform="translate(111.38 292.51)">
+          5
+        </text>
       </g>
     </svg>
   );
 }
-
-//<defs><style>.cls-1{fill:#bbc6d1;}.cls-1,.cls-2,.cls-3,.cls-4{stroke:#000;stroke-width:6px;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-8{stroke-miterlimit:10;}.cls-2,.cls-5{fill:#7d99b6;}.cls-15,.cls-3{fill:none;}.cls-3{stroke-linecap:square;}.cls-4{fill:#486d94;}.cls-14,.cls-6{font-size:12px;}.cls-6,.cls-9{fill:#1d1d1b;font-family:Raleway-ExtraBold, Raleway;font-weight:800;}.cls-7,.cls-8{fill:#010101;}.cls-15,.cls-8{stroke:#010101;}.cls-8{stroke-width:0.5px;}.cls-9{font-size:11.54px;}.cls-10{letter-spacing:-0.03em;}.cls-11{font-size:14px;}.cls-11,.cls-13{font-family:Raleway-Bold, Raleway;font-weight:700;}.cls-12{letter-spacing:-0.02em;}.cls-13{font-size:17.77px;fill:#fff;}.cls-14{fill:#f6f6f6;font-family:Raleway-SemiBold, Raleway;font-weight:600;}.cls-15{stroke-linecap:round;stroke-linejoin:round;stroke-width:2.56px;}</style></defs>
