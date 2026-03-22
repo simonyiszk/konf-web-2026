@@ -15,7 +15,7 @@ const map = [
   "Kir-Dev",
   "Nova Services Zrt.",
   "Barré Technologies Zrt.",
-  "OTP",
+  "OTP Bank",
   "Műegyetemi Rádió Club",
   "HA5KFU",
   "Nokia",
