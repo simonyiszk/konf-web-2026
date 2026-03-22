@@ -22,6 +22,10 @@ const links = [
     label: "előadások",
   },
   {
+    href: "/map",
+    label: "térkép",
+  },
+  {
     href: "/giveaway",
     label: "nyereményjáték",
   },

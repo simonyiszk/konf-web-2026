@@ -1,67 +1,72 @@
-'use client';
-import { useRef, useState } from 'react';
-import { MdLocationPin } from 'react-icons/md';
+"use client";
+import { useRef, useState } from "react";
+import { MdLocationPin } from "react-icons/md";
 
-import { Map } from './map';
+import { Map } from "./map";
 
 const map = [
-  'Regisztrációs pult',
-  'Bosch',
-  'Nokia',
-  'ICF Tech',
-  'Sicontact',
-  'Silicon Labs',
-  'Interactive Brokers',
-  'Paks II.',
-  'Barré Technologies',
-  'Nova Services',
-  'KUKA',
-  'OTP Bank',
-  'Knorr-Bremse',
-  'Schönherz Iskolaszövetkezet',
-  'BME EELISA',
-  'PARIPA',
-  'BME Suborbitals',
-  'BME Formula Racing Team',
-  'schdesign',
-  'Kir-Dev',
-  'SEM',
-  'HA5KFU',
-  'LEGO Kör',
-  'BME Solar Boat Team',
+  "Regisztrációs pult",
+  "PTC",
+  "ICF Tech Hungary Kft.",
+  "Silicon Laboratories",
+  "SEM",
+  "WorldQuant",
+  "schdesign",
+  "Kir-Dev",
+  "Nova Services Zrt.",
+  "Barré Technologies Zrt.",
+  "OTP",
+  "Műegyetemi Rádió Club",
+  "HA5KFU",
+  "Nokia",
+  "LEGO Kör",
+  "BME Suborbitals",
+  "Schönherz Iskolaszövetkezet",
+  "Energetikai Szakkollégium",
+  "BME Formula Racing Team",
+  "BME SharkTeam",
+  "VIK",
+  "BME Solar Boat Team",
+  "HUNOR - Magyar Űrhajós Program",
 ];
 
 export function Floorplan() {
   const [active, setActive] = useState(-1);
   const ref = useRef<HTMLDivElement>(null);
   return (
-    <section className='container'>
-      <h2 ref={ref} className='mb-4 text-center text-4xl lg:col-span-2'>
-        Térkép
-      </h2>
-      <div className='relative flex flex-col-reverse mdx:flex-row w-full rounded-lg justify-center gap-8 mdx:gap-16 lg:gap-32 items-center'>
-        <ol className='text-center mdx:text-start gap-4 mdx:block'>
+    <section className="container">
+      <div className="relative flex flex-col-reverse pb-8 lg:flex-row w-full rounded-lg justify-center gap-8 lg:gap-16 items-center lg:items-start">
+        <ol className="text-center lg:text-left gap-1 lg:flex-col lg:flex lg:w-1/3">
           {map.map((name, i) => {
             return (
-              <li key={name} className='text-lg'>
+              <li key={name} className="text-lg">
                 <button
-                  type='button'
-                  className='group py-1 pl-1 text-center'
+                  type="button"
+                  className="group py-0.5 pl-1 text-center lg:text-left"
                   onClick={() => {
-                    if (ref.current && window.innerWidth < 940) {
+                    if (ref.current && window.innerWidth < 1024) {
                       ref.current.scrollIntoView({
-                        behavior: 'smooth',
-                        inline: 'start',
+                        behavior: "smooth",
+                        block: "start",
                       });
                     }
                     setActive(i);
                   }}
                 >
-                  {i == 0 ? 'R: Regisztrációs pult' : `${i}:  ${name}`}
+                  {i == 0 ? (
+                    <>
+                      <span className="text-[#EA7311]">R</span>: Regisztrációs
+                      pult
+                    </>
+                  ) : (
+                    <>
+                      <span className="text-[#EA7311]">{i}</span>: {name}
+                    </>
+                  )}
                   <span>
                     <MdLocationPin
-                      className={`inline pb-1  group-hover:text-konf-accent-yellow ${
-                        active === i ? 'text-[#ffe500]' : 'text-white'
+                      className={`inline pb-1 group-hover:text-konf-accent-yellow ${
+                        active === i ? "text-[#EA7311]" : "text-white"
                       }`}
                     />
                   </span>
@@ -70,7 +75,7 @@ export function Floorplan() {
             );
           })}
         </ol>
-        <div className='pointer-events-none relative select-none bg-white/20 0 p-8 rounded-md md:flex-1 flex-0 w-full mdx:w-fit mdx:p-2 md:max-h-[1000px] max-h-full flex flex-row justify-center items-center'>
+        <div ref={ref} className="pointer-events-none relative select-none bg-white/20 p-8 rounded-md flex-1 w-full lg:w-2/3 max-h-full flex flex-row justify-center items-center">
           <Map active={active} />
         </div>
       </div>
