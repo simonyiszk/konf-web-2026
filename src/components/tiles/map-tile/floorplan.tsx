@@ -47,7 +47,7 @@ export function Floorplan() {
                     if (ref.current && window.innerWidth < 1024) {
                       ref.current.scrollIntoView({
                         behavior: "smooth",
-                        inline: "start",
+                        block: "start",
                       });
                     }
                     setActive(i);
@@ -75,7 +75,7 @@ export function Floorplan() {
             );
           })}
         </ol>
-        <div className="pointer-events-none relative select-none bg-white/20 p-8 rounded-md flex-1 w-full lg:w-2/3 max-h-full flex flex-row justify-center items-center">
+        <div ref={ref} className="pointer-events-none relative select-none bg-white/20 p-8 rounded-md flex-1 w-full lg:w-2/3 max-h-full flex flex-row justify-center items-center">
           <Map active={active} />
         </div>
       </div>
