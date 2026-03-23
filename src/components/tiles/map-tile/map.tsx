@@ -9,7 +9,7 @@ export function Map({ active }: MapProps) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 244.81 392.73"
-      className="map-svg max-h-max md:max-h-[800px] h-[365px] xxs:h-[500px] xs:h-[600px] sm:h-[650px] md:h[800px] max-w-full"
+      className="map-svg max-h-max md:max-h-[800px] h-[450px] xxs:h-[550px] xs:h-[650px] sm:h-[700px] md:h-[800px] max-w-full"
     >
       <rect
         className="cls-1"
