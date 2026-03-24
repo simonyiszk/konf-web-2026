@@ -8,11 +8,11 @@ const mapLinks = {
 
 export function LocationTile() {
   return (
-    <div className="col-span-2 rounded-[30px] overflow-hidden bg-background text-text flex flex-row min-h-[300px]">
-      <div className="flex flex-col justify-center gap-4 px-10 py-10 w-[40%] shrink-0">
-        <h1 className="text-text">Helyszín</h1>
-        <address className="block text-xl not-italic leading-relaxed">
-          <span className="block font-bold text-2xl">BME I épület</span>
+    <div className="col-span-2 rounded-[30px] overflow-hidden bg-background text-text flex flex-col md:flex-row min-h-[300px]">
+      <div className="flex flex-col justify-center gap-4 px-6 py-6 md:px-10 md:py-10 w-full md:w-[40%] shrink-0">
+        <h1 className="text-text text-2xl md:text-4xl">Helyszín</h1>
+        <address className="block text-base md:text-xl not-italic leading-relaxed">
+          <span className="block font-bold text-lg md:text-2xl">BME I épület</span>
           <span className="block">Budapest 1117</span>
           <span className="block">Magyar Tudósok Körútja 2.</span>
           <span className="block">Budapest, Magyarország</span>
