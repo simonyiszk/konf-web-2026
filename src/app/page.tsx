@@ -21,7 +21,7 @@ export default async function Landing() {
   return (
     <div className="flex-grow relative flex flex-col justify-center items-center w-full">
       <Hero/>
-      <YoutubeLive ib025Link={`https://www.youtube.com/live/4yPSuYcq1Lk?is=GkWZuD5FX7f0fRnM`} ib028Link={`https://www.youtube.com/live/BYsWw5UEZwk?si=19DJiVIBnKQWFdwO`}/>
+      <YoutubeLive ib025Link={`https://www.youtube.com/embed/4yPSuYcq1Lk?si=ZKAkVrSsoRqUfawz`} ib028Link={`https://www.youtube.com/embed/BYsWw5UEZwk?si=8iq0jEArig38D5xN`}/>
 
       {/* <FeaturedPresentationTile
         sectionTitle={data.featuredPresentations.sectionTitle}
