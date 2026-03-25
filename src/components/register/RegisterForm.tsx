@@ -26,7 +26,7 @@ export function RegisterForm(){
   const [phone, setPhone] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  /*const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     setError("");
     e.preventDefault();
     if (!firstName || !lastName || !email) {
@@ -46,9 +46,9 @@ export function RegisterForm(){
     executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
       submitEnquiryForm(gReCaptchaToken);
     })
-  }
+  }*/
 
-  const submitEnquiryForm = (gReCaptchaToken: string) => {
+  /*const submitEnquiryForm = (gReCaptchaToken: string) => {
     register({firstName, lastName, email, plays, phone, recaptchaToken: gReCaptchaToken}).then(
       (status) => {
         if (status === "OK") {
@@ -58,14 +58,13 @@ export function RegisterForm(){
         }
       }
     )
-  }
+  }*/
 
-  const inputClasses = "w-full bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54] focus:outline-none focus-visible:outline-none focus:ring-0"
+  const inputClasses = "w-full cursor-not-allowed bg-primary-300 border-[3px] border-primary-700 rounded-2xl px-3 py-2 focus:border-[5px] focus:border-secondary focus:bg-text text-xl text-primary-700 placeholder:text-[#ab7e54] focus:outline-none focus-visible:outline-none focus:ring-0"
 
   return (
     <form
-      className="space-y-4 flex flex-col lg:min-w-[300px] max-lg:w-full"
-      onSubmit={handleSubmit}
+      className="space-y-4 flex flex-col lg:min-w-[300px] max-lg:w-full opacity-60"
     >
       <div>
         <label className="block text-lg">Vezetéknév</label>
@@ -73,6 +72,7 @@ export function RegisterForm(){
           name="lastName"
           type="text"
           className={inputClasses}
+          disabled
           placeholder="Simonyi"
           value={lastName}
           onChange={(e) => setLastName(e?.target?.value)}
@@ -85,6 +85,7 @@ export function RegisterForm(){
           name="firstName"
           type="text"
           className={inputClasses}
+          disabled
           placeholder="Károly"
           value={firstName}
           onChange={(e) => setFirstName(e?.target?.value)}
@@ -97,6 +98,7 @@ export function RegisterForm(){
           name="email"
           type="email"
           className={inputClasses}
+          disabled
           placeholder="simonyi@simonyi.bme.hu"
           value={email}
           onChange={(e) => setEmail(e?.target?.value)}
@@ -110,6 +112,7 @@ export function RegisterForm(){
           type="checkbox"
           className="w-5 h-5 text-primary-700 bg-primary-300 border-primary-700 rounded focus:ring-primary-500 focus:ring-2"
           checked={plays}
+          disabled
           onChange={(e) => setPlays(e?.target?.checked)}
         />
       </div>
@@ -120,6 +123,7 @@ export function RegisterForm(){
           name="phone"
           type="tel"
           className={inputClasses}
+          disabled
           placeholder="+36201234567"
           value={phone}
           onChange={(e) => setPhone(e?.target?.value)}
@@ -130,6 +134,7 @@ export function RegisterForm(){
         <button
           type="submit"
           onClick={() => console.log("RegisterForm: submit button clicked")}
+          disabled
           className="inline-flex items-center justify-center bg-primary-300 text-primary-700 gap-3 mb-2 border-2 border-primary-700 rounded-lg px-2 py-1 hover:bg-secondary shadow-md w-48 text-lg"
           aria-label="Regisztráció"
         >
