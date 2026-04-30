@@ -3,15 +3,11 @@ import { getIndexData } from "@/models/get-index-data";
 import { redirect } from "next/navigation";
 import { MobilAppTile } from "@/components/tiles/mobil-app-tile";
 import GiveawayTile from "@/components/tiles/giveaway-tile";
-import FeaturedPresentationTile from "@/components/tiles/featured-presentations-tile/featured-presentation-tile";
 import Hero from "@/components/hero/Hero";
 import YoutubeLive from "@/components/live-videos/youtube-live";
-/*import {getStreams} from "@/models/get-youtube-video-data";
-import {StreamData} from "@/models/models";
-import YoutubeLive from "@/components/live-videos/youtube-live";*/
 
-export default async function Landing() {
-  const data = await getIndexData();
+export default function Landing() {
+  const data = getIndexData();
   // const streams: StreamData[] | undefined = getStreams();
   if (!data) {
     redirect("/error");

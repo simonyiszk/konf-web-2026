@@ -50,7 +50,7 @@ export default function FeaturedPresentationTile({
 
           const imageSrc =
             (presentation.imageUrls && presentation.imageUrls[0]) ||
-            presentation.presenter.pictureUrl;
+            presentation.presenter?.pictureUrl;
 
           const linkHref = `/presentations/${slugify(presentation.title)}`;
 
@@ -125,10 +125,10 @@ export default function FeaturedPresentationTile({
 
                   <div>
                     <p className="text-lg md:text-xl font-bold text-[var(--text-base)]">
-                      {presentation.presenter.name}
+                      {presentation.presenter?.name}
                     </p>
                     <p className="text-sm md:text-base text-[var(--text-base)]">
-                      {presentation.presenter.rank}
+                      {presentation.presenter?.rank}
                     </p>
                   </div>
                 </div>

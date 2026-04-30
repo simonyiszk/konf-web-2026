@@ -5,8 +5,8 @@ import Presentation from "@/components/presentation/Presentation";
 import {getIndexData} from "@/models/get-index-data";
 import slugify from "@/utils/slugify";
 
-export async function generateStaticParams() {
-  const data = await getIndexData();
+export function generateStaticParams() {
+  const data = getIndexData();
   return (
     data?.presentations?.filter((p) => !p.isBreak).map((p) => ({
       slug: slugify(p.title),
@@ -22,7 +22,7 @@ export async function generateMetadata(
   props: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const data = await getIndexData();
+  const data = getIndexData();
   const slug = (await props.params).slug;
   const presentation = data?.presentations.find(
     (p) => slugify(p.title) === slug
@@ -30,17 +30,17 @@ export async function generateMetadata(
 
   return {
     title: presentation?.title,
-    description: `${presentation?.presenter.name} "${presentation?.title}" című előadása a XXI. Simonyi Konferencián`,
+    description: `${presentation?.presenter?.name} "${presentation?.title}" című előadása a XXI. Simonyi Konferencián`,
     keywords: `${(await parent).keywords}, ${
-      presentation?.presenter.name
+      presentation?.presenter?.name
     }${presentation?.title
       .split(" ")
       .reduce((prev, curr) => `${prev}, ${curr}`, "")}`,
   };
 }
 
-const getPresentationBySlug = async (slug: string) => {
-  const data = await getIndexData();
+const getPresentationBySlug = (slug: string) => {
+  const data = getIndexData();
   return data?.presentations.find((p) => slugify(p.title) === slug);
 };
 
@@ -49,7 +49,7 @@ export default async function PresentationBySlug({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const presentation = await getPresentationBySlug((await params).slug);
+  const presentation = getPresentationBySlug((await params).slug);
   if (!presentation) {
     notFound();
   }
