@@ -74,21 +74,21 @@ export default function Presentation({
             )}
           >
             <img
-              src={presenter.pictureUrl}
+              src={presenter?.pictureUrl}
               className="object-cover h-full w-full rounded-3xl"
               alt="Presentation Image"
             />
           </div>
           <p className="block mt-4 text-[32px] leading-tight font-bold text-[--foreground]-900">
-            {presenter.name}
+            {presenter?.name}
           </p>
           <p className="block mt-0.5 text-[20px]  text-[--background]">
-            {presenter.rank}
+            {presenter?.rank}
           </p>
-          {presenter.company && presenter.company.logoUrl && (
+          {presenter?.company && presenter?.company.logoUrl && (
             <div className="mt-2 bg-white rounded-xl max-w-[308px] max-h-[75px] w-full">
               <img
-                src={presenter.company.logoUrl}
+                src={presenter?.company.logoUrl}
                 alt="Company logo"
                 className="p-2 max-w-full max-h-[75px] object-fit m-auto"
               />
