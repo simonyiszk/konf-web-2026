@@ -44,12 +44,12 @@ const getPresentationBySlug = (slug: string) => {
   return data?.presentations.find((p) => slugify(p.title) === slug);
 };
 
-export default function PresentationBySlug({
+export default async function PresentationBySlug({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const presentation = getPresentationBySlug(params.slug);
+  const presentation = getPresentationBySlug((await params).slug);
   if (!presentation) {
     notFound();
   }
