@@ -22,57 +22,57 @@ export function getIndexData(): IndexPageData {
         {
           title: "XV. Simonyi Konferencia",
           priority: 2018,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/180_QRTARUSKTU37.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/181_17NNUY2V1QP7F.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/182_2931OY5MMBNO.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/183_1JB4KAXX3LH1E.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/184_19P83ZYMJDS8X.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/185_1QKYBZR7PB940.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/180_QRTARUSKTU37.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/181_17NNUY2V1QP7F.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/182_2931OY5MMBNO.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/183_1JB4KAXX3LH1E.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/184_19P83ZYMJDS8X.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/185_1QKYBZR7PB940.jpg"]
         },
         {
           title: "XVI. Simonyi Konferencia",
           priority: 2019,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/190_1UKE9N1P2K963.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/191_11S8ZU1UIHUJD.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/192_139BQB5Y9VKM6.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/193_67ZH80JPEPO.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/194_9TV9TU26CAGF.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/190_1UKE9N1P2K963.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/191_11S8ZU1UIHUJD.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/192_139BQB5Y9VKM6.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/193_67ZH80JPEPO.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/194_9TV9TU26CAGF.jpg"]
         },
         {
           title: "XVIII. Simonyi Konferencia",
           priority: 2021,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/210_UQJ6WF1L0SO.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/211_U4450XYESONA.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/212_SW0KQO7I2NP7.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/213_1B44YG5OZ05FV.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/214_1IZ186UW8XPR2.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/210_UQJ6WF1L0SO.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/211_U4450XYESONA.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/212_SW0KQO7I2NP7.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/213_1B44YG5OZ05FV.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/214_1IZ186UW8XPR2.jpg"]
         },
         {
           title: "XIX. Simonyi Konferencia",
           priority: 2022,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/220_1EN0JC3ZSRQK8.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/221_U8S77F8QNP84.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/222_RUQOVD7869AR.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/223_1TLQKZLJBXDRD.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/224_58TEHQH86288.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/220_1EN0JC3ZSRQK8.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/221_U8S77F8QNP84.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/222_RUQOVD7869AR.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/223_1TLQKZLJBXDRD.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/224_58TEHQH86288.jpg"]
         },
         {
           title: "XX. Simonyi Konferencia",
           priority: 2023,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/235_1UNKZC3F5PB08.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/230_J8G9OHBVDSZR.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/231_R9VQ794OWMTF.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/232_MIERGYRMO6QZ.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/233_TMJOXF2EYRWP.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/234_9RWWEOXRNHH1.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/235_1UNKZC3F5PB08.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/230_J8G9OHBVDSZR.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/231_R9VQ794OWMTF.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/232_MIERGYRMO6QZ.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/233_TMJOXF2EYRWP.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/234_9RWWEOXRNHH1.jpg"]
         },
         {
           title: "XXI. Simonyi Konferencia",
           priority: 2024,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/240_1AO8HWXTJ8BUL.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/241_LRC1MUCWM215.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/242_MNIL5YK9ND5O.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/243_1GAC2SB8OTW3Z.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/244_3KNO88KJFKCZ.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/245_GDPEULGD012R.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/246_1VZKNM0B4IPF6.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/247_B4NP0HWJGP3P.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/240_1AO8HWXTJ8BUL.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/241_LRC1MUCWM215.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/242_MNIL5YK9ND5O.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/243_1GAC2SB8OTW3Z.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/244_3KNO88KJFKCZ.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/245_GDPEULGD012R.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/246_1VZKNM0B4IPF6.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/247_B4NP0HWJGP3P.jpg"]
         },
         {
           title: "XXII. Simonyi Konferencia",
           priority: 2025,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/251_1M1IRHO9IXTQ6.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/252_128A8W50FY4U8.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/253_2249X43089ZR.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/254_1294TWN81Z7TV.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/255_I08CPF3EWZ5L.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/256_RDQ4NM2F5KKK.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/257_1AECRSBCY9YA2.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/258_GSD5ZV8P7TT0.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/251_1M1IRHO9IXTQ6.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/252_128A8W50FY4U8.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/253_2249X43089ZR.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/254_1294TWN81Z7TV.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/255_I08CPF3EWZ5L.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/256_RDQ4NM2F5KKK.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/257_1AECRSBCY9YA2.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/258_GSD5ZV8P7TT0.jpg"]
         },
         {
           title: "XI. Simonyi Konferencia",
           priority: 2014,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/142_1GM10PHHD4Y41.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/140_171UD5WML53RD.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/143_1RO7AL24ASMZT.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/144_18XDYL7LFUHF6.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/142_1GM10PHHD4Y41.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/140_171UD5WML53RD.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/143_1RO7AL24ASMZT.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/144_18XDYL7LFUHF6.jpg"]
         },
         {
           title: "XII. Simonyi Konferencia",
           priority: 2015,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/151_1UPVAKW3S6NM.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/152_1HM2BAREEQVZT.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/153_168LR4ZI4DJNZ.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/151_1UPVAKW3S6NM.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/152_1HM2BAREEQVZT.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/153_168LR4ZI4DJNZ.jpg"]
         },
         {
           title: "XIII. Simonyi Konferencia",
           priority: 2016,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/160_1EQLXM03VHL0H.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/161_11F2SCL336O33.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/162_1RJA3U1SO8VJO.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/163_WUPSLFQ7V4GK.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/164_69H1O1X497UQ.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/160_1EQLXM03VHL0H.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/161_11F2SCL336O33.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/162_1RJA3U1SO8VJO.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/163_WUPSLFQ7V4GK.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/164_69H1O1X497UQ.jpg"]
         },
         {
           title: "XIV. Simonyi Konferencia",
           priority: 2017,
-          imageUrls: ["https://cdn.kir-dev.hu/cmsch-konf/public/170_42LQYSACAPWS.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/171_GIYXXWXUVTD3.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/172_YQJLOFVLZS32.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/173_PHBK25AM6ZC1.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/174_BLZQLN9HHHB.jpg", "https://cdn.kir-dev.hu/cmsch-konf/public/175_1CA718OCWSOCU.jpg"]
+          imageUrls: ["https://xxiii.konferencia.simonyi.bme.hu/img/public/170_42LQYSACAPWS.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/171_GIYXXWXUVTD3.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/172_YQJLOFVLZS32.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/173_PHBK25AM6ZC1.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/174_BLZQLN9HHHB.jpg", "https://xxiii.konferencia.simonyi.bme.hu/img/public/175_1CA718OCWSOCU.jpg"]
         }
       ]
     },
@@ -98,91 +98,91 @@ export function getIndexData(): IndexPageData {
       companies: [
         {
           name: "One",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019cd8c1-4ee0-7d87-b890-92fd9f6f3c21.jpg",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019cd8c1-4ee0-7d87-b890-92fd9f6f3c21.jpg",
           url: "",
           category: SponsorCategory.FEATURED_SPONSOR
         },
         {
           name: "Nemzetbiztonsági Szakszolgálat Nemzeti Kiberbiztonsági Intézet",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019ce164-4c25-7147-826b-61d29e8f6329.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019ce164-4c25-7147-826b-61d29e8f6329.png",
           url: "https://nki.gov.hu/",
           category: SponsorCategory.NO_ASSOCIATION
         },
         {
           name: "thyssenkrupp",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019cd2bd-8b8d-7d26-87df-754dde33850a.jpg",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019cd2bd-8b8d-7d26-87df-754dde33850a.jpg",
           url: "https://www.thyssenkrupp.hu/hu/",
           category: SponsorCategory.NO_ASSOCIATION
         },
         {
           name: "One Broadcast",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019cfd5d-b1d0-72a1-bb23-ac5bd635c48c.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019cfd5d-b1d0-72a1-bb23-ac5bd635c48c.png",
           url: "",
           category: SponsorCategory.SPONSOR
         },
         {
           name: "PTC",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c47b3-967e-75fb-900d-35962d6b68a4.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c47b3-967e-75fb-900d-35962d6b68a4.png",
           url: "https://www.ptc.com/en/careers/hungary-careers",
           category: SponsorCategory.MAIN_SPONSOR
         },
         {
           name: "ICF Tech Hungary Kft.",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c47b5-44b4-7c64-a3f6-40e4fd9e3373.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c47b5-44b4-7c64-a3f6-40e4fd9e3373.png",
           url: "https://careers.icftech.hu/",
           category: SponsorCategory.FEATURED_SPONSOR
         },
         {
           name: "Sicontact Kft.",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c4816-4c99-7bc8-b1c7-07460628b366.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c4816-4c99-7bc8-b1c7-07460628b366.png",
           url: "https://www.eset.com/hu/",
           category: SponsorCategory.FEATURED_SPONSOR
         },
         {
           name: "Barré Technologies Zrt.",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c47ae-cf17-75cc-8310-c2a4560f1786.jpg",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c47ae-cf17-75cc-8310-c2a4560f1786.jpg",
           url: "https://www.barre.hu/karrier/",
           category: SponsorCategory.FEATURED_SPONSOR
         },
         {
           name: "Silicon Labs",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c5cde-2499-7144-bad5-f62ec5fd6462.jpg",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c5cde-2499-7144-bad5-f62ec5fd6462.jpg",
           url: "https://www.silabs.com/about-us/careers",
           category: SponsorCategory.FEATURED_SPONSOR
         },
         {
           name: "Nova Services",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c7017-9a28-7329-94ef-aa5fecf876a0.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c7017-9a28-7329-94ef-aa5fecf876a0.png",
           url: "https://www.novaservices.hu/",
           category: SponsorCategory.FEATURED_SPONSOR
         },
         {
           name: "WorldQuant",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c4815-283d-72cc-bff6-fc685e7a797b.jpg",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c4815-283d-72cc-bff6-fc685e7a797b.jpg",
           url: "https://www.worldquant.com/",
           category: SponsorCategory.SPONSOR
         },
         {
           name: "OTP Bank",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c47b4-7ef9-7a34-8b12-3a24492d5ac4.jpg",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c47b4-7ef9-7a34-8b12-3a24492d5ac4.jpg",
           url: "https://www.otpbank.hu/",
           category: SponsorCategory.SPONSOR
         },
         {
           name: "BME VIK",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/VIK_6N6XAL1M4XBO.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/VIK_6N6XAL1M4XBO.png",
           url: "https://vik.bme.hu",
           category: SponsorCategory.SPONSOR
         },
         {
           name: "Schönherz Iskolaszövetkezet",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/SCH_IS_16TX2JCJ3RAD9.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/SCH_IS_16TX2JCJ3RAD9.png",
           url: "https://schonherz.hu/",
           category: SponsorCategory.SPONSOR
         },
         {
           name: "Nokia",
-          logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/NOKIA_LOGO_69USCU8941J6.png",
+          logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/NOKIA_LOGO_69USCU8941J6.png",
           url: "https://www.facebook.com/nokiahungary/",
           category: SponsorCategory.FEATURED_SPONSOR
         }
@@ -193,70 +193,70 @@ export function getIndexData(): IndexPageData {
         name: "Szabó Benedek",
         rank: "Webfelelős",
         emailAddress: "szabo.benedek2@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/BENI_17VWP4L0JCM0R.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/BENI_17VWP4L0JCM0R.png",
         priority: 3
       },
       {
         name: "Harsányi Levente",
         rank: "Arculati felelős",
         emailAddress: "harsanyi.levente@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/LEVI_181TF9UXWXUAW.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/LEVI_181TF9UXWXUAW.png",
         priority: 1
       },
       {
         name: "Csányi Balázs",
         rank: "Főrendező",
         emailAddress: "csanyi.balazs@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/CSEBI_1QOOQY6K5KW9A.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/CSEBI_1QOOQY6K5KW9A.png",
         priority: 0
       },
       {
         name: "Bihari Bence",
         rank: "Expo felelős",
         emailAddress: "bihari.bence@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/BENCE_II2A5D8S8IFZ.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/BENCE_II2A5D8S8IFZ.png",
         priority: 1
       },
       {
         name: "Sali Nóra",
         rank: "Előadás felelős",
         emailAddress: "sali.nora@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/NORI_BCNVOIO37CXH.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/NORI_BCNVOIO37CXH.png",
         priority: 1
       },
       {
         name: "Sinkó Dániel",
         rank: "Gazdasági felelős",
         emailAddress: "sinko.daniel@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/DANI_KNZSA7ILC2H5.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/DANI_KNZSA7ILC2H5.png",
         priority: 1
       },
       {
         name: "Domján Zorka",
         rank: "PR- és sajtófelelős",
         emailAddress: "domjan.zorka@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/ZORKA_1FGH8WA3YMAMZ.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/ZORKA_1FGH8WA3YMAMZ.png",
         priority: 1
       },
       {
         name: "Vaska Barnabás",
         rank: "Vezető vállalati kapcsolattartó",
         emailAddress: "vaska.barnabas@svk.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/BARNI_EIIAM597NHG7.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/BARNI_EIIAM597NHG7.png",
         priority: 1
       },
       {
         name: "Németh Marcell",
         rank: "Szakkollégium elnöke",
         emailAddress: "nemeth.marcell@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/MARCI_15OQCR8I06LMV.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/MARCI_15OQCR8I06LMV.png",
         priority: 0
       },
       {
         name: "Dombora Melinda",
         rank: "Helyszínfelelős",
         emailAddress: "dombora.melinda@simonyi.bme.hu",
-        pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/public/MELCSI_I0OB72Q3EJC5.png",
+        pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/public/MELCSI_I0OB72Q3EJC5.png",
         priority: 2
       }
     ],
@@ -277,7 +277,7 @@ export function getIndexData(): IndexPageData {
           presenter: {
             name: "Härtlein Károly",
             rank: "mesteroktató",
-            pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c47a5-f406-7689-ae77-482e7734d878.jpg",
+            pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c47a5-f406-7689-ae77-482e7734d878.jpg",
             company: undefined
           }
         }
@@ -297,7 +297,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Vágó Péter",
           rank: "Termékmenedzser",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c5e4a-115b-71ec-8ff9-9c0a25aad23d.jpeg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c5e4a-115b-71ec-8ff9-9c0a25aad23d.jpeg",
           company: undefined
         }
       },
@@ -314,7 +314,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Haragos Gergő Viktor",
           rank: "computer graphic enthusiastic",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c47a2-ffde-7ef9-8e2c-a7596a995b2f.png",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c47a2-ffde-7ef9-8e2c-a7596a995b2f.png",
           company: undefined
         }
       },
@@ -331,7 +331,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Härtlein Károly",
           rank: "mesteroktató",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c47a5-f406-7689-ae77-482e7734d878.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c47a5-f406-7689-ae77-482e7734d878.jpg",
           company: undefined
         }
       },
@@ -348,7 +348,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Dr. Bacsárdi László",
           rank: "tanszékvezető, egyetemi docens",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c72d1-9225-7918-bfdb-b1b1f167fe5c.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c72d1-9225-7918-bfdb-b1b1f167fe5c.jpg",
           company: undefined
         }
       },
@@ -365,10 +365,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Dr. Bergmann Gábor",
           rank: "Vezető kutató (Fellow Researcher)",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c47b6-6922-7269-8775-2dc984a2360e.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c47b6-6922-7269-8775-2dc984a2360e.jpg",
           company: {
             name: "PTC",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c47b3-967e-75fb-900d-35962d6b68a4.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c47b3-967e-75fb-900d-35962d6b68a4.png",
             url: "https://www.ptc.com/en/careers/hungary-careers",
             category: SponsorCategory.MAIN_SPONSOR
           }
@@ -387,7 +387,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Duda Ernő",
           rank: "Medipredict-CEO, Magyar Biotechnológiai Szövetség- elnök",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c47c4-7dd1-77ea-b348-b27344c4eae0.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c47c4-7dd1-77ea-b348-b27344c4eae0.jpg",
           company: undefined
         }
       },
@@ -404,10 +404,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Tóth Ádám",
           rank: "Ügyvezető",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c5cc7-ba9b-77ba-bcf1-173e88ca467f.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c5cc7-ba9b-77ba-bcf1-173e88ca467f.jpg",
           company: {
             name: "ICF Tech Hungary Kft.",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c47b5-44b4-7c64-a3f6-40e4fd9e3373.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c47b5-44b4-7c64-a3f6-40e4fd9e3373.png",
             url: "https://careers.icftech.hu/",
             category: SponsorCategory.FEATURED_SPONSOR
           }
@@ -438,10 +438,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Cserényi Gyula",
           rank: "HUNOR-program kiképzett kutatóűrhajósa",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019d02f2-afda-7f2f-8af8-f87044dc70ea.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019d02f2-afda-7f2f-8af8-f87044dc70ea.jpg",
           company: {
             name: "HUNOR",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019d0656-e4ea-701d-941c-551b4ee02294.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019d0656-e4ea-701d-941c-551b4ee02294.png",
             url: "https://hunor.gov.hu/",
             category: SponsorCategory.NO_ASSOCIATION
           }
@@ -496,10 +496,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Béres Péter",
           rank: "IT vezető",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c4817-4202-745e-ac8d-c8a528183271.png",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c4817-4202-745e-ac8d-c8a528183271.png",
           company: {
             name: "Sicontact Kft.",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c4816-4c99-7bc8-b1c7-07460628b366.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c4816-4c99-7bc8-b1c7-07460628b366.png",
             url: "https://www.eset.com/hu/",
             category: SponsorCategory.FEATURED_SPONSOR
           }
@@ -554,10 +554,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Rimmel Botond",
           rank: "Business Analyst",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c72c9-4c50-7cca-a7b7-fce2b4c435a8.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c72c9-4c50-7cca-a7b7-fce2b4c435a8.jpg",
           company: {
             name: "Barré Technologies Zrt.",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c47ae-cf17-75cc-8310-c2a4560f1786.jpg",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c47ae-cf17-75cc-8310-c2a4560f1786.jpg",
             url: "https://www.barre.hu/karrier/",
             category: SponsorCategory.FEATURED_SPONSOR
           }
@@ -576,7 +576,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Dr. Eged Bertalan",
           rank: "",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c72ce-291d-7c9e-9d60-8db1c7328f6a.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c72ce-291d-7c9e-9d60-8db1c7328f6a.jpg",
           company: undefined
         }
       },
@@ -593,7 +593,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Dr. Szaniszló Zsolt",
           rank: "",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c72cd-3562-7424-acdb-43bbc66e06f1.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c72cd-3562-7424-acdb-43bbc66e06f1.jpg",
           company: undefined
         }
       },
@@ -610,10 +610,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Kocsi Tamás",
           rank: "IT üzleti megoldások - Szakértékesítési osztályvezető",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019ce7c9-80b1-731b-adee-83a7023fbfd3.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019ce7c9-80b1-731b-adee-83a7023fbfd3.jpg",
           company: {
             name: "One",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019cd8c1-4ee0-7d87-b890-92fd9f6f3c21.jpg",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019cd8c1-4ee0-7d87-b890-92fd9f6f3c21.jpg",
             url: "",
             category: SponsorCategory.FEATURED_SPONSOR
           }
@@ -632,10 +632,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Siki Gergely",
           rank: "SW Product Owner",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019cd2b8-7bc9-7346-a59e-4773143fa336.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019cd2b8-7bc9-7346-a59e-4773143fa336.jpg",
           company: {
             name: "thyssenkrupp",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019cd2bd-8b8d-7d26-87df-754dde33850a.jpg",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019cd2bd-8b8d-7d26-87df-754dde33850a.jpg",
             url: "https://www.thyssenkrupp.hu/hu/",
             category: SponsorCategory.NO_ASSOCIATION
           }
@@ -654,7 +654,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Tóth Ervin",
           rank: "Mérnök, óraadó tanár",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019cadc2-4159-7199-9eda-f798561f6077.png",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019cadc2-4159-7199-9eda-f798561f6077.png",
           company: undefined
         }
       },
@@ -671,10 +671,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Körmöczi Péter",
           rank: "CTO",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c47c1-bc38-7921-a20c-9eda17399bd6.png",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c47c1-bc38-7921-a20c-9eda17399bd6.png",
           company: {
             name: "Nova Services",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c7017-9a28-7329-94ef-aa5fecf876a0.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c7017-9a28-7329-94ef-aa5fecf876a0.png",
             url: "https://www.novaservices.hu/",
             category: SponsorCategory.FEATURED_SPONSOR
           }
@@ -705,10 +705,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Preinsperger Máté",
           rank: "Applications Engineer",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019cb0bd-0bfd-766c-aaa4-ae5b168b0365.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019cb0bd-0bfd-766c-aaa4-ae5b168b0365.jpg",
           company: {
             name: "Silicon Labs",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c5cde-2499-7144-bad5-f62ec5fd6462.jpg",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c5cde-2499-7144-bad5-f62ec5fd6462.jpg",
             url: "https://www.silabs.com/about-us/careers",
             category: SponsorCategory.FEATURED_SPONSOR
           }
@@ -727,7 +727,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Ádám Zsófia",
           rank: "PhD Student, Critical Systems Research Group BME-MIT",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c72cb-3ebc-7cfe-9ef8-4e48afb03eb7.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c72cb-3ebc-7cfe-9ef8-4e48afb03eb7.jpg",
           company: undefined
         }
       },
@@ -744,10 +744,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Dr. Józsa Csaba Máté",
           rank: "Senior AI Research Scientist",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019cbcdd-5836-7c44-a848-441aed6a6363.jpeg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019cbcdd-5836-7c44-a848-441aed6a6363.jpeg",
           company: {
             name: "Nokia",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019c481d-159c-7570-a32f-e16a31aac60e.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019c481d-159c-7570-a32f-e16a31aac60e.png",
             url: "https://www.facebook.com/nokiahungary/",
             category: SponsorCategory.FEATURED_SPONSOR
           }
@@ -778,10 +778,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Dr. Schlégl Ádám",
           rank: "PhD, HUN-REN TKI HUNOR-program, Élettudományos koordinátor",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019cddb3-509a-75c8-8ca8-27535e130d73.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019cddb3-509a-75c8-8ca8-27535e130d73.jpg",
           company: {
             name: "HUNOR",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019d0656-e4ea-701d-941c-551b4ee02294.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019d0656-e4ea-701d-941c-551b4ee02294.png",
             url: "https://hunor.gov.hu/",
             category: SponsorCategory.NO_ASSOCIATION
           }
@@ -800,10 +800,10 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Kiss Tamás László",
           rank: "Főosztályvezető​",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019ce165-b44f-7142-8a5c-58e8b7c99020.png",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019ce165-b44f-7142-8a5c-58e8b7c99020.png",
           company: {
             name: "Nemzetbiztonsági Szakszolgálat Nemzeti Kiberbiztonsági Intézet",
-            logoUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-company/019ce164-4c25-7147-826b-61d29e8f6329.png",
+            logoUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-company/019ce164-4c25-7147-826b-61d29e8f6329.png",
             url: "https://nki.gov.hu/",
             category: SponsorCategory.NO_ASSOCIATION
           }
@@ -822,7 +822,7 @@ export function getIndexData(): IndexPageData {
         presenter: {
           name: "Dudás Levente",
           rank: "docens, BME-HVT",
-          pictureUrl: "https://cdn.kir-dev.hu/cmsch-konf/conference-presenter/019c72cf-624d-73f5-9770-74f40c97adca.jpg",
+          pictureUrl: "https://xxiii.konferencia.simonyi.bme.hu/img/conference-presenter/019c72cf-624d-73f5-9770-74f40c97adca.jpg",
           company: undefined
         }
       }]
