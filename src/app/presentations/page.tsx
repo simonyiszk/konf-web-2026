@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     "Az előadások listája a XXIII. Simonyi Konferencián, Magyarország legnagyobb egyetemi hallgatók által szervezett éves technológiai konferenciáján.",
 };
 
-export default async function Presentations() {
-  const presentations = await getPresentationData();
+export default function Presentations() {
+  const presentations = getPresentationData();
   if (!presentations) {
     notFound();
   }

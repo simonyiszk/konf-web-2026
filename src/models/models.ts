@@ -8,6 +8,7 @@ export enum SponsorCategory {
   MAIN_SPONSOR = "MAIN_SPONSOR",
   FEATURED_SPONSOR = "FEATURED_SPONSOR",
   SPONSOR = "SPONSOR",
+  NO_ASSOCIATION = "NO_ASSOCIATION",
 }
 
 export interface Company {
@@ -45,7 +46,7 @@ export interface Break {
 export interface PresentationModel {
   slug: string;
   title: string;
-  presenter: Presenter;
+  presenter: Presenter | null;
   room: "IB028" | "IB025" | "BOTH";
   language: "en" | "hu";
   startTime: string;

@@ -7,10 +7,8 @@ import {SponsorSection} from "@/components/sponsors/sponsor-section";
 import {Company} from "@/models/models";
 import {getIndexData} from "@/models/get-index-data";
 
-export async function Footer() {
-  const sponsors = await getIndexData().then(
-    (data) => data?.sponsors || { sectionTitle: "", companies: [] as Company[] }
-  )
+export function Footer() {
+  const sponsors = getIndexData()?.sponsors || { sectionTitle: "", companies: [] as Company[] };
 
   return (
     <>

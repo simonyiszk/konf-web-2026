@@ -3,10 +3,8 @@ import GiveawayRules from "@/components/giveaway/giveaway-rules";
 import {getIndexData} from "@/models/get-index-data";
 import {redirect} from "next/navigation";
 
-export default async function GiveawayPage() {
-  const giveawayData = await getIndexData().then(
-    (data) => data?.giveaway
-  )
+export default function GiveawayPage() {
+  const giveawayData = getIndexData()?.giveaway;
   if (!giveawayData) {
     redirect("/error");
   }

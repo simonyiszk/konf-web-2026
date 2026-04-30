@@ -2,8 +2,8 @@ import {getIndexData} from "@/models/get-index-data";
 
 import {PresentationWithDates} from "./models";
 
-export async function getPresentationData(): Promise<PresentationWithDates[] | undefined> {
-  const indexData = await getIndexData();
+export function getPresentationData(): PresentationWithDates[] | undefined {
+  const indexData = getIndexData();
   if (!indexData || !indexData.presentations) {
     return;
   }
